@@ -15,6 +15,6 @@ internalAngle = 0; // This is our own rotation, separate from the overall stack
 
 angle = 0; // This is the overall rotation, after adding all effects together
 
-// This is only for the collision detection
-image_xscale = (radius*2.0)/sprite_get_height(sprite_index);
-image_yscale = (radius*2.0)/sprite_get_height(sprite_index);
+var scale = (radius*2.0)/sprite_get_width(sprite_index);
+image_xscale = scale;
+image_yscale = scale;

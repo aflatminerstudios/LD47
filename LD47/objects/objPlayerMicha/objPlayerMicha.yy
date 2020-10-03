@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprBlueCircle",
-    "path": "sprites/sprBlueCircle/sprBlueCircle.yy",
+    "name": "sprCircleMultilines",
+    "path": "sprites/sprCircleMultilines/sprCircleMultilines.yy",
   },
   "solid": false,
   "visible": true,
