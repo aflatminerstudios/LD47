@@ -7,8 +7,9 @@ maxTimer = room_speed * 15;
 startingGlompables = 15;
 glompableSpawnTime = room_speed * 5;
 
-scrSpawnStartingGlompables(self.id);
 
+
+scrSpawnStartingGlompables(self.id);
 
 alarm[0] = glompableSpawnTime;
 

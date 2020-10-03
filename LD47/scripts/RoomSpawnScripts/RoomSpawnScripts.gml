@@ -1,7 +1,7 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 
-///@function scrSpawnGlompables
+///@function scrSpawnStartingGlompables(controller)
 ///@description Spawn all random starting glompables
 ///@param controller which controller is spawning random glompables
 function scrSpawnStartingGlompables(controller) {
