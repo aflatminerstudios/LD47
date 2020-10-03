@@ -9,6 +9,7 @@
     {"id":{"name":"InitializationScripts","path":"scripts/InitializationScripts/InitializationScripts.yy",},"order":1,},
     {"id":{"name":"TitleBG","path":"sprites/TitleBG/TitleBG.yy",},"order":0,},
     {"id":{"name":"GeneralScripts","path":"scripts/GeneralScripts/GeneralScripts.yy",},"order":0,},
+    {"id":{"name":"shdBloom","path":"shaders/shdBloom/shdBloom.yy",},"order":5,},
     {"id":{"name":"objGlompable","path":"objects/objGlompable/objGlompable.yy",},"order":0,},
     {"id":{"name":"objTestMichaControl","path":"objects/objTestMichaControl/objTestMichaControl.yy",},"order":8,},
     {"id":{"name":"sprBlueCircle","path":"sprites/sprBlueCircle/sprBlueCircle.yy",},"order":1,},
