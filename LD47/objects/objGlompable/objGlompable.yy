@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "scrCircleRainbow",
-    "path": "sprites/scrCircleRainbow/scrCircleRainbow.yy",
+    "name": "sprCircleYellow",
+    "path": "sprites/sprCircleYellow/sprCircleYellow.yy",
   },
   "solid": false,
   "visible": true,

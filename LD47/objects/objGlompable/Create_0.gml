@@ -6,12 +6,14 @@ outerColor = choose($11ff11, $ff1111, $1111ff, $11ffff, $ff11ff);
 radius = irandom_range(10, 30)
 
  // Set this to 0 if you want to keep it from rotating separately from what it is attached to
-baseAngularSpeedPerFrame = 2;
+baseAngularSpeedPerFrame = -2;
 angularSpeedPerFrame = baseAngularSpeedPerFrame;
 
+shouldGearRotateWhenAttaching = false;
+
+
+// Internals
 internalAngle = 0; // This is our own rotation, separate from the overall stack
-
-
 
 angle = 0; // This is the overall rotation, after adding all effects together
 

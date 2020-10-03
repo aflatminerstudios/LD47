@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprWhiteCircle",
-    "path": "sprites/sprWhiteCircle/sprWhiteCircle.yy",
+    "name": "sprCircleWhite",
+    "path": "sprites/sprCircleWhite/sprCircleWhite.yy",
   },
   "solid": false,
   "visible": true,

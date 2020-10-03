@@ -6,7 +6,7 @@
     "path": "folders/Micha Working.yy",
   },
   "resourceVersion": "1.0",
-  "name": "scrAttachGlompableToPlayer",
+  "name": "scrAttachGlompableToObject",
   "tags": [],
   "resourceType": "GMScript",
 }

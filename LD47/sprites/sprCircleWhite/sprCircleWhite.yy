@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"61e06596-52d4-4e91-bf4a-e0b9521f54e1","path":"sprites/sprWhiteCircle/sprWhiteCircle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"61e06596-52d4-4e91-bf4a-e0b9521f54e1","path":"sprites/sprWhiteCircle/sprWhiteCircle.yy",},"LayerId":{"name":"c81adcac-778b-4551-b642-65720ddd612a","path":"sprites/sprWhiteCircle/sprWhiteCircle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprWhiteCircle","path":"sprites/sprWhiteCircle/sprWhiteCircle.yy",},"resourceVersion":"1.0","name":"61e06596-52d4-4e91-bf4a-e0b9521f54e1","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"61e06596-52d4-4e91-bf4a-e0b9521f54e1","path":"sprites/sprCircleWhite/sprCircleWhite.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"61e06596-52d4-4e91-bf4a-e0b9521f54e1","path":"sprites/sprCircleWhite/sprCircleWhite.yy",},"LayerId":{"name":"c81adcac-778b-4551-b642-65720ddd612a","path":"sprites/sprCircleWhite/sprCircleWhite.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprCircleWhite","path":"sprites/sprCircleWhite/sprCircleWhite.yy",},"resourceVersion":"1.0","name":"61e06596-52d4-4e91-bf4a-e0b9521f54e1","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"sprWhiteCircle","path":"sprites/sprWhiteCircle/sprWhiteCircle.yy",},
+    "spriteId": {"name":"sprCircleWhite","path":"sprites/sprCircleWhite/sprCircleWhite.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"ad81177b-0ddd-46d8-a3fb-827b93d4e8b3","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"61e06596-52d4-4e91-bf4a-e0b9521f54e1","path":"sprites/sprWhiteCircle/sprWhiteCircle.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"ad81177b-0ddd-46d8-a3fb-827b93d4e8b3","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"61e06596-52d4-4e91-bf4a-e0b9521f54e1","path":"sprites/sprCircleWhite/sprCircleWhite.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,9 +58,9 @@
     "yorigin": 50,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sprWhiteCircle","path":"sprites/sprWhiteCircle/sprWhiteCircle.yy",},
+    "parent": {"name":"sprCircleWhite","path":"sprites/sprCircleWhite/sprCircleWhite.yy",},
     "resourceVersion": "1.3",
-    "name": "sprWhiteCircle",
+    "name": "sprCircleWhite",
     "tags": [],
     "resourceType": "GMSequence",
   },
@@ -68,11 +68,11 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"c81adcac-778b-4551-b642-65720ddd612a","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Micha Working",
-    "path": "folders/Micha Working.yy",
+    "name": "Circles",
+    "path": "folders/Micha Working/Circles.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sprWhiteCircle",
+  "name": "sprCircleWhite",
   "tags": [],
   "resourceType": "GMSprite",
 }

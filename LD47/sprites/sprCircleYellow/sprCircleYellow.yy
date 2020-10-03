@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"d3ff71df-bbfd-4483-8ad1-63bd7291815e","path":"sprites/scrCircleRainbow/scrCircleRainbow.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"d3ff71df-bbfd-4483-8ad1-63bd7291815e","path":"sprites/scrCircleRainbow/scrCircleRainbow.yy",},"LayerId":{"name":"37beb5f6-ae25-4678-9951-9bae0a122239","path":"sprites/scrCircleRainbow/scrCircleRainbow.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"scrCircleRainbow","path":"sprites/scrCircleRainbow/scrCircleRainbow.yy",},"resourceVersion":"1.0","name":"d3ff71df-bbfd-4483-8ad1-63bd7291815e","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"f4ce04f3-7951-4d2e-89b1-b27321a3b1aa","path":"sprites/sprCircleYellow/sprCircleYellow.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"f4ce04f3-7951-4d2e-89b1-b27321a3b1aa","path":"sprites/sprCircleYellow/sprCircleYellow.yy",},"LayerId":{"name":"2e8a4b98-efdb-4871-bd2d-7822de02003e","path":"sprites/sprCircleYellow/sprCircleYellow.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprCircleYellow","path":"sprites/sprCircleYellow/sprCircleYellow.yy",},"resourceVersion":"1.0","name":"f4ce04f3-7951-4d2e-89b1-b27321a3b1aa","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"scrCircleRainbow","path":"sprites/scrCircleRainbow/scrCircleRainbow.yy",},
+    "spriteId": {"name":"sprCircleYellow","path":"sprites/sprCircleYellow/sprCircleYellow.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"d7afbb7f-a07c-4f9e-9ab4-82098c1045d8","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d3ff71df-bbfd-4483-8ad1-63bd7291815e","path":"sprites/scrCircleRainbow/scrCircleRainbow.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"8fe6dff9-68ec-4c4d-9ebf-50f494fef5fe","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f4ce04f3-7951-4d2e-89b1-b27321a3b1aa","path":"sprites/sprCircleYellow/sprCircleYellow.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,21 +58,21 @@
     "yorigin": 150,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"scrCircleRainbow","path":"sprites/scrCircleRainbow/scrCircleRainbow.yy",},
+    "parent": {"name":"sprCircleYellow","path":"sprites/sprCircleYellow/sprCircleYellow.yy",},
     "resourceVersion": "1.3",
-    "name": "scrCircleRainbow",
+    "name": "sprCircleYellow",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"37beb5f6-ae25-4678-9951-9bae0a122239","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"2e8a4b98-efdb-4871-bd2d-7822de02003e","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
     "name": "Circles",
     "path": "folders/Micha Working/Circles.yy",
   },
   "resourceVersion": "1.0",
-  "name": "scrCircleRainbow",
+  "name": "sprCircleYellow",
   "tags": [],
   "resourceType": "GMSprite",
 }

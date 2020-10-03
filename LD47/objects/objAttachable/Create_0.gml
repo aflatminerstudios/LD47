@@ -17,9 +17,9 @@ root = noone;
 distanceFromRoot = 0;
 angleFromRoot = 0;
 angleDiffFromRoot = 0;
-// Add parent/lifeline attachable (or player) to determine if it's been knocked off -- Micha TODO
+// Add parent attachable (or player) to determine if it's been knocked off -- Micha TODO
 // This is the instance that is next closer to the player on the branch
-lifelineAttachable = noone;
+parentAttachable = noone;
 
 
 

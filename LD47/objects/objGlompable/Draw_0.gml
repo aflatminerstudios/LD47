@@ -11,7 +11,7 @@ draw_self();
 
 
 if(shouldDrawDebugReference) {
-	var referenceSprite = sprReferenceCircle;
+	var referenceSprite = sprCircleReference;
 	var refScale = (radius*2.0)/sprite_get_width(referenceSprite);
 	draw_sprite_ext(referenceSprite, 0, x, y, refScale, refScale, image_angle, c_white, 0.5); // Remove -- Debug Micha TODO
 }
