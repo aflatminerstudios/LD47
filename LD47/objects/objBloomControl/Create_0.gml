@@ -14,6 +14,8 @@ if (shaders_are_supported()) {
 	else if (shader_is_compiled(shdBloomFilterLuminance))	shader_type = 1;
 }
 
+shader_type = 1;
+
 // Luminance shader for ...
 switch (shader_type) {
 	case 1: // GLSL ES
@@ -34,6 +36,8 @@ switch (shader_type) {
 		u_bloom_layer_range		= shader_get_uniform(shader_bloom_lum, "bloom_layer_range");
 		break;		
 }
+
+
 
 if (shader_type >= 1) {
 	shader_blur				= shdBlur2PassGaussLerpMRT;
@@ -71,7 +75,7 @@ if (shader_type >= 1) {
 //-----------------------------------------------------------------------------
 // create depth based shader controllers for GLSL & HLSL
 if (shader_type >= 2) {
-  scrCreateBloomMRTUniformSetter("ilyr_main", 10, 0.5, 0.2)
- // scrCreateBloomMRTUniformSetter("alyr_bg1", 10, 0.5, 0.2)	
+  scrCreateBloomMRTUniformSetter("ilyr_main", 1.3, 0.35, 0.1)
+  scrCreateBloomMRTUniformSetter("alyr_bg1", 1.3, 0.35, 0.1)	
 }
 #endregion
