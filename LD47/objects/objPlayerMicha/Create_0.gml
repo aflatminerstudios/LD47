@@ -3,5 +3,6 @@
 
 speedPerFrame = 3;
 
-baseSpeedPerFrame = 1;
-angularSpeedPerFrame = baseSpeedPerFrame;
+angle = 0;
+baseAngularSpeedPerFrame = -1;
+angularSpeedPerFrame = baseAngularSpeedPerFrame;

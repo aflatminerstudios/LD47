@@ -10,4 +10,5 @@ y = y + dirY*speedPerFrame;
 
 
 // Rotate some per frame
-image_angle = image_angle + angularSpeedPerFrame;
+angle = angle + angularSpeedPerFrame
+image_angle = angle;
