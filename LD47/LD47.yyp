@@ -1,14 +1,19 @@
 {
   "resources": [
     {"id":{"name":"objInitialize","path":"objects/objInitialize/objInitialize.yy",},"order":5,},
+    {"id":{"name":"objJohnTest","path":"objects/objJohnTest/objJohnTest.yy",},"order":3,},
+    {"id":{"name":"sprJohnTest","path":"sprites/sprJohnTest/sprJohnTest.yy",},"order":2,},
+    {"id":{"name":"sndTitle","path":"sounds/sndTitle/sndTitle.yy",},"order":0,},
     {"id":{"name":"InitializationScripts","path":"scripts/InitializationScripts/InitializationScripts.yy",},"order":1,},
+    {"id":{"name":"TitleBG","path":"sprites/TitleBG/TitleBG.yy",},"order":0,},
     {"id":{"name":"GeneralScripts","path":"scripts/GeneralScripts/GeneralScripts.yy",},"order":0,},
     {"id":{"name":"roomGameOver","path":"rooms/roomGameOver/roomGameOver.yy",},"order":3,},
     {"id":{"name":"objTitleControl","path":"objects/objTitleControl/objTitleControl.yy",},"order":0,},
-    {"id":{"name":"roomTitleScreen","path":"rooms/roomTitleScreen/roomTitleScreen.yy",},"order":2,},
+    {"id":{"name":"roomJohnTest","path":"rooms/roomJohnTest/roomJohnTest.yy",},"order":1,},
+    {"id":{"name":"roomTitleScreen","path":"rooms/roomTitleScreen/roomTitleScreen.yy",},"order":1,},
     {"id":{"name":"roomInitialize","path":"rooms/roomInitialize/roomInitialize.yy",},"order":0,},
     {"id":{"name":"ControlScripts","path":"scripts/ControlScripts/ControlScripts.yy",},"order":2,},
-    {"id":{"name":"roomMainRoom","path":"rooms/roomMainRoom/roomMainRoom.yy",},"order":1,},
+    {"id":{"name":"roomMainRoom","path":"rooms/roomMainRoom/roomMainRoom.yy",},"order":2,},
   ],
   "Options": [
     {"name":"Linux","path":"options/linux/options_linux.yy",},
@@ -30,9 +35,10 @@
   },
   "RoomOrder": [
     {"name":"roomInitialize","path":"rooms/roomInitialize/roomInitialize.yy",},
-    {"name":"roomMainRoom","path":"rooms/roomMainRoom/roomMainRoom.yy",},
     {"name":"roomTitleScreen","path":"rooms/roomTitleScreen/roomTitleScreen.yy",},
+    {"name":"roomMainRoom","path":"rooms/roomMainRoom/roomMainRoom.yy",},
     {"name":"roomGameOver","path":"rooms/roomGameOver/roomGameOver.yy",},
+    {"name":"roomJohnTest","path":"rooms/roomJohnTest/roomJohnTest.yy",},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
