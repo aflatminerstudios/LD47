@@ -3,7 +3,7 @@
 
 innerColor = choose($11cc11, $cc1111, $1111cc);
 outerColor = choose($11ff11, $ff1111, $1111ff);
-radius = 20;
+radius = irandom_range(10, 30)
 
 angle = 0;
 
