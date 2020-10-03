@@ -15,6 +15,8 @@ if (ready) {
 			targetView = "credits";
   } else if (keyboard_check_pressed(ord("M"))) {
     room_goto(roomTestMicha);
+  } else if (keyboard_check_pressed(ord("J"))) {
+    room_goto(roomJohnTest);
   } else if (keyboard_check_pressed(vk_anykey) || mouse_check_button_pressed(mb_any)) {
     room_goto(roomMainRoom);
   }
