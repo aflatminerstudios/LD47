@@ -11,6 +11,7 @@
     {"id":{"name":"TitleBG","path":"sprites/TitleBG/TitleBG.yy",},"order":0,},
     {"id":{"name":"GeneralScripts","path":"scripts/GeneralScripts/GeneralScripts.yy",},"order":0,},
     {"id":{"name":"sprBackgroundCheckerboard","path":"sprites/sprBackgroundCheckerboard/sprBackgroundCheckerboard.yy",},"order":15,},
+    {"id":{"name":"shdBloom","path":"shaders/shdBloom/shdBloom.yy",},"order":5,},
     {"id":{"name":"objGlompable","path":"objects/objGlompable/objGlompable.yy",},"order":0,},
     {"id":{"name":"sprCircleInsertSquare","path":"sprites/sprCircleInsertSquare/sprCircleInsertSquare.yy",},"order":0,},
     {"id":{"name":"objTestMichaControl","path":"objects/objTestMichaControl/objTestMichaControl.yy",},"order":8,},
