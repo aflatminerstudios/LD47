@@ -13,12 +13,11 @@ function scrAttachGlompableToPlayer(glompableInstance, playerInstance){
 		self.innerColor = innerColor;
 		self.outerColor = outerColor;
 		self.radius = radius;
-		self.image_xscale = (radius*2.0)/self.sprite_width;
-		self.image_yscale = (radius*2.0)/self.sprite_height;
+		self.image_xscale = (radius*2.0)/sprite_get_width(objAttachable.sprite_index);
+		self.image_yscale = (radius*2.0)/sprite_get_height(objAttachable.sprite_index);
 		
 		// Get info about the angle/distance from the player (root)
 		self.root = playerInstance;
-		// If we add non-circle objects, we'll need to adjust the self.radius/2 fix at the end of the next line
 		self.distanceFromRoot = point_distance(playerInstance.x, playerInstance.y, self.x, self.y);
 		self.angleFromRoot = point_direction(playerInstance.x, playerInstance.y, self.x, self.y) - playerInstance.angle;
 		self.angleDiffFromRoot = self.angle - playerInstance.angle;

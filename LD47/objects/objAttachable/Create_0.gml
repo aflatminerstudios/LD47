@@ -21,5 +21,5 @@ radius = 20;
 
 // This is only for the collision detection
 // This will need to be updated after changing over from objGlompable
-image_xscale = (radius*2.0)/sprite_width;
-image_yscale = (radius*2.0)/sprite_height;
+image_xscale = (radius*2.0)/sprite_get_height(sprite_index);
+image_yscale = (radius*2.0)/sprite_get_height(sprite_index);
