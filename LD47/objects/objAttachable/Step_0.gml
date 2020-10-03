@@ -5,8 +5,10 @@
 x = root.x + lengthdir_x(distanceFromRoot, root.angle + angleFromRoot);
 y = root.y + lengthdir_y(distanceFromRoot, root.angle + angleFromRoot);
 
+internalAngle += angularSpeedPerFrame;
+angle = internalAngle;
 if(root) {
-	angle = root.angle + angleDiffFromRoot;
+	angle += root.angle + angleDiffFromRoot;
 }
 
 image_angle = angle;

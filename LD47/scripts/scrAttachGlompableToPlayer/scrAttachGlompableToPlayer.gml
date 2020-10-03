@@ -5,6 +5,9 @@ function scrAttachGlompableToPlayer(glompableInstance, playerInstance){
 	var innerColor = glompableInstance.innerColor;
 	var outerColor = glompableInstance.outerColor;
 	var radius = glompableInstance.radius;
+	var baseAngularSpeedPerFrame = glompableInstance.baseAngularSpeedPerFrame;
+	var angularSpeedPerFrame = glompableInstance.angularSpeedPerFrame;
+	var internalAngle = glompableInstance.internalAngle;
 	
 	with(glompableInstance) {
 		instance_change(objAttachable, true);
@@ -15,6 +18,10 @@ function scrAttachGlompableToPlayer(glompableInstance, playerInstance){
 		self.radius = radius;
 		self.image_xscale = (radius*2.0)/sprite_get_width(objAttachable.sprite_index);
 		self.image_yscale = (radius*2.0)/sprite_get_height(objAttachable.sprite_index);
+		
+		self.baseAngularSpeedPerFrame = baseAngularSpeedPerFrame;
+		self.angularSpeedPerFrame = angularSpeedPerFrame;
+		self.internalAngle = internalAngle;
 		
 		// Get info about the angle/distance from the player (root)
 		self.root = playerInstance;
