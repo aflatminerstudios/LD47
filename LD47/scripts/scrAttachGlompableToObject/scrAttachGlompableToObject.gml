@@ -68,5 +68,6 @@ function scrAttachGlompableToObject(glompableInstance, parentAttachableInstance)
 		self.distanceFromRoot = point_distance(playerInstance.x, playerInstance.y, self.x, self.y);
 		self.angleFromRoot = point_direction(playerInstance.x, playerInstance.y, self.x, self.y) - playerInstance.angle;
 		self.angleDiffFromRoot = self.angle - playerInstance.angle;
+    
 	}
 }

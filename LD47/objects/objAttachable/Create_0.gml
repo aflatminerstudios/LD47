@@ -30,3 +30,15 @@ angle = 0; // This is the overall rotation, after adding all effects together
 var scale = (radius*2.0)/sprite_get_width(sprite_index);
 image_xscale = scale;
 image_yscale = scale;
+
+
+///ADDED BY JOHN
+dotColor = choose(c_red, c_green, c_blue, c_purple, c_orange);
+drawPointX = 0;
+drawPointY = 0;
+stepsBetweenPoints = 5;
+alarm[0] = stepsBetweenPoints;
+list = ds_list_create();
+//yList = ds_list_create();
+maxList = 50;
+lineWidth = 2;
