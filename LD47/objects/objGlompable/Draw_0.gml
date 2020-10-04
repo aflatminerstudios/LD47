@@ -1,16 +1,23 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+event_inherited();
+return;
+
+
+
+
 var shouldDrawDebugReference = false;
 
 // Draw the insert for colorblind mode
 if(global.colorBlindModeOn) {
-	var assistSprite = sprInsertYellowSquare;
+	var assistSprite = circleTheme.colorAssistSprite;
 	//var refScale = (radius*2.0)/sprite_get_width(assistSprite); // Assumes the size of the sprite is a circle that goes to the edges
 	var refScale = image_xscale; // Assumes the circle sprite and insert have the same relative size
 	draw_sprite_ext(assistSprite, 0, x, y, refScale, refScale, image_angle, c_white, image_alpha);
 }
 
+sprite_index = circleTheme.mainSprite;
 draw_self();
 
 if(shouldDrawDebugReference) {

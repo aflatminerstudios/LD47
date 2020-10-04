@@ -1,10 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-// Move this to a better location --  Micha TODO
-global.colorBlindModeOn = true;
 
-glowSprite = sprGlowYellow;
+// choose a random circle theme from the global theme
+circleTheme = global.currentTheme.playerCircleTheme;
 
 speedPerFrame = 4;
 
@@ -16,6 +15,7 @@ radius = 50;
 
 // Internals
 root = self;
+internalAngle = 0; // This is our own rotation, separate from the overall stack
 
 var scale = (radius*2.0)/sprite_get_width(sprite_index);
 image_xscale = scale;

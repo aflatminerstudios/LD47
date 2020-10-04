@@ -3,7 +3,8 @@
 
 
 // These should be set during the changeover from objGlompable to objAttachable
-glowSprite = sprGlowYellow;
+// choose a random circle theme from the global theme
+circleTheme = global.currentTheme.circleThemes[ irandom_range(0, array_length(global.currentTheme.circleThemes)-1) ];
 radius = 20;
 
  // Set this to 0 if you want to keep it from rotating separately from what it is attached to

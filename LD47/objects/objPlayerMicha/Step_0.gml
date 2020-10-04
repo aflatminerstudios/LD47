@@ -18,5 +18,11 @@ if (place_meeting(x, y, objNoNoParent)) {
 
 
 // Rotate some per frame
-angle = angle + angularSpeedPerFrame
+internalAngle = internalAngle + angularSpeedPerFrame
+if(internalAngle > 360)
+	internalAngle -= 360;
+if(internalAngle < 0)
+	internalAngle += 360;
+	
+angle = internalAngle;
 image_angle = angle;

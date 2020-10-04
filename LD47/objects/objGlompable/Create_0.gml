@@ -1,19 +1,16 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-
-
-circleTheme = 0; // Make enum that loads a struct from the color, or something -- Micha TODO
-color = "yellow"; // Make enum
-glowSprite = sprGlowYellow;
+// choose a random circle theme from the global theme
+circleTheme = global.currentTheme.circleThemes[ irandom_range(0, array_length(global.currentTheme.circleThemes)-1) ];
 
 //radius = irandom_range(10, 30);
-radius = choose(10, 20, 25, 30, 35, 40);
+radius = choose(15, 20, 25, 30, 35, 40);
 
 
 
- // Set this to 0 if you want to keep it from rotating separately from what it is attached to
-baseAngularSpeedPerFrame = -2;
+// Set this to 0 if you want to keep it from rotating in place
+baseAngularSpeedPerFrame = choose(-2, 2);
 angularSpeedPerFrame = baseAngularSpeedPerFrame;
 
 shouldUseGearRatios = true;

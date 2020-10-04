@@ -8,13 +8,15 @@ x = root.x + lengthdir_x(distanceFromRoot, root.angle + angleFromRoot);
 y = root.y + lengthdir_y(distanceFromRoot, root.angle + angleFromRoot);
 
 internalAngle += angularSpeedPerFrame;
+if(internalAngle > 360)
+	internalAngle -= 360;
+if(internalAngle < 0)
+	internalAngle += 360;
+	
 angle = internalAngle;
 if(root) {
 	angle += root.angle + angleDiffFromRoot;
 }
-
-image_angle = angle;
-
 
 if (place_meeting(x, y, objNoNoParent)) {
   x = oldX;

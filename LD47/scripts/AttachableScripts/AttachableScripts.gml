@@ -11,23 +11,24 @@ function scrAttachGlompableToObject(glompableInstance, parentAttachableInstance)
 	
 	var playerInstance = parentAttachableInstance.root;
 	
-	// Add theme info --  Micha TODO
-	
-	var glowSprite = glompableInstance.glowSprite;
+	var circleTheme = glompableInstance.circleTheme
 	var radius = glompableInstance.radius;
+	var internalAngle = glompableInstance.internalAngle;
 	var spriteIndex = glompableInstance.sprite_index;
 	var imageIndex = glompableInstance.image_index;
+	var imageAngle = glompableInstance.image_angle;
 	var imageSpeed = glompableInstance.image_speed;
 	var imageXScale = glompableInstance.image_xscale;
 	var imageYScale = glompableInstance.image_yscale;
+	var internalAngle = glompableInstance.internalAngle;
 	var baseAngularSpeedPerFrame = glompableInstance.baseAngularSpeedPerFrame;
 	var angularSpeedPerFrame = glompableInstance.angularSpeedPerFrame;
-	var internalAngle = glompableInstance.internalAngle;
 	var shouldReverseRotationWhenAttaching = glompableInstance.shouldReverseRotationWhenAttaching;
 	var shouldUseGearRatios = glompableInstance.shouldUseGearRatios;
 
 
-		
+	// Create a new instance of objAttachable
+	// Make this accept a specific object_index defined in the glompable (child of objAttachable) --  Micha TODO
 	var newAttachable = instance_create_layer(glompableInstance.x, glompableInstance.y, glompableInstance.layer, objAttachable);
 	instance_destroy(glompableInstance);
 	with(newAttachable) {
@@ -35,15 +36,16 @@ function scrAttachGlompableToObject(glompableInstance, parentAttachableInstance)
 		//instance_change(objAttachable, true);
 		self.parentAttachable = parentAttachableInstance;
     
-    
 		// Move values over to the new class
-		self.glowSprite = glowSprite; // Temporary until we get the whole theme moved over -- Micha TODO
+		self.circleTheme = circleTheme;
 		self.radius = radius;
 		self.sprite_index = spriteIndex;
 		self.image_index = imageIndex;
+		self.image_angle = imageAngle;
 		self.image_speed = imageSpeed;
 		self.image_xscale = imageXScale
 		self.image_yscale = imageYScale;
+		self.internalAngle = internalAngle;
 		
 		var angularSpeedSign = 1;
 		if(shouldReverseRotationWhenAttaching || shouldUseGearRatios) {
