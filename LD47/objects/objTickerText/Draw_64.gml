@@ -17,8 +17,8 @@ shader_reset();
 
 //This is here to get the proper width
 if (x + textOffset + string_width(text) <= textEnd) {
-  show_debug_message("Destroying!");
-  
+  //show_debug_message("Destroying!");
+  instance_destroy();
 }
 
 draw_set_halign(oldAlign);

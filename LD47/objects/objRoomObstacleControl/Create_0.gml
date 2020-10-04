@@ -7,7 +7,7 @@ event_inherited();
 //Redefine random glompable spawns during level
 glompableSpawnTime = room_speed * 3;
 alarm[0] = glompableSpawnTime;
-maxTimer = room_speed * 25;
+maxTimer = room_speed * 30;
 
 //Redefine zooming behavior
 preTime = 1 * room_speed;
