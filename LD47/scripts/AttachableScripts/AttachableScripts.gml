@@ -83,8 +83,8 @@ function scrDetachAttachable(attachable) {
     self.parentAttachable = attachable.parentAttachable;
 		
 		// Move values over to the new class
-		self.innerColor = attachable.innerColor;
-		self.outerColor = attachable.outerColor;
+		self.circleTheme = attachable.circleTheme;
+		
 		self.radius = attachable.radius;
 		self.sprite_index = attachable.sprite_index;
 		self.image_index = attachable.image_index;

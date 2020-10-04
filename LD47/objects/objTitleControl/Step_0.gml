@@ -19,6 +19,8 @@ if (ready) {
     room_goto(roomJohnTest);
   } else if (keyboard_check_pressed(ord("K"))) {
     room_goto(roomKaiju); 
+  } else if (keyboard_check_pressed(ord("O"))) {
+    room_goto(roomObstacle); 
   } else if (keyboard_check_pressed(vk_anykey)) {// || mouse_check_button_pressed(mb_any)) {
     room_goto(roomMainRoom);
   }

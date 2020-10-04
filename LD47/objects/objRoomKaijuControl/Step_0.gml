@@ -1,8 +1,8 @@
-/// @description Insert description here
+/// @description Check timer
 // You can write your code in this editor
 
+event_inherited()
 
-timer++;
 if (playing) {
   if (timer > maxTimer) {
     alarm[1] = 1; 
@@ -12,6 +12,5 @@ if (playing) {
   if (timer > preTime) {
     alarm[2] = 1; 
   }
-
   
 }
