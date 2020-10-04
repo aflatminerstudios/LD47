@@ -19,3 +19,7 @@ numAttached = 0;
 totalSize = 0;
 dist = 0;
 bboxSize = 0;
+timer = 0;
+maxTimer = 0;
+
+won = true;
