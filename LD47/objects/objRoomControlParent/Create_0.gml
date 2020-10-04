@@ -26,7 +26,7 @@ alarm[4] = preTime + zoomTime;
 // This coud be moved to a script and called anytime inside a game mode
 var colorBGLayerId = layer_get_id("Background");
 var colorBGId = layer_background_get_id(colorBGLayerId);
-layer_background_blend(colorBGId, c_green);//global.currentTheme.backgroundImage)
+layer_background_blend(colorBGId, global.currentTheme.backgroundImage);
 
 var imageBGLayerId = layer_get_id("BackgroundImage");
 var imageBGId = layer_background_get_id(imageBGLayerId);
