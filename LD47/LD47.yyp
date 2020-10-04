@@ -24,6 +24,7 @@
     {"id":{"name":"sprCircleMultilines","path":"sprites/sprCircleMultilines/sprCircleMultilines.yy",},"order":2,},
     {"id":{"name":"sprBlueCircle","path":"sprites/sprBlueCircle/sprBlueCircle.yy",},"order":1,},
     {"id":{"name":"objPlayerMicha","path":"objects/objPlayerMicha/objPlayerMicha.yy",},"order":3,},
+    {"id":{"name":"objPlayerPlaceholder","path":"objects/objPlayerPlaceholder/objPlayerPlaceholder.yy",},"order":15,},
     {"id":{"name":"RoomSpawnScripts","path":"scripts/RoomSpawnScripts/RoomSpawnScripts.yy",},"order":11,},
     {"id":{"name":"objAttachable","path":"objects/objAttachable/objAttachable.yy",},"order":5,},
     {"id":{"name":"objSpiroControl","path":"objects/objSpiroControl/objSpiroControl.yy",},"order":6,},
