@@ -19,6 +19,9 @@ zoomTime = 1 * room_speed;
 zoomStart = 1;
 zoomTarget = 0.5;
 zoom = zoomStart;
+alarm[3] = room_speed;
+audio_play_sound(sndBeep, 100, false);
+alarm[4] = preTime + zoomTime;
 
 
 view_camera[0] = camera_create_view(0, 0, room_width, room_height, 0, objPlayerPlaceholder, 5, 5, 300, 225);
