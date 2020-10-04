@@ -42,7 +42,5 @@ with (objAttachable) {
 
 var bboxSize = (right - left) * (bottom - top);
 
-
-show_message("Time's up!\nYou got " + string(numAttached) + " objects attached.\nYou had a total radius of " + string(totalSize) + "\nYou had a maximum distance of " + string(dist) + "\nYou had a total size of " + string(bboxSize));
-room_goto(roomTitleScreen);
+scrGameOverKaiju(self.id);
 
