@@ -7,7 +7,7 @@ maxTimer = room_speed * 15;
 startingGlompables = 18;
 glompableSpawnTime = room_speed * 5;
 
-instance_create_layer(800, 600, "Glompables", objPlayerPlaceholder);
+instance_create_layer(room_width/2, room_height/2, "Glompables", objPlayerPlaceholder);
 
 
 alarm[0] = glompableSpawnTime;
