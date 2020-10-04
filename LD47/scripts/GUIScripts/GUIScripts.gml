@@ -22,3 +22,15 @@ function scrDrawTimer(time, xCoord, yCoord, timerColor){
 
 }
 
+///@function scrScrollText(ticker, text)
+///@param ticker Parent ticker object
+///@param text What text to scroll
+
+function scrScrollText(ticker, text) {
+  //Create text at depth just above ticker
+  var instance = instance_create_depth(ticker.x, ticker.y + 37, ticker.depth - 1, objTickerText);
+  instance.text = text;
+  instance.textOffset = instance.textBegin;
+  
+  
+}

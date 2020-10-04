@@ -26,6 +26,11 @@ alarm[4] = preTime + zoomTime;
 
 view_camera[0] = camera_create_view(0, 0, room_width, room_height, 0, objPlayerPlaceholder, 5, 5, 300, 225);
 
+//For ticker text
+ticker = instance_create_layer(400, 53.5, "UI", objTicker);
+currentText = "";
+
+
 //REMOVE: Sets volume of everything to zero
 var num = audio_get_listener_count();
 for( var i = 0; i < num; i++;)
@@ -34,3 +39,4 @@ for( var i = 0; i < num; i++;)
    audio_set_master_gain(info[? "index"], 0);
    ds_map_destroy(info);
    }
+   

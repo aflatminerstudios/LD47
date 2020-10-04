@@ -15,3 +15,9 @@ if (playing) {
 
   
 }
+
+if (instance_number(objTickerText) == 0) {
+  
+  scrScrollText(ticker, "Here is some text text!");
+  
+}
