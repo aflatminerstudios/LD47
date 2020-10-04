@@ -18,7 +18,7 @@ draw_self();
 if (style == "Kaiju") {
 
   totalScore = ((totalSize +  sqrt(bboxSize) + dist) * numAttached * numAttached ) ;
-  show_debug_message(string(bboxSize) + " bb size");
+
   //Labels
   draw_text(x - 198, y - 68, "Loops attached: "); 
   draw_text(x - 198, y - 30, "Total loop size: ");

@@ -25,7 +25,7 @@ function scrSpawnGameOver(controller, which) {
   return instance;
 }
 
-///@function scrGameOverKaiju(controller, numAttached, totalSize, dist, bboxSize)
+///@function scrGameOverKaiju(controller, numAttached, totalSize, dist, bboxSize)      
 ///@param controller which controller called this
 ///@param numAttached number of loops attached
 ///@param dist Furthest distance
@@ -40,7 +40,27 @@ function scrGameOverKaiju(controller, numAttached, totalSize, dist, bboxSize) {
   instance.dist = dist;
   instance.bboxSize = bboxSize;
   
+  //John TODO:  change sprite based on theme
 }
+///@function scrGameOverObstacle(controller)
+///@param controller which controller called this
+///@param won Did they win
+function scrGameOverObstacle(controller, won) {
+  
+  instance = scrSpawnGameOver(self.id, objGameOver);
+  scrGameOverCleanup(controller);
+  instance.style = "Obstacle";
+  
+  
+  //John TODO:  change sprite based on theme and winning
+  if (won) {
+    
+  } else {
+    
+  }
+  
+}
+
 
 function scrPressMode() {
   room_goto(roomTitleScreen);
