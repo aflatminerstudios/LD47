@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "ButtonSprites",
-    "path": "folders/John Working/ButtonSprites.yy",
+    "path": "folders/Sprites/ButtonSprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprModePressed",

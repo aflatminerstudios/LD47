@@ -28,7 +28,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Buttons",
-    "path": "folders/John Working/Buttons.yy",
+    "path": "folders/Objects/Buttons.yy",
   },
   "resourceVersion": "1.0",
   "name": "objBtnColorblind",

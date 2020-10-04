@@ -29,8 +29,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "John Working",
-    "path": "folders/John Working.yy",
+    "name": "Game Over",
+    "path": "folders/Objects/Game Over.yy",
   },
   "resourceVersion": "1.0",
   "name": "objGameOver",
