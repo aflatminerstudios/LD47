@@ -30,8 +30,10 @@ if(shouldDrawDebugReference) {
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 // angularSpeed
-draw_text_transformed(x, y, string(self.angularSpeedPerFrame), 1, 1, 0);
+//draw_text_transformed(x, y, string(self.angularSpeedPerFrame), 1, 1, 0);
 // instance id
 //draw_text_transformed(x, y, string(self.id-100000), 1, 1, 0);
 // angle
 //draw_text_transformed(x, y, string(internalAngle), 1, 1, 0);
+// theme name
+draw_text_transformed(x, y, circleTheme.name, 1, 1, 0);
