@@ -11,8 +11,8 @@ targetView = "title"; // "title, "credits", "instructions"
 
 
 creditsX = 0;
-titleX = 300 + 100;
-instructionsX = titleX + 300 + 100;
+titleX = 400 + 100;
+instructionsX = titleX + 400 + 100;
 
 show_debug_message("Title Screen");
 

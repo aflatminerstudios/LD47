@@ -3,12 +3,12 @@
 
 //Only switch rooms after ready
 if (ready) {
-  if (scrIsRight() || keyboard_check_pressed(ord("I"))) {
+  if (scrIsRightPressed() || keyboard_check_pressed(ord("I"))) {
 		if(targetView == "title")
 			targetView = "instructions";
 		else if(targetView == "credits")
 			targetView = "title";
-  } else if (scrIsLeft() || keyboard_check_pressed(ord("C"))) {
+  } else if (scrIsLeftPressed() || keyboard_check_pressed(ord("C"))) {
 		if(targetView == "instructions")
 			targetView = "title";
 		else if(targetView == "title")
