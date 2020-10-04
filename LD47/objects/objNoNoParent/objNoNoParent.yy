@@ -22,7 +22,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "NoNos",
-    "path": "folders/John Working/NoNos.yy",
+    "path": "folders/Objects/NoNos.yy",
   },
   "resourceVersion": "1.0",
   "name": "objNoNoParent",

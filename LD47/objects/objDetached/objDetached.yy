@@ -29,8 +29,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "John Working",
-    "path": "folders/John Working.yy",
+    "name": "Glompables",
+    "path": "folders/Objects/Glompables.yy",
   },
   "resourceVersion": "1.0",
   "name": "objDetached",
