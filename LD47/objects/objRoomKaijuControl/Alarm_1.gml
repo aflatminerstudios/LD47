@@ -3,10 +3,10 @@
 var numAttached = instance_number(objAttachable);
 var totalSize = 0;
 var dist = 0;
-var left = objPlayerMicha.x - objPlayerMicha.sprite_width / 2;
-var right = objPlayerMicha.x + objPlayerMicha.sprite_width / 2;
-var top = objPlayerMicha.y - objPlayerMicha.sprite_height / 2;
-var bottom = objPlayerMicha.y + objPlayerMicha.sprite_height / 2;
+var left = objPlayerMicha.x - objPlayerMicha.radius / 2;
+var right = objPlayerMicha.x + objPlayerMicha.radius / 2;
+var top = objPlayerMicha.y - objPlayerMicha.radius / 2;
+var bottom = objPlayerMicha.y + objPlayerMicha.radius / 2;
 
 with (objAttachable) {
   totalSize += radius;
@@ -15,7 +15,7 @@ with (objAttachable) {
   var curDist = distance_to_object(furthest);
   if (distance_to_object(objPlayerMicha) > curDist) {
     furthest = objPlayerMicha; 
-    curDist = distance_to_object(furthest) + sprite_width(objAttachable);    
+    curDist = distance_to_object(furthest) + objPlayerMicha.radius / 2;    
   } else {
     curDist += furthest.radius * 2; 
   }
