@@ -35,31 +35,75 @@ circleThemeBlue = new CircleTheme(
 	sprCircleBlue,
 	sprGlowBlue,
 	sprInsertBlueHoop,
-	c_blue
+	c_blue // Get these color values from Jodi's theme sheet -- Micha TODO
+);
+
+circleThemeCyan = new CircleTheme(
+	sprCircleCyan,
+	sprGlowCyan,
+	sprInsertCyanCrescent,
+	c_aqua
+);
+
+circleThemeOrange = new CircleTheme(
+	sprCircleOrange,
+	sprGlowOrange,
+	sprInsertOrangeFlower,
+	c_orange
 );
 
 circleThemePink = new CircleTheme(
 	sprCirclePink,
 	sprGlowPink,
 	sprInsertPinkStar,
-	c_red
+	c_fuchsia
+);
+
+circleThemeYellow = new CircleTheme(
+	sprCircleYellow,
+	sprGlowYellow,
+	sprInsertYellowSquare,
+	c_yellow
 );
 
 stuckInTheLoopTheme = new ColorTheme(
 	playerCircleThemeLoop, 
 	[
-		circleThemeBlue, 
-		circleThemePink
+		circleThemeBlue,
+		circleThemeCyan,
+		circleThemeOrange,
+		circleThemePink,
+		circleThemeYellow
 	]
 );
 
 ////////////////////////////
 // Stuck In The Bloop Theme
-
+stuckInTheBloopTheme = new ColorTheme(
+ // This theme is a duplicate of Stuck in the Loop -- Micha TODO
+	playerCircleThemeLoop, 
+	[
+		circleThemeBlue,
+		circleThemeCyan,
+		circleThemeOrange,
+		circleThemePink,
+		circleThemeYellow
+	]
+);
 
 ////////////////////////////
 // Stuck In The Loo Theme
-
+stuckInTheLooTheme = new ColorTheme(
+// This theme is a duplicate of Stuck in the Loop -- Micha TODO
+	playerCircleThemeLoop, 
+	[
+		circleThemeBlue,
+		circleThemeCyan,
+		circleThemeOrange,
+		circleThemePink,
+		circleThemeYellow
+	]
+);
 
 // Set up the global values
 global.currentTheme = global.stuckInTheLoopTheme;
