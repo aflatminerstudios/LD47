@@ -9,7 +9,6 @@ glompableSpawnTime = room_speed * 5;
 
 instance_create_layer(800, 600, "Glompables", objPlayerPlaceholder);
 
-scrSpawnStartingGlompables(self.id);
 
 alarm[0] = glompableSpawnTime;
 
