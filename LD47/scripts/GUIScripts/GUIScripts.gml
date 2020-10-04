@@ -1,7 +1,7 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 
-///@functions scrDrawTimer
+///@function scrDrawTimer
 ///@desc Draws the timer, assuming this is during drawGUI
 function scrDrawTimer(time, xCoord, yCoord, timerColor){
   var oldFont = draw_get_font();
@@ -21,3 +21,4 @@ function scrDrawTimer(time, xCoord, yCoord, timerColor){
   draw_set_font(oldFont);
 
 }
+
