@@ -1,40 +1,21 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+event_inherited();
 
-// These should be set during the changeover from objGlompable to objAttachable
-// choose a random circle theme from the global theme
-circleTheme = global.currentTheme.circleThemes[ irandom_range(0, array_length(global.currentTheme.circleThemes)-1) ];
-radius = 20;
-
- // Set this to 0 if you want to keep it from rotating separately from what it is attached to
-baseAngularSpeedPerFrame = 4;
-angularSpeedPerFrame = baseAngularSpeedPerFrame;
-
-internalAngle = 0; // This is our own rotation, separate from the overall stack
 
 root = noone;
 distanceFromRoot = 0;
 angleFromRoot = 0;
 angleDiffFromRoot = 0;
-// Add parent attachable (or player) to determine if it's been knocked off -- Micha TODO
 // This is the instance that is next closer to the player on the branch
 parentAttachable = noone;
-
-
-
-
-angle = 0; // This is the overall rotation, after adding all effects together
-
-// This will need to be updated/transferred from objGlompable
-var scale = (radius*2.0)/sprite_get_width(sprite_index);
-image_xscale = scale;
-image_yscale = scale;
 
 
 ///ADDED BY JOHN
 dotColor = choose(c_red, c_green, c_blue, c_purple, c_orange);
 dotColor = choose($00ffc0, $00ffff, $ff00ff, $fafa02, $3409ff, $ffa711);
+dotColor = circleTheme.trailColor;
 drawPointX = 0;
 drawPointY = 0;
 stepsBetweenPoints = 5;

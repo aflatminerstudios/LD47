@@ -1,11 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-
-
-
-
 var shouldDrawDebugReference = false;
+
+
 
 image_angle = angle;
 sprite_index = circleTheme.mainSprite;
