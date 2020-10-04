@@ -21,11 +21,19 @@ if (ready) {
     room_goto(roomKaiju); 
   } else if (keyboard_check_pressed(ord("O"))) {
     room_goto(roomObstacle); 
+  } else if (keyboard_check_pressed(ord("T"))) {
+    if(global.currentTheme == global.stuckInTheLoopTheme)
+			global.currentTheme = global.stuckInTheBloopTheme;
+		else if(global.currentTheme == global.stuckInTheBloopTheme)
+			global.currentTheme = global.stuckInTheLooTheme;
+		else if(global.currentTheme == global.stuckInTheLooTheme)
+			global.currentTheme = global.stuckInTheLoopTheme;
+  } else if (keyboard_check_pressed(ord("Y"))) {
+    global.colorBlindModeOn = !global.colorBlindModeOn;
   } else if (keyboard_check_pressed(vk_anykey)) {// || mouse_check_button_pressed(mb_any)) {
     room_goto(roomMainRoom);
   }
 }
-
 
 var activeCamera = view_camera[0];
 /*if(global.aspectRatio == AspectRatio.FULL_SCREEN)

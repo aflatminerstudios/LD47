@@ -7,15 +7,15 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 4,
-  "bbox_right": 395,
-  "bbox_top": 4,
-  "bbox_bottom": 395,
+  "bbox_left": 19,
+  "bbox_right": 480,
+  "bbox_top": 14,
+  "bbox_bottom": 484,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 400,
-  "height": 400,
+  "width": 500,
+  "height": 500,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"e6526541-befb-4c7f-8d18-59d6ddb1fe3e","path":"sprites/sprGlowMultilines/sprGlowMultilines.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"e6526541-befb-4c7f-8d18-59d6ddb1fe3e","path":"sprites/sprGlowMultilines/sprGlowMultilines.yy",},"LayerId":{"name":"ec23955e-2302-4b67-af6d-d15d007c92b3","path":"sprites/sprGlowMultilines/sprGlowMultilines.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprGlowMultilines","path":"sprites/sprGlowMultilines/sprGlowMultilines.yy",},"resourceVersion":"1.0","name":"e6526541-befb-4c7f-8d18-59d6ddb1fe3e","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"96a21395-5b82-43fe-9d24-0d8bfe92c91d","path":"sprites/sprGlowMultilines/sprGlowMultilines.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"96a21395-5b82-43fe-9d24-0d8bfe92c91d","path":"sprites/sprGlowMultilines/sprGlowMultilines.yy",},"LayerId":{"name":"98d31b05-27ba-426a-9dcb-82a70e24b5a5","path":"sprites/sprGlowMultilines/sprGlowMultilines.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprGlowMultilines","path":"sprites/sprGlowMultilines/sprGlowMultilines.yy",},"resourceVersion":"1.0","name":"96a21395-5b82-43fe-9d24-0d8bfe92c91d","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"sprGlowMultilines","path":"sprites/sprGlowMultilines/sprGlowMultilines.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"e21b1653-198d-4d46-9995-a3b220816914","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e6526541-befb-4c7f-8d18-59d6ddb1fe3e","path":"sprites/sprGlowMultilines/sprGlowMultilines.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"2b6ff7ef-b272-4d0f-8403-2b4b43f46b55","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"96a21395-5b82-43fe-9d24-0d8bfe92c91d","path":"sprites/sprGlowMultilines/sprGlowMultilines.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -54,8 +54,8 @@
     "backdropHeight": 768,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 200,
-    "yorigin": 200,
+    "xorigin": 250,
+    "yorigin": 250,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprGlowMultilines","path":"sprites/sprGlowMultilines/sprGlowMultilines.yy",},
@@ -65,7 +65,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"ec23955e-2302-4b67-af6d-d15d007c92b3","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"98d31b05-27ba-426a-9dcb-82a70e24b5a5","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
     "name": "Circle Glows",

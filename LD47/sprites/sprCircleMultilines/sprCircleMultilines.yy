@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"ca65037a-f968-41d7-af18-c92531e2d7d3","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Circles",
-    "path": "folders/Sprites/Circles.yy",
+    "name": "Loop Theme (Default)",
+    "path": "folders/Sprites/Circles/Loop Theme (Default).yy",
   },
   "resourceVersion": "1.0",
   "name": "sprCircleMultilines",

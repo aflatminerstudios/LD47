@@ -5,21 +5,22 @@
 // Define the theme structure
 
 // An overall theme (Stuck In The Loop, Stuck In The Loop, etc.)
-ColorTheme = function(_name, _playerCircleTheme, _circleThemes, _backgroundColor, _backgroundOverlay) constructor {
+ColorTheme = function(_name, _playerCircleTheme, _circleThemes, _backgroundColor, _backgroundImage,
+											_nonoBomb, _nonoBullet, _nonoShip, _nonoSingleBlade, _nonoTurbine, _nonoWedge) constructor {
 	name = _name;
 	// CircleTheme
 	playerCircleTheme = _playerCircleTheme
 	// Array of CircleThemes
 	circleThemes = _circleThemes;
 	backgroundColor = _backgroundColor;
-	backgroundOverlay = _backgroundOverlay;
-	// Add Nono's -- Micha TODO
-	// Nonobomb
-	// Nonosingleblade
-	// Nonoturbine
-	// Nonowedge
-	// Nonoship
-	// Nonobullet
+	backgroundImage = _backgroundImage;
+	// Nono sprites
+	nonoBomb = _nonoBomb;
+	nonoBullet = _nonoBullet;
+	nonoShip = _nonoShip;
+	nonoSingleBlade = _nonoSingleBlade;
+	nonoTurbine = _nonoTurbine;
+	nonoWedge = _nonoWedge;
 };
 
 // A single circle
@@ -130,7 +131,7 @@ circleThemeYellow = new CircleTheme(
 	),
 );
 
-stuckInTheLoopTheme = new ColorTheme(
+global.stuckInTheLoopTheme = new ColorTheme(
 	"Stuck In The Loop",
 	playerCircleThemeLoop, 
 	[
@@ -140,13 +141,19 @@ stuckInTheLoopTheme = new ColorTheme(
 		circleThemePink,
 		circleThemeYellow
 	],
-	c_black, // Set these from Jodi's theme docs -- Micha TODO
-	sprBackgroundCheckerboard
+	$5b2c2b, // background color (behind the tiled background sprites)
+	sprBackgroundLoop,
+	sprNoBomb, 
+	sprNoBullet, 
+	sprNoShip, 
+	sprNoSingleBlade,
+	sprNoTurbine, 
+	sprNoWedge,
 );
 
 ////////////////////////////
 // Stuck In The Bloop Theme
-stuckInTheBloopTheme = new ColorTheme(
+global.stuckInTheBloopTheme = new ColorTheme(
 	"Stuck In The Bloop",
  // This theme is a duplicate of Stuck in the Loop -- Micha TODO
 	playerCircleThemeLoop, 
@@ -157,13 +164,19 @@ stuckInTheBloopTheme = new ColorTheme(
 		circleThemePink,
 		circleThemeYellow
 	],
-	c_green,
-	sprBackgroundCheckerboard
+	$230a06, // background color (behind the tiled background sprites)
+	sprBackgroundBloop,
+	sprNoBomb, 
+	sprNoBullet, 
+	sprNoShip, 
+	sprNoSingleBlade,
+	sprNoTurbine, 
+	sprNoWedge,
 );
 
 ////////////////////////////
 // Stuck In The Loo Theme
-stuckInTheLooTheme = new ColorTheme(
+global.stuckInTheLooTheme = new ColorTheme(
 	"Stuck In The Loo",
 // This theme is a duplicate of Stuck in the Loop -- Micha TODO
 	playerCircleThemeLoop, 
@@ -174,8 +187,14 @@ stuckInTheLooTheme = new ColorTheme(
 		circleThemePink,
 		circleThemeYellow
 	],
-	c_yellow,
-	sprBackgroundCheckerboard
+	$e8faff, // background color (behind the tiled background sprites)
+	sprBackgroundLoo,
+	sprNoBomb, 
+	sprNoBullet, 
+	sprNoShip, 
+	sprNoSingleBlade,
+	sprNoTurbine, 
+	sprNoWedge,
 );
 
 // Set up the global values

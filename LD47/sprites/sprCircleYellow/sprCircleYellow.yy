@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"2e8a4b98-efdb-4871-bd2d-7822de02003e","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Circles",
-    "path": "folders/Sprites/Circles.yy",
+    "name": "Loop Theme (Default)",
+    "path": "folders/Sprites/Circles/Loop Theme (Default).yy",
   },
   "resourceVersion": "1.0",
   "name": "sprCircleYellow",

@@ -22,6 +22,18 @@ alarm[3] = room_speed;
 audio_play_sound(sndBeep, 100, false);
 alarm[4] = preTime + zoomTime;
 
+// Set up the BG based on the current theme
+// This coud be moved to a script and called anytime inside a game mode
+var colorBGLayerId = layer_get_id("Background");
+var colorBGId = layer_background_get_id(colorBGLayerId);
+layer_background_blend(colorBGId, c_green);//global.currentTheme.backgroundImage)
+
+var imageBGLayerId = layer_get_id("BackgroundImage");
+var imageBGId = layer_background_get_id(imageBGLayerId);
+layer_background_sprite(imageBGId, global.currentTheme.backgroundImage);
+layer_background_htiled(imageBGId, true);
+layer_background_vtiled(imageBGId, true);
+
 
 view_camera[0] = camera_create_view(0, 0, room_width, room_height, 0, noone, 5, 5, 300, 225);
 

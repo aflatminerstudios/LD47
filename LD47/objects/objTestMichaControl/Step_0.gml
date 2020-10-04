@@ -2,6 +2,8 @@
 
 if (keyboard_check_pressed(vk_escape)) {
 	room_goto(roomTitleScreen);
+} else if (keyboard_check_pressed(ord("Y"))) {
+	global.colorBlindModeOn = !global.colorBlindModeOn;
 }
 
 if(room != roomTestMicha)
