@@ -1,8 +1,8 @@
 {
   "type": 1,
   "parent": {
-    "name": "John Working",
-    "path": "folders/John Working.yy",
+    "name": "Shaders",
+    "path": "folders/Shaders.yy",
   },
   "resourceVersion": "1.0",
   "name": "shdBloom",

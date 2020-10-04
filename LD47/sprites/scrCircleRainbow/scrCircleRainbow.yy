@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "Circles",
-    "path": "folders/Micha Working/Circles.yy",
+    "path": "folders/Sprites/Circles.yy",
   },
   "resourceVersion": "1.0",
   "name": "scrCircleRainbow",

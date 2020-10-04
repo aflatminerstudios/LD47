@@ -24,8 +24,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "John Working",
-    "path": "folders/John Working.yy",
+    "name": "Main Game Controllers",
+    "path": "folders/Objects/Main Game Controllers.yy",
   },
   "resourceVersion": "1.0",
   "name": "objSpiroControl",

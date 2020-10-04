@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "Circle Inserts (Color Blind)",
-    "path": "folders/Micha Working/Circle Inserts (Color Blind).yy",
+    "path": "folders/Sprites/Circle Inserts (Color Blind).yy",
   },
   "resourceVersion": "1.0",
   "name": "sprCircleInsertSquare",

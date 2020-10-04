@@ -34,8 +34,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Micha Working",
-    "path": "folders/Micha Working.yy",
+    "name": "Glompables",
+    "path": "folders/Objects/Glompables.yy",
   },
   "resourceVersion": "1.0",
   "name": "objAttachable",

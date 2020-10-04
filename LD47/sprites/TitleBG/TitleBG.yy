@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"8e9a3f7c-b070-4490-ab99-9fe1d7715cc2","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "John Working",
-    "path": "folders/John Working.yy",
+    "name": "Title Screen",
+    "path": "folders/Sprites/Title Screen.yy",
   },
   "resourceVersion": "1.0",
   "name": "TitleBG",
