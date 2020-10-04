@@ -6,9 +6,15 @@ var shouldDrawDebugReference = false;
 //if(shouldDrawDebugReference)
 //	draw_circle_color(x, y, radius, innerColor, outerColor, false);
 
+// Draw the insert for colorblind mode
+if(global.colorBlindModeOn) {
+	var assistSprite = sprInsertYellowSquare;
+	//var refScale = (radius*2.0)/sprite_get_width(assistSprite); // Assumes the size of the sprite is a circle that goes to the edges
+	var refScale = image_xscale; // Assumes the circle sprite and insert have the same relative size
+	draw_sprite_ext(assistSprite, 0, x, y, refScale, refScale, image_angle, c_white, image_alpha);
+}
 
 draw_self();
-
 
 if(shouldDrawDebugReference) {
 	var referenceSprite = sprCircleReference;
