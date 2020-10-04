@@ -34,7 +34,8 @@ function scrAttachGlompableToObject(glompableInstance, parentAttachableInstance)
 	//with(glompableInstance) {
 		//instance_change(objAttachable, true);
 		self.parentAttachable = parentAttachableInstance;
-		
+    
+    
 		// Move values over to the new class
 		self.glowSprite = glowSprite; // Temporary until we get the whole theme moved over -- Micha TODO
 		self.radius = radius;
@@ -69,4 +70,47 @@ function scrAttachGlompableToObject(glompableInstance, parentAttachableInstance)
 		self.angleDiffFromRoot = self.angle - playerInstance.angle;
     
 	}
+}
+
+///@function scrDetachAttachable(attachable)
+///@param attachable The attachable to detach
+function scrDetachAttachable(attachable) {
+  var newDetached = instance_create_layer(attachable.x, attachable.y, attachable.layer, objDetached);
+  show_debug_message("Detaching " + string(attachable));
+  with (newDetached) {
+    self.parentAttachable = attachable.parentAttachable;
+		
+		// Move values over to the new class
+		self.innerColor = attachable.innerColor;
+		self.outerColor = attachable.outerColor;
+		self.radius = attachable.radius;
+		self.sprite_index = attachable.sprite_index;
+		self.image_index = attachable.image_index;
+		self.image_speed = attachable.image_speed;
+		self.image_xscale = attachable.image_xscale;
+		self.image_yscale = attachable.image_yscale;
+    
+    self.internalAngle = attachable.internalAngle;
+    self.angle = attachable.angle;
+    self.speedPerFrame = attachable.angularSpeedPerFrame * 3;
+    
+    self.list = attachable.list;
+
+    self.maxList = attachable.maxList;
+    self.lineWidth = attachable.lineWidth;
+    self.dotColor = attachable.dotColor;
+    self.stepsBetweenPoints = attachable.stepsBetweenPoints;
+    self.alarm[0] = self.stepsBetweenPoints;
+  }
+  
+  with (objAttachable) {
+    show_debug_message("Parent = " + string(parentAttachable.id));
+   if (parentAttachable.id == attachable) {
+    scrDetachAttachable(self.id); 
+   }   
+  }
+  
+  with (attachable) {
+    instance_destroy(); 
+  }
 }
