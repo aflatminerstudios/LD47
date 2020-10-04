@@ -4,6 +4,13 @@
 
 with (objAttachable) {
   ///ADDED BY JOHN
-  scrDrawPoints(list, dotColor, lineWidth);  
+  var isMaxSize = false;
+  
+  if (ds_list_size(list) >= maxList) {
+    isMaxSize = true;
+  }
+  
+  
+  scrDrawPoints(list, dotColor, lineWidth, isMaxSize);  
 }
 
