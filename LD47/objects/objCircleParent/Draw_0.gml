@@ -36,4 +36,4 @@ draw_set_valign(fa_middle);
 // angle
 //draw_text_transformed(x, y, string(internalAngle), 1, 1, 0);
 // theme name
-draw_text_transformed(x, y, circleTheme.name, 1, 1, 0);
+//draw_text_transformed(x, y, circleTheme.name, 1, 1, 0);

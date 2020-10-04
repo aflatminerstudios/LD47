@@ -33,7 +33,7 @@ currentText = "";
 instance_create_layer(0, 0, "Controllers", objSpiroControl);
 
 //Create glow renderer
-var glowDepth = layer_get_depth(layer_get_id("Glompables")) - 50;
+var glowDepth = layer_get_depth(layer_get_id("Glompables")) + 50;
 instance_create_depth(0, 0, glowDepth, objCircleGlowRenderer);
 
 

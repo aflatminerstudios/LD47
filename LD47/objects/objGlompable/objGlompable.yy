@@ -5,7 +5,10 @@
   },
   "solid": false,
   "visible": true,
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "sprCircleCollisionMask",
+    "path": "sprites/sprCircleCollisionMask/sprCircleCollisionMask.yy",
+  },
   "persistent": false,
   "parentObjectId": {
     "name": "objCircleParent",

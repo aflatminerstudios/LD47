@@ -14,6 +14,12 @@ ColorTheme = function(_name, _playerCircleTheme, _circleThemes, _backgroundColor
 	backgroundColor = _backgroundColor;
 	backgroundOverlay = _backgroundOverlay;
 	// Add Nono's -- Micha TODO
+	// Nonobomb
+	// Nonosingleblade
+	// Nonoturbine
+	// Nonowedge
+	// Nonoship
+	// Nonobullet
 };
 
 // A single circle
