@@ -98,9 +98,9 @@ function scrDetachAttachable(attachable) {
     
     self.list = attachable.list;
 
-    self.maxList = attachable.maxList;
-    self.lineWidth = attachable.lineWidth;
-    self.dotColor = attachable.dotColor;
+    //self.maxList = attachable.maxList;
+    //self.lineWidth = attachable.lineWidth;
+    //self.dotColor = attachable.dotColor;
     self.stepsBetweenPoints = attachable.stepsBetweenPoints;
     self.alarm[0] = self.stepsBetweenPoints;
   }

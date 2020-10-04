@@ -3,7 +3,7 @@
 
 /// @function scrNull()
 /// @desc Does nothing
-function scrNull() {
+function scrNullScript() {
   return;
 }
 
