@@ -23,5 +23,3 @@ var scale = (radius*2.0)/sprite_get_width(sprite_index);
 image_xscale = scale;
 image_yscale = scale;
 
-
-

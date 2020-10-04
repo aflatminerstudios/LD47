@@ -34,6 +34,7 @@ image_yscale = scale;
 
 ///ADDED BY JOHN
 dotColor = choose(c_red, c_green, c_blue, c_purple, c_orange);
+dotColor = choose($00ffc0, $00ffff, $ff00ff, $fafa02, $3409ff, $ffa711);
 drawPointX = 0;
 drawPointY = 0;
 stepsBetweenPoints = 5;
