@@ -42,5 +42,5 @@ with (objAttachable) {
 
 var bboxSize = (right - left) * (bottom - top);
 
-scrGameOverKaiju(self.id);
+scrGameOverKaiju(self.id, numAttached, totalSize, dist, bboxSize);
 

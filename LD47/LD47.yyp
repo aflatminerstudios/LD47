@@ -5,6 +5,7 @@
     {"id":{"name":"sprCircleWhite","path":"sprites/sprCircleWhite/sprCircleWhite.yy",},"order":2,},
     {"id":{"name":"sprCircleBlue","path":"sprites/sprCircleBlue/sprCircleBlue.yy",},"order":9,},
     {"id":{"name":"objInitialize","path":"objects/objInitialize/objInitialize.yy",},"order":4,},
+    {"id":{"name":"fntGameOver","path":"fonts/fntGameOver/fntGameOver.yy",},"order":3,},
     {"id":{"name":"fntTicker","path":"fonts/fntTicker/fntTicker.yy",},"order":2,},
     {"id":{"name":"objDetached","path":"objects/objDetached/objDetached.yy",},"order":1,},
     {"id":{"name":"objRoomControlParent","path":"objects/objRoomControlParent/objRoomControlParent.yy",},"order":3,},

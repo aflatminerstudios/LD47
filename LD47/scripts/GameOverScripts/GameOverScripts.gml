@@ -25,12 +25,21 @@ function scrSpawnGameOver(controller, which) {
   return instance;
 }
 
-///@function scrGameOverKaiju(controller)
+///@function scrGameOverKaiju(controller, numAttached, totalSize, dist, bboxSize)
 ///@param controller which controller called this
-function scrGameOverKaiju(controller) {
+///@param numAttached number of loops attached
+///@param dist Furthest distance
+///@param bboxSize Containing Area
+function scrGameOverKaiju(controller, numAttached, totalSize, dist, bboxSize) {
   
   instance = scrSpawnGameOver(self.id, objGameOver);
   scrGameOverCleanup(controller);
+  instance.style = "Kaiju";
+  instance.numAttached = numAttached;
+  instance.totalSize = totalSize;
+  instance.dist = dist;
+  instance.bboxSize = bboxSize;
+  
 }
 
 function scrPressMode() {
