@@ -21,3 +21,5 @@ if (placeholder != noone) {
   placeholder.x = 305;
   placeholder.y = 230;
 }
+
+won = false;
