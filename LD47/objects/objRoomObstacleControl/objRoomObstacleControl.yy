@@ -5,8 +5,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "objRoomControl",
-    "path": "objects/objRoomControl/objRoomControl.yy",
+    "name": "objRoomControlParent",
+    "path": "objects/objRoomControlParent/objRoomControlParent.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -20,7 +20,10 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"objRoomObstacleControl","path":"objects/objRoomObstacleControl/objRoomObstacleControl.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":74,"eventType":8,"collisionObjectId":null,"parent":{"name":"objRoomObstacleControl","path":"objects/objRoomObstacleControl/objRoomObstacleControl.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {

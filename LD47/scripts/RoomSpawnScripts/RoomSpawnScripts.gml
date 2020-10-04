@@ -19,14 +19,14 @@ function scrSpawnRandomGlompable() {
   var xCoord = irandom_range(3 + glomp.radius / 2, room_width - glomp.radius / 2 - 3);
   var yCoord = irandom_range(3 + glomp.radius / 2, room_height - glomp.radius / 2 - 3);
   with (glomp) {  
-    while (place_meeting(xCoord, yCoord, objCircleParent)) {
+    while (place_meeting(xCoord, yCoord, objCircleParent) || place_meeting(xCoord, yCoord, objNoNoParent)) {
       xCoord = irandom_range(3 + glomp.radius / 2, room_width - glomp.radius / 2 - 3);
       yCoord = irandom_range(3 + glomp.radius / 2, room_height - glomp.radius / 2 - 3);
     }
   
     x = xCoord;
     y = yCoord;    
-    show_debug_message(string(x) + " , " + string(y));
+    
   }
   
 }

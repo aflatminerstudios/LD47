@@ -5,8 +5,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "objRoomControl",
-    "path": "objects/objRoomControl/objRoomControl.yy",
+    "name": "objRoomControlParent",
+    "path": "objects/objRoomControlParent/objRoomControlParent.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,

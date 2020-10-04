@@ -7,10 +7,4 @@ if (playing) {
   if (timer > maxTimer) {
     alarm[1] = 1; 
   }
-} else {
-  
-  if (timer > preTime) {
-    alarm[2] = 1; 
-  }
-  
-}
+} 
