@@ -29,7 +29,14 @@ view_camera[0] = camera_create_view(0, 0, room_width, room_height, 0, noone, 5, 
 ticker = instance_create_layer(400, 53.5, "UI", objTicker);
 currentText = "";
 
+//Create other controllers
 instance_create_layer(0, 0, "Controllers", objSpiroControl);
+
+//Create glow renderer
+var glowDepth = layer_get_depth(layer_get_id("Glompables")) - 50;
+instance_create_depth(0, 0, glowDepth, objCircleGlowRenderer);
+
+
 
 
 //REMOVE: Sets volume of everything to zero
