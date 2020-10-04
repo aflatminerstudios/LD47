@@ -13,7 +13,7 @@ function scrInitialize(){
   global.prevAspectRatio = global.aspectRatio;
   
   scrUpdateWindowSettings();
-  
+
   randomize();
 }
 
