@@ -1,5 +1,5 @@
 {
-  "bboxMode": 2,
+  "bboxMode": 0,
   "collisionKind": 2,
   "type": 0,
   "origin": 4,
@@ -7,10 +7,10 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 2,
-  "bbox_right": 297,
-  "bbox_top": 2,
-  "bbox_bottom": 297,
+  "bbox_left": 1,
+  "bbox_right": 298,
+  "bbox_top": 1,
+  "bbox_bottom": 298,
   "HTile": false,
   "VTile": false,
   "For3D": false,
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"4ba9391e-6893-4b02-a56e-e85794ac9b7a","path":"sprites/sprCircleMultilines/sprCircleMultilines.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"4ba9391e-6893-4b02-a56e-e85794ac9b7a","path":"sprites/sprCircleMultilines/sprCircleMultilines.yy",},"LayerId":{"name":"ca65037a-f968-41d7-af18-c92531e2d7d3","path":"sprites/sprCircleMultilines/sprCircleMultilines.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprCircleMultilines","path":"sprites/sprCircleMultilines/sprCircleMultilines.yy",},"resourceVersion":"1.0","name":"4ba9391e-6893-4b02-a56e-e85794ac9b7a","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"3c97ca69-5478-4ce0-9262-80e4b020ddde","path":"sprites/sprCircleBlue/sprCircleBlue.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"3c97ca69-5478-4ce0-9262-80e4b020ddde","path":"sprites/sprCircleBlue/sprCircleBlue.yy",},"LayerId":{"name":"a5350914-d528-4910-b922-319c9684f7a7","path":"sprites/sprCircleBlue/sprCircleBlue.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprCircleBlue","path":"sprites/sprCircleBlue/sprCircleBlue.yy",},"resourceVersion":"1.0","name":"3c97ca69-5478-4ce0-9262-80e4b020ddde","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"sprCircleMultilines","path":"sprites/sprCircleMultilines/sprCircleMultilines.yy",},
+    "spriteId": {"name":"sprCircleBlue","path":"sprites/sprCircleBlue/sprCircleBlue.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"295d9e2e-4b78-4964-aff1-a6c6c7dfc245","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4ba9391e-6893-4b02-a56e-e85794ac9b7a","path":"sprites/sprCircleMultilines/sprCircleMultilines.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"11d321f9-2656-45ea-9afe-4e42426244d7","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3c97ca69-5478-4ce0-9262-80e4b020ddde","path":"sprites/sprCircleBlue/sprCircleBlue.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,21 +58,21 @@
     "yorigin": 150,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sprCircleMultilines","path":"sprites/sprCircleMultilines/sprCircleMultilines.yy",},
+    "parent": {"name":"sprCircleBlue","path":"sprites/sprCircleBlue/sprCircleBlue.yy",},
     "resourceVersion": "1.3",
-    "name": "sprCircleMultilines",
+    "name": "sprCircleBlue",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"ca65037a-f968-41d7-af18-c92531e2d7d3","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"a5350914-d528-4910-b922-319c9684f7a7","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
     "name": "Circles",
     "path": "folders/Sprites/Circles.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sprCircleMultilines",
+  "name": "sprCircleBlue",
   "tags": [],
   "resourceType": "GMSprite",
 }

@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"c81adcac-778b-4551-b642-65720ddd612a","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Circles",
-    "path": "folders/Sprites/Circles.yy",
+    "name": "Debug Or Obsolete",
+    "path": "folders/Sprites/Circles/Debug Or Obsolete.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprBlueCircle",

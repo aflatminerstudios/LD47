@@ -8,7 +8,7 @@ var shouldDrawDebugReference = false;
 
 draw_self();
 if(global.colorBlindModeOn) {
-	var assistSprite = sprCircleInsertSquare;
+	var assistSprite = sprInsertYellowSquare;
 	var refScale = (radius*2.0)/sprite_get_width(assistSprite);
 	draw_sprite_ext(assistSprite, 0, x, y, refScale, refScale, image_angle, c_white, image_alpha);
 }
