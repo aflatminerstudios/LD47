@@ -8,5 +8,5 @@ if (!playing) {
   theTime = max(ceil((preTime - timer)/room_speed)+1, 0);
 }
 
-scrDrawTimer(theTime, 400, 35, c_red);
+scrDrawTimer(theTime, 400, 32, c_red);
 

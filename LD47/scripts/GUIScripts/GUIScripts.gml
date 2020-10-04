@@ -11,8 +11,10 @@ function scrDrawTimer(time, xCoord, yCoord, timerColor){
   draw_set_font(fntTimer);
   draw_set_color(timerColor);
   draw_set_halign(fa_center);
-    
-  draw_text_color(xCoord, yCoord, time, timerColor, timerColor, timerColor, timerColor, 1);
+  
+  draw_sprite(sprHUDTimerCircle, 0, xCoord, yCoord);
+  
+  draw_text_color(xCoord, yCoord + 8, time, timerColor, timerColor, timerColor, timerColor, 1);
 
   draw_set_halign(oldAlign);
   draw_set_color(oldColor);
