@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprNoBomb",
-    "path": "sprites/sprNoBomb/sprNoBomb.yy",
+    "name": "sprNoSingleBlade",
+    "path": "sprites/sprNoSingleBlade/sprNoSingleBlade.yy",
   },
   "solid": false,
   "visible": true,
@@ -31,7 +31,7 @@
     "path": "folders/John Working/NoNos.yy",
   },
   "resourceVersion": "1.0",
-  "name": "objNoNoBomb",
+  "name": "objNoNoSingleBlade",
   "tags": [],
   "resourceType": "GMObject",
 }

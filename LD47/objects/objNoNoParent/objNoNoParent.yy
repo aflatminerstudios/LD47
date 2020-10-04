@@ -21,8 +21,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "John Working",
-    "path": "folders/John Working.yy",
+    "name": "NoNos",
+    "path": "folders/John Working/NoNos.yy",
   },
   "resourceVersion": "1.0",
   "name": "objNoNoParent",

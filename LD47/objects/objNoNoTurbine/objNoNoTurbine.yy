@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprNoBomb",
-    "path": "sprites/sprNoBomb/sprNoBomb.yy",
+    "name": "sprNoTurbine",
+    "path": "sprites/sprNoTurbine/sprNoTurbine.yy",
   },
   "solid": false,
   "visible": true,
@@ -23,7 +23,10 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"objNoNoTurbine","path":"objects/objNoNoTurbine/objNoNoTurbine.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"objNoNoTurbine","path":"objects/objNoNoTurbine/objNoNoTurbine.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
@@ -31,7 +34,7 @@
     "path": "folders/John Working/NoNos.yy",
   },
   "resourceVersion": "1.0",
-  "name": "objNoNoBomb",
+  "name": "objNoNoTurbine",
   "tags": [],
   "resourceType": "GMObject",
 }
