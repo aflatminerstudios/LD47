@@ -14,6 +14,7 @@
     {"id":{"name":"InitializationScripts","path":"scripts/InitializationScripts/InitializationScripts.yy",},"order":1,},
     {"id":{"name":"sprInsertCyanCrescent","path":"sprites/sprInsertCyanCrescent/sprInsertCyanCrescent.yy",},"order":3,},
     {"id":{"name":"sprInsertOrangeFlower","path":"sprites/sprInsertOrangeFlower/sprInsertOrangeFlower.yy",},"order":4,},
+    {"id":{"name":"objCircleGlowRenderer","path":"objects/objCircleGlowRenderer/objCircleGlowRenderer.yy",},"order":9,},
     {"id":{"name":"scrCircleRainbow","path":"sprites/scrCircleRainbow/scrCircleRainbow.yy",},"order":0,},
     {"id":{"name":"roomJohnTest","path":"rooms/roomJohnTest/roomJohnTest.yy",},"order":0,},
     {"id":{"name":"TitleBG","path":"sprites/TitleBG/TitleBG.yy",},"order":0,},

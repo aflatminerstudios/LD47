@@ -3,9 +3,6 @@
 
 var shouldDrawDebugReference = false;
 
-//if(shouldDrawDebugReference)
-//	draw_circle_color(x, y, radius, innerColor, outerColor, false);
-
 // Draw the insert for colorblind mode
 if(global.colorBlindModeOn) {
 	var assistSprite = sprInsertYellowSquare;
@@ -23,7 +20,7 @@ if(shouldDrawDebugReference) {
 }
 
 
-// Debug code, draws in the center of the circle
+// Debug code, draws text in the center of the circle
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 // angularSpeed

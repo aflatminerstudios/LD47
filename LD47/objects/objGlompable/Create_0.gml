@@ -1,10 +1,14 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-innerColor = choose($11cc11, $cc1111, $1111cc, $11cccc, $cc11cc);
-outerColor = choose($11ff11, $ff1111, $1111ff, $11ffff, $ff11ff);
-radius = irandom_range(10, 30)
-radius = choose(10, 20, 30, 40);
+
+
+circleTheme = 0; // Make enum that loads a struct from the color, or something -- Micha TODO
+color = "yellow"; // Make enum
+glowSprite = sprGlowYellow;
+
+//radius = irandom_range(10, 30);
+radius = choose(10, 20, 25, 30, 35, 40);
 
 
 

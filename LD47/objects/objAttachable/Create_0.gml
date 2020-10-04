@@ -3,8 +3,7 @@
 
 
 // These should be set during the changeover from objGlompable to objAttachable
-innerColor = c_white;
-outerColor = c_white;
+glowSprite = sprGlowYellow;
 radius = 20;
 
  // Set this to 0 if you want to keep it from rotating separately from what it is attached to

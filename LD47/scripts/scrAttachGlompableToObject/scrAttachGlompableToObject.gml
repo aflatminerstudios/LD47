@@ -11,8 +11,9 @@ function scrAttachGlompableToObject(glompableInstance, parentAttachableInstance)
 	
 	var playerInstance = parentAttachableInstance.root;
 	
-	var innerColor = glompableInstance.innerColor;
-	var outerColor = glompableInstance.outerColor;
+	// Add theme info --  Micha TODO
+	
+	var glowSprite = glompableInstance.glowSprite;
 	var radius = glompableInstance.radius;
 	var spriteIndex = glompableInstance.sprite_index;
 	var imageIndex = glompableInstance.image_index;
@@ -24,9 +25,8 @@ function scrAttachGlompableToObject(glompableInstance, parentAttachableInstance)
 	var internalAngle = glompableInstance.internalAngle;
 	var shouldReverseRotationWhenAttaching = glompableInstance.shouldReverseRotationWhenAttaching;
 	var shouldUseGearRatios = glompableInstance.shouldUseGearRatios;
-	
-	//with(glompableInstance) {
-		//instance_change(objAttachable, true);
+
+
 		
 	var newAttachable = instance_create_layer(glompableInstance.x, glompableInstance.y, glompableInstance.layer, objAttachable);
 	instance_destroy(glompableInstance);
@@ -36,8 +36,7 @@ function scrAttachGlompableToObject(glompableInstance, parentAttachableInstance)
 		self.parentAttachable = parentAttachableInstance;
 		
 		// Move values over to the new class
-		self.innerColor = innerColor;
-		self.outerColor = outerColor;
+		self.glowSprite = glowSprite; // Temporary until we get the whole theme moved over -- Micha TODO
 		self.radius = radius;
 		self.sprite_index = spriteIndex;
 		self.image_index = imageIndex;

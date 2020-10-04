@@ -4,6 +4,8 @@
 // Move this to a better location --  Micha TODO
 global.colorBlindModeOn = true;
 
+glowSprite = sprGlowYellow;
+
 speedPerFrame = 4;
 
 angle = 0;
