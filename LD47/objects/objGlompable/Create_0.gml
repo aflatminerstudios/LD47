@@ -4,12 +4,14 @@
 innerColor = choose($11cc11, $cc1111, $1111cc, $11cccc, $cc11cc);
 outerColor = choose($11ff11, $ff1111, $1111ff, $11ffff, $ff11ff);
 radius = irandom_range(10, 30)
+radius = choose(10, 20, 30, 40);
 
  // Set this to 0 if you want to keep it from rotating separately from what it is attached to
 baseAngularSpeedPerFrame = -2;
 angularSpeedPerFrame = baseAngularSpeedPerFrame;
 
-shouldGearRotateWhenAttaching = false;
+shouldUseGearRatios = true;
+shouldReverseRotationWhenAttaching = true; // Is included automatically if the shouldUseGearRatios is true
 
 
 // Internals
