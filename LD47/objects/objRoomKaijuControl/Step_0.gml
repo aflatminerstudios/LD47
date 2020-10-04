@@ -1,11 +1,8 @@
-/// @description Insert description here
+/// @description Check timer
 // You can write your code in this editor
 
-if (keyboard_check_pressed(ord("A"))) {
-  scrToggleGreyscale(); 
-}
+event_inherited()
 
-timer++;
 if (playing) {
   if (timer > maxTimer) {
     alarm[1] = 1; 
@@ -15,12 +12,5 @@ if (playing) {
   if (timer > preTime) {
     alarm[2] = 1; 
   }
-
-  
-}
-
-if (instance_number(objTickerText) == 0) {
-  
-  scrScrollText(ticker, "Here is some text text!");
   
 }
