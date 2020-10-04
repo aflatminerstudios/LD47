@@ -93,7 +93,7 @@ if (keyboard_check_pressed(ord("1"))) {
 
 shouldRecalcRootAngularSpeed = true; // Doing it every frame so we can act on new circles
 if(shouldRecalcRootAngularSpeed) {
-	with(objPlayerMicha) {
+	with(objPlayer) {
 		switch(other.slowAsGrowMode) {
 			case 0:
 				// off

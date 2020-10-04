@@ -3,19 +3,19 @@
 var numAttached = instance_number(objAttachable);
 var totalSize = 0;
 var dist = 0;
-var left = objPlayerMicha.x - objPlayerMicha.radius / 2;
-var right = objPlayerMicha.x + objPlayerMicha.radius / 2;
-var top = objPlayerMicha.y - objPlayerMicha.radius / 2;
-var bottom = objPlayerMicha.y + objPlayerMicha.radius / 2;
+var left = objPlayer.x - objPlayer.radius / 2;
+var right = objPlayer.x + objPlayer.radius / 2;
+var top = objPlayer.y - objPlayer.radius / 2;
+var bottom = objPlayer.y + objPlayer.radius / 2;
 
 with (objAttachable) {
   totalSize += radius;
   
   var furthest = instance_furthest(x, y, objAttachable);
   var curDist = distance_to_object(furthest);
-  if (distance_to_object(objPlayerMicha) > curDist) {
-    furthest = objPlayerMicha; 
-    curDist = distance_to_object(furthest) + objPlayerMicha.radius / 2;    
+  if (distance_to_object(objPlayer) > curDist) {
+    furthest = objPlayer; 
+    curDist = distance_to_object(furthest) + objPlayer.radius / 2;    
   } else {
     curDist += furthest.radius * 2; 
   }

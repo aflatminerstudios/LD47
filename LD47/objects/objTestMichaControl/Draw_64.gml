@@ -57,7 +57,7 @@ switch(slowAsGrowMode) {
 }
 
 statusString += "\n[8 9] Slow rotation multiplier: " + string(slowAsGrowModeMultiplier)
-statusString += "\nCurrent rotation speed: " + string(objPlayerMicha.angularSpeedPerFrame) + " deg/frame";
+statusString += "\nCurrent rotation speed: " + string(objPlayer.angularSpeedPerFrame) + " deg/frame";
 statusString += "\nLast Key: " + string(ord(keyboard_lastchar));
 
 draw_text(10, 10, statusString);

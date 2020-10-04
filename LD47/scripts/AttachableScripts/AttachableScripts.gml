@@ -4,7 +4,7 @@ function scrAttachGlompableToObject(glompableInstance, parentAttachableInstance)
 	
 	// You can only attach to the player or objects who inherit from objAttachable
 	if (object_is_ancestor(parentAttachableInstance.object_index, objAttachable) ||
-	    object_is_ancestor(parentAttachableInstance.object_index, objPlayerMicha)) {
+	    object_is_ancestor(parentAttachableInstance.object_index, objPlayer)) {
 		show_debug_message("Warning: The target instance (" + string(parentAttachableInstance) + ") cannot be attached to. (Does it inherit from objAttachable?");
 		return;
 	}
@@ -49,7 +49,7 @@ function scrAttachGlompableToObject(glompableInstance, parentAttachableInstance)
 		
 		var angularSpeedSign = 1;
 		if(shouldReverseRotationWhenAttaching || shouldUseGearRatios) {
-			if(parentAttachableInstance.object_index == objPlayerMicha)
+			if(parentAttachableInstance.object_index == objPlayer)
 				angularSpeedSign = sign(parentAttachableInstance.angularSpeedPerFrame);
 			else
 				angularSpeedSign = -1*sign(parentAttachableInstance.angularSpeedPerFrame);
