@@ -7,15 +7,15 @@
   "edgeFiltering": false,
   "collisionTolerance": 254,
   "swfPrecision": 2.525,
-  "bbox_left": 5,
-  "bbox_right": 28,
-  "bbox_top": 10,
-  "bbox_bottom": 90,
+  "bbox_left": 18,
+  "bbox_right": 113,
+  "bbox_top": 32,
+  "bbox_bottom": 368,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 33,
-  "height": 100,
+  "width": 130,
+  "height": 400,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"f6c8e355-7561-479e-8409-da46f0f78eaf","path":"sprites/sprNoWedgeBloop/sprNoWedgeBloop.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f6c8e355-7561-479e-8409-da46f0f78eaf","path":"sprites/sprNoWedgeBloop/sprNoWedgeBloop.yy",},"LayerId":{"name":"c0935b90-4567-4a01-a9b7-f294230f8f8a","path":"sprites/sprNoWedgeBloop/sprNoWedgeBloop.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprNoWedgeBloop","path":"sprites/sprNoWedgeBloop/sprNoWedgeBloop.yy",},"resourceVersion":"1.0","name":"f6c8e355-7561-479e-8409-da46f0f78eaf","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"6c7c73a6-206a-4140-84c9-5f5007c76e5c","path":"sprites/sprNoWedgeBloop/sprNoWedgeBloop.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"6c7c73a6-206a-4140-84c9-5f5007c76e5c","path":"sprites/sprNoWedgeBloop/sprNoWedgeBloop.yy",},"LayerId":{"name":"d7e20801-9db5-4df8-b9b7-bc1840a4b3ba","path":"sprites/sprNoWedgeBloop/sprNoWedgeBloop.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprNoWedgeBloop","path":"sprites/sprNoWedgeBloop/sprNoWedgeBloop.yy",},"resourceVersion":"1.0","name":"6c7c73a6-206a-4140-84c9-5f5007c76e5c","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"sprNoWedgeBloop","path":"sprites/sprNoWedgeBloop/sprNoWedgeBloop.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"071cb819-c31c-4d3c-998a-365c2d3450b3","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f6c8e355-7561-479e-8409-da46f0f78eaf","path":"sprites/sprNoWedgeBloop/sprNoWedgeBloop.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"83e3f81b-94e6-4dc1-b272-03e7ae950bec","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6c7c73a6-206a-4140-84c9-5f5007c76e5c","path":"sprites/sprNoWedgeBloop/sprNoWedgeBloop.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -54,8 +54,8 @@
     "backdropHeight": 768,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 16,
-    "yorigin": 50,
+    "xorigin": 65,
+    "yorigin": 200,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprNoWedgeBloop","path":"sprites/sprNoWedgeBloop/sprNoWedgeBloop.yy",},
@@ -65,7 +65,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"c0935b90-4567-4a01-a9b7-f294230f8f8a","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"d7e20801-9db5-4df8-b9b7-bc1840a4b3ba","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
     "name": "Bloop Theme",

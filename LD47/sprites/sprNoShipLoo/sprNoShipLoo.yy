@@ -7,15 +7,15 @@
   "edgeFiltering": false,
   "collisionTolerance": 254,
   "swfPrecision": 2.525,
-  "bbox_left": 15,
-  "bbox_right": 61,
+  "bbox_left": 17,
+  "bbox_right": 85,
   "bbox_top": 15,
-  "bbox_bottom": 83,
+  "bbox_bottom": 61,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 77,
-  "height": 101,
+  "width": 101,
+  "height": 77,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"da1606c4-848f-4725-b9ec-5d9e207e7bde","path":"sprites/sprNoShipLoo/sprNoShipLoo.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"da1606c4-848f-4725-b9ec-5d9e207e7bde","path":"sprites/sprNoShipLoo/sprNoShipLoo.yy",},"LayerId":{"name":"4f918a2d-3643-4ee8-8b21-aed15d6e6e5c","path":"sprites/sprNoShipLoo/sprNoShipLoo.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprNoShipLoo","path":"sprites/sprNoShipLoo/sprNoShipLoo.yy",},"resourceVersion":"1.0","name":"da1606c4-848f-4725-b9ec-5d9e207e7bde","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"0e5aa968-be59-4230-8bf6-19746a39ff87","path":"sprites/sprNoShipLoo/sprNoShipLoo.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"0e5aa968-be59-4230-8bf6-19746a39ff87","path":"sprites/sprNoShipLoo/sprNoShipLoo.yy",},"LayerId":{"name":"aa1b27c1-6de0-41c8-b0b0-dd2792620205","path":"sprites/sprNoShipLoo/sprNoShipLoo.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprNoShipLoo","path":"sprites/sprNoShipLoo/sprNoShipLoo.yy",},"resourceVersion":"1.0","name":"0e5aa968-be59-4230-8bf6-19746a39ff87","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"sprNoShipLoo","path":"sprites/sprNoShipLoo/sprNoShipLoo.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"0457652e-a82b-4805-bcb2-33a6780c84a2","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"da1606c4-848f-4725-b9ec-5d9e207e7bde","path":"sprites/sprNoShipLoo/sprNoShipLoo.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"2d0229dc-9690-4a8e-9a9c-94c1de51734e","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0e5aa968-be59-4230-8bf6-19746a39ff87","path":"sprites/sprNoShipLoo/sprNoShipLoo.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -54,8 +54,8 @@
     "backdropHeight": 768,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 38,
-    "yorigin": 50,
+    "xorigin": 50,
+    "yorigin": 38,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprNoShipLoo","path":"sprites/sprNoShipLoo/sprNoShipLoo.yy",},
@@ -65,7 +65,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"4f918a2d-3643-4ee8-8b21-aed15d6e6e5c","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"aa1b27c1-6de0-41c8-b0b0-dd2792620205","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
     "name": "Loo Theme",
