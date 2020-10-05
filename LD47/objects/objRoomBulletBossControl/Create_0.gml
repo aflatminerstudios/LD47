@@ -13,6 +13,9 @@ totalAttached = 0;
 
 scrSpawnStartingGlompables(self.id);
 
+
+ds_list_add(textList, "Watch out!!!", "The only thing that can stop you is you (or bullets).", "They really don't like you, do they?", "Running into ships is bad. You do know that, right?");
+
 var theText = "Live as long as you can!"; 
 var tickerInstance = scrScrollText(ticker, theText);
 canSpawnText = false;

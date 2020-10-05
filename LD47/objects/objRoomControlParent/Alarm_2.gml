@@ -50,5 +50,8 @@ if (zoom <= zoomTarget) {
   with (objPlayerPlaceholder) {
     instance_destroy();
   }
+  with (readyGo) {
+    instance_destroy(); 
+  }
   timer = 0;
 }

@@ -50,16 +50,18 @@ instance_create_depth(0, 0, glowDepth, objCircleGlowRenderer);
 
 textList = ds_list_create();
 
-ds_list_add(textList, "The only limit is yourself.", "Keep it up!", "Don't stop believing!", "I believe in you!", "Watch out!!");
+ds_list_add(textList, "The only limit is yourself.", "Don't stop believing!", "I definitely believe in you. I'm not just saying that.", "Maybe you should try harder?");
 canSpawnText = true;
 
 //REMOVE: Sets volume of everything to zero
 var num = audio_get_listener_count();
 for( var i = 0; i < num; i++;)
 {
-var info = audio_get_listener_info(i);
-audio_set_master_gain(info[? "index"], 0);
-ds_map_destroy(info);
+  var info = audio_get_listener_info(i);
+  audio_set_master_gain(info[? "index"], 0);
+  ds_map_destroy(info);
 }
    
 won = false;
+
+readyGo = noone;

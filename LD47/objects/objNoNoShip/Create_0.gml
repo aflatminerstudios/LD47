@@ -9,5 +9,8 @@ image_angle = direction;
 
 bulletMaxTime = room_speed * 2;
 bulletMinTime = room_speed / 2;
-var r = irandom_range(bulletMinTime, bulletMaxTime);
-alarm[0] = r;
+
+if (objRoomBulletBossControl.timer != 0) {
+  var r = irandom_range(bulletMinTime, bulletMaxTime)
+  alarm[0] = r;
+}

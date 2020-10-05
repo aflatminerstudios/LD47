@@ -22,9 +22,9 @@ if (placeholder != noone) {
   placeholder.y = 230;
 }
 
+ds_list_add(textList, "Watch out!!!", "Don't run into things!", "Does it hurt being so good?", "It's over there! No, not there.", "Do you know where you're going?");
 
-
-var theText = "Get to the goal with as many loops as you can!"; 
+var theText = "Get to the goal! With more loops!"; 
 var tickerInstance = scrScrollText(ticker, theText);
 canSpawnText = false;
 tickerInstance.textOffset = room_width/3;
