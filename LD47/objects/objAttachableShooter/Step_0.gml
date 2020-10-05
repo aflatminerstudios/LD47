@@ -1,6 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+/// @description Insert description here
+// You can write your code in this editor
+
 var oldX = x;
 var oldY = y;
 
@@ -18,6 +21,7 @@ if(root) {
 	angle += root.angle + angleDiffFromRoot;
 }
 
+// Everything above this point is identical to the parent event (as of Sunday night at 2am)
 
 if (place_meeting(x, y, objNoNoShip)) {
   var collObject = instance_place(x, y, objNoNoShip);
@@ -25,6 +29,8 @@ if (place_meeting(x, y, objNoNoShip)) {
   y = oldY;  
   scrDetachAttachable(self.id, collObject);
 	instance_destroy(collObject);
+	if(instance_exists(objRoomBulletBossControl))
+		objRoomBulletBossControl.shipsDestroyed++;
 } else if (place_meeting(x, y, objNoNoParent)) {
   var collObject = instance_place(x, y, objNoNoParent);
   x = oldX;

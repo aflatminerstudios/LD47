@@ -67,6 +67,31 @@ if (style == "Obstacle") {
 if (objShaderControl.fadeAmount != 0) {
   shader_reset();
 }
+
+if (style == "BulletBoss") {
+
+	var loops = numAttached;
+	var time = dist; // Using this for time survived
+	var ships = totalSize; // Using this for ships destroyed
+  //totalScore = ((totalSize + sqrt(bboxSize) + dist) * numAttached * numAttached);
+	totalScore = time * 1 + ships * 1 + loops*5;
+
+  //Labels
+  draw_text(x - 198, y - 68, "Time survived: "); 
+  draw_text(x - 198, y - 30, "Ships destroyed: ");
+  draw_text(x - 198, y + 6,  "Loops attached: ");
+  draw_text(x - 198, y + 46, "Total score: ");
+  
+  //Scores
+  draw_set_halign(fa_right);
+	var seconds = time/60;
+	var timeString = string_format(seconds, 0, 1) + "\""
+	draw_text(x + 155, y - 68, timeString);
+  draw_text(x + 155, y - 30, scrAddSeparator(string_format(ships, 0, 0), ",", 3));
+  draw_text(x + 155, y + 6, scrAddSeparator(string_format(loops, 0, 0), ",", 3));
+  draw_text(x + 155, y + 46, scrAddSeparator(string_format(totalScore, 0, 0), ",", 3));
+}
+
 draw_set_halign(oldAlign);
 draw_set_color(oldColor);
 draw_set_font(oldFont);

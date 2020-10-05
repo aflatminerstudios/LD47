@@ -46,7 +46,7 @@ function scrGameOverKaiju(controller, numAttached, totalSize, dist, bboxSize) {
   
   instance = scrSpawnGameOver(self.id, objGameOver);
   scrGameOverCleanup(controller);
-  instance.style = "Kaiju";
+  instance.style = "BulletBoss";
   instance.numAttached = numAttached;
   instance.totalSize = totalSize;
   instance.dist = dist;
@@ -125,5 +125,22 @@ function scrGameOverObstacle(controller, won) {
   } else {
     instance.sprite_index = global.currentTheme.gameOverFail;
   }
+  
+}
+
+//@function scrGameOverKaiju(controller, numAttached, totalSize, dist, bboxSize)      
+///@param controller which controller called this
+///@param totalAttached number of loops attached total during the round
+///@param shipsDestroyed Furthest distance
+///@param timeSurvived Time on clock on game over
+function scrGameOverBulletBoss(controller, totalAttached, shipsDestroyed, timeSurvived) {
+  
+  instance = scrSpawnGameOver(self.id, objGameOver);
+  scrGameOverCleanup(controller);
+  instance.style = "BulletBoss";
+  instance.numAttached = totalAttached; // Using this for total attached count during round
+  instance.totalSize = shipsDestroyed; // Using this for ships destroyed
+  instance.dist = timeSurvived; // Using this for time survived
+  instance.sprite_index = global.currentTheme.gameOverWin;
   
 }

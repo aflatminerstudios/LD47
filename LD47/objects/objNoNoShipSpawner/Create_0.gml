@@ -1,7 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-baseShipsPerSecond = 1;
-shipsPerSecond = baseShipsPerSecond;
+minShipsPerSecond = 0.2;
+maxShipsPerSecond = 1.25;
+maxShipsTime = 45*room_speed;
+shipsPerSecond = minShipsPerSecond;
 
-alarm[0] = room_speed/shipsPerSecond;
+alarm[0] = irandom(room_speed*2);// room_speed/shipsPerSecond;

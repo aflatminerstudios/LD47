@@ -77,6 +77,9 @@ function scrAttachGlompableToObject(glompableInstance, parentAttachableInstance)
 		self.angleDiffFromRoot = self.angle - playerInstance.angle;
     
 	}
+	
+	if(instance_exists(objRoomBulletBossControl))
+		objRoomBulletBossControl.totalAttached++;
 }
 
 ///@function scrDetachAttachable(attachable)

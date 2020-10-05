@@ -14,6 +14,11 @@ function scrDrawTimer(time, xCoord, yCoord, timerColor){
   shader_set(shd_greyscale);
   shader_set_uniform_f(objShaderControl.fade, objShaderControl.fadeAmount);
   draw_sprite(sprHUDTimerCircle, 0, xCoord, yCoord);
+	
+	var timeString = string(time);
+	if(room == roomBulletBoss)
+		timeString = string_format(time, 0, 2);
+		
   
   draw_text_color(xCoord, yCoord + 8, time, timerColor, timerColor, timerColor, timerColor, 1);
   shader_reset();

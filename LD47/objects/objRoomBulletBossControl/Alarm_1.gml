@@ -3,10 +3,10 @@
 var numAttached = instance_number(objAttachable);
 var totalSize = 0;
 var dist = 0;
-var left = objPlayer.x - objPlayer.radius / 2;
-var right = objPlayer.x + objPlayer.radius / 2;
-var top = objPlayer.y - objPlayer.radius / 2;
-var bottom = objPlayer.y + objPlayer.radius / 2;
+//var left = objPlayer.x - objPlayer.radius / 2;
+//var right = objPlayer.x + objPlayer.radius / 2;
+//var top = objPlayer.y - objPlayer.radius / 2;
+//var bottom = objPlayer.y + objPlayer.radius / 2;
 
 with (objAttachable) {
   totalSize += radius;
@@ -28,24 +28,24 @@ with (objAttachable) {
     dist = curDist; 
   }
   
-  if (x - radius / 2 < left) {
-    left = x - radius / 2; 
-  }
-  if (x + radius / 2 > right) {
-    right = x + radius / 2; 
-  }
-  if (y - radius / 2 < top) {
-    top = y - radius / 2; 
-  }
-  if (y + radius / 2 > bottom) {
-    bottom =  y + radius / 2; 
-  }
+  //if (x - radius / 2 < left) {
+  //  left = x - radius / 2; 
+  //}
+  //if (x + radius / 2 > right) {
+  //  right = x + radius / 2; 
+  //}
+  //if (y - radius / 2 < top) {
+  //  top = y - radius / 2; 
+  //}
+  //if (y + radius / 2 > bottom) {
+  //  bottom =  y + radius / 2; 
+  //}
   
   
 }
 
+//var bboxSize = (right - left) * (bottom - top);
 
-var bboxSize = (right - left) * (bottom - top);
-
-scrGameOverKaiju(self.id, numAttached, totalSize, dist, bboxSize);
+scrGameOverBulletBoss(self.id, self.totalAttached, self.shipsDestroyed, self.timer); 
+//scrGameOverKaiju(self.id, numAttached, totalSize, dist, bboxSize);
 
