@@ -22,3 +22,7 @@ angle = 0; // This is the overall rotation, after adding all effects together
 var scale = (radius*2.0)/sprite_get_width(sprite_index);
 image_xscale = scale;
 image_yscale = scale;
+
+skip = false;
+skipCount = 0;
+maxSkipCount = room_speed * 0.5;

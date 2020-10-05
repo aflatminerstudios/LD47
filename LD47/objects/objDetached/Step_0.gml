@@ -17,16 +17,20 @@ while (place_meeting(x, y, objNoNoParent)) {
   count++;
   var collObject = instance_place(x, y, objNoNoParent);
 
-  internalAngle = point_direction(collObject.x, collObject.y, x, y);
+  internalAngle = point_direction(x, y, collObject.x, collObject.y);//, x, y);
 
   x = x + lengthdir_x(tempSpeed, internalAngle);
-  y = y + lengthdir_y(tempSpeed, internalAngle);
-   
+  y = y + lengthdir_y(tempSpeed, internalAngle);    
+  show_debug_message(internalAngle);
   if (count > 300) {
-   count = 0;
-   tempSpeed *= 2;
+    count = 0;
+    tempSpeed *= 2;
   }
+  
+  skip = true;
+  skipCount = 0;
 }
+
 
 if (abs(x) > room_width * 1.2 || abs(y) > room_height * 1.2) {
   instance_destroy(); 
