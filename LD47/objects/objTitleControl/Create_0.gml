@@ -20,3 +20,5 @@ music = sndTitle;
 if (!audio_is_playing(music)) {
    audio_play_sound(music, 50, true);
 }
+
+alarm[1] = 1;

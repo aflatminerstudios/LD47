@@ -32,9 +32,12 @@ if (ready) {
 			global.currentTheme = global.stuckInTheLoopTheme;
   } else if (keyboard_check_pressed(ord("Y"))) {
     global.colorBlindModeOn = !global.colorBlindModeOn;
-  } else if (keyboard_check_pressed(vk_anykey)) {// || mouse_check_button_pressed(mb_any)) {
-    room_goto(roomMainRoom);
+  } else if (keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_space)) {
+    scrPlayGame(); 
   }
+  /*else if (keyboard_check_pressed(vk_anykey)) {// || mouse_check_button_pressed(mb_any)) {
+    room_goto(roomMainRoom);
+  }*/
 }
 
 var activeCamera = view_camera[0];

@@ -1,0 +1,3 @@
+root = self;
+
+frozen = true;

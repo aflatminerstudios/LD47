@@ -12,7 +12,7 @@ if(internalAngle > 360)
 	internalAngle -= 360;
 if(internalAngle < 0)
 	internalAngle += 360;
-	
+
 angle = internalAngle;
 if(root) {
 	angle += root.angle + angleDiffFromRoot;
@@ -22,13 +22,12 @@ if(root) {
 if (place_meeting(x, y, objNoNoShip)) {
   var collObject = instance_place(x, y, objNoNoShip);
   x = oldX;
-  y = oldY;  
+  y = oldY;
   scrDetachAttachable(self.id, collObject);
 	instance_destroy(collObject);
 } else if (place_meeting(x, y, objNoNoParent)) {
   var collObject = instance_place(x, y, objNoNoParent);
   x = oldX;
-  y = oldY;  
-  scrDetachAttachable(self.id, collObject);
+  y = oldY;
+  scrDetachAttachable(self.id, collObject, true);
 }
-
