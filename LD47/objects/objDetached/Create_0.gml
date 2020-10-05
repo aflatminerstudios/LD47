@@ -27,3 +27,6 @@ skip = false;
 skipCount = 0;
 maxSkipCount = room_speed * 0.55;
 created = 0;
+
+brightness = shader_get_uniform(shd_bright_contrast, "brightness_amount");
+contrast = shader_get_uniform(shd_bright_contrast, "contrast_amount");
