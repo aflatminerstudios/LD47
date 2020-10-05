@@ -1,6 +1,7 @@
 {
   "resources": [
     {"id":{"name":"objBtnLoo","path":"objects/objBtnLoo/objBtnLoo.yy",},"order":6,},
+    {"id":{"name":"objBtnPlay","path":"objects/objBtnPlay/objBtnPlay.yy",},"order":12,},
     {"id":{"name":"sprInsertPinkStar","path":"sprites/sprInsertPinkStar/sprInsertPinkStar.yy",},"order":5,},
     {"id":{"name":"sprNoBullet","path":"sprites/sprNoBullet/sprNoBullet.yy",},"order":1,},
     {"id":{"name":"sprBtnBloopOff","path":"sprites/sprBtnBloopOff/sprBtnBloopOff.yy",},"order":17,},
@@ -92,6 +93,7 @@
     {"id":{"name":"sprGlowBlue","path":"sprites/sprGlowBlue/sprGlowBlue.yy",},"order":5,},
     {"id":{"name":"sprNoTurbineBloop","path":"sprites/sprNoTurbineBloop/sprNoTurbineBloop.yy",},"order":4,},
     {"id":{"name":"objHit","path":"objects/objHit/objHit.yy",},"order":1,},
+    {"id":{"name":"sprThemeSelect","path":"sprites/sprThemeSelect/sprThemeSelect.yy",},"order":3,},
     {"id":{"name":"sprCredits","path":"sprites/sprCredits/sprCredits.yy",},"order":1,},
     {"id":{"name":"GUIScripts","path":"scripts/GUIScripts/GUIScripts.yy",},"order":4,},
     {"id":{"name":"SpirographScripts","path":"scripts/SpirographScripts/SpirographScripts.yy",},"order":6,},
@@ -105,6 +107,7 @@
     {"id":{"name":"sprLooHit","path":"sprites/sprLooHit/sprLooHit.yy",},"order":2,},
     {"id":{"name":"sprHUDtickerTapeBGBloop","path":"sprites/sprHUDtickerTapeBGBloop/sprHUDtickerTapeBGBloop.yy",},"order":3,},
     {"id":{"name":"objTestMichaControl","path":"objects/objTestMichaControl/objTestMichaControl.yy",},"order":8,},
+    {"id":{"name":"sprBtnPlay","path":"sprites/sprBtnPlay/sprBtnPlay.yy",},"order":29,},
     {"id":{"name":"fntTimer","path":"fonts/fntTimer/fntTimer.yy",},"order":0,},
     {"id":{"name":"sprCircleMultilines","path":"sprites/sprCircleMultilines/sprCircleMultilines.yy",},"order":2,},
     {"id":{"name":"objBtnModeFighters","path":"objects/objBtnModeFighters/objBtnModeFighters.yy",},"order":10,},
@@ -114,6 +117,7 @@
     {"id":{"name":"sprBtnModeObstacleOff","path":"sprites/sprBtnModeObstacleOff/sprBtnModeObstacleOff.yy",},"order":15,},
     {"id":{"name":"sprBloopHit","path":"sprites/sprBloopHit/sprBloopHit.yy",},"order":1,},
     {"id":{"name":"sprBlueCircle","path":"sprites/sprBlueCircle/sprBlueCircle.yy",},"order":0,},
+    {"id":{"name":"sprModeSelect","path":"sprites/sprModeSelect/sprModeSelect.yy",},"order":4,},
     {"id":{"name":"objNoNoTurbine","path":"objects/objNoNoTurbine/objNoNoTurbine.yy",},"order":3,},
     {"id":{"name":"afm_sprButtonUp","path":"sprites/afm_sprButtonUp/afm_sprButtonUp.yy",},"order":0,},
     {"id":{"name":"sprHUDtickerTapeBGLoo","path":"sprites/sprHUDtickerTapeBGLoo/sprHUDtickerTapeBGLoo.yy",},"order":4,},

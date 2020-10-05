@@ -62,7 +62,22 @@ function scrSetSelectButtons() {
       show_debug_message(string(sprite_index) + ", " + string(sprBtnModeCollectOff) + ", " + string(sprBtnModeObstacleOff));
     }    
   }
+}
 
-
+/// @function scrPlayGame()
+function scrPlayGame() {
+  var theme = objThemeModeControl.theme;
+  var mode = objThemeModeControl.mode;
+  var targetRoom = roomTitleScreen;
   
+  if (mode == "Collector") {
+    targetRoom = roomKaiju;
+  } else if (mode == "Obstacle") {
+    targetRoom = roomObstacle; 
+  } else if (mode == "Fighters") {
+    targetRoom = roomTitleScreen; 
+  }
+  
+  
+  room_goto(targetRoom);
 }
