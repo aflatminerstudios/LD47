@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"c0935b90-4567-4a01-a9b7-f294230f8f8a","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "NoNos",
-    "path": "folders/Sprites/NoNos.yy",
+    "name": "Loop Theme (Default)",
+    "path": "folders/Sprites/NoNos/Loop Theme (Default).yy",
   },
   "resourceVersion": "1.0",
   "name": "sprNoWedge",

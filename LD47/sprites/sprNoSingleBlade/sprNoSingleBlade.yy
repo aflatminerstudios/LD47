@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"cb84fe0c-ca63-4c7c-9d95-9fabb4bafbdd","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "NoNos",
-    "path": "folders/Sprites/NoNos.yy",
+    "name": "Loop Theme (Default)",
+    "path": "folders/Sprites/NoNos/Loop Theme (Default).yy",
   },
   "resourceVersion": "1.0",
   "name": "sprNoSingleBlade",

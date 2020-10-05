@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"0b1694b5-1278-4e57-874a-40300558c85f","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "NoNos",
-    "path": "folders/Sprites/NoNos.yy",
+    "name": "Loop Theme (Default)",
+    "path": "folders/Sprites/NoNos/Loop Theme (Default).yy",
   },
   "resourceVersion": "1.0",
   "name": "sprNoBomb",

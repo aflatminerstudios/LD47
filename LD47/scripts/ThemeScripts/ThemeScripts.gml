@@ -1,13 +1,18 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 
+function scrApplyNonoTheme(nonoTheme) {
+	
+}
+
+
+
 
 // Define the theme structure
 
 // An overall theme (Stuck In The Loop, Stuck In The Loop, etc.)
 ColorTheme = function(_name, _playerCircleTheme, _circleThemes, _backgroundColor, _backgroundImage,
-											_nonoBomb, _nonoBullet, _nonoShip, _nonoSingleBlade, _nonoTurbine, _nonoWedge,
-                      _gameOverWin, _gameOverFail, _fntColor, _hitSprite) constructor {
+											_nonoTheme, _gameOverWin, _gameOverFail, _fntColor, _hitSprite) constructor {
 	name = _name;
 	// CircleTheme
 	playerCircleTheme = _playerCircleTheme
@@ -16,16 +21,12 @@ ColorTheme = function(_name, _playerCircleTheme, _circleThemes, _backgroundColor
 	backgroundColor = _backgroundColor;
 	backgroundImage = _backgroundImage;
 	// Nono sprites
-	nonoBomb = _nonoBomb;
-	nonoBullet = _nonoBullet;
-	nonoShip = _nonoShip;
-	nonoSingleBlade = _nonoSingleBlade;
-	nonoTurbine = _nonoTurbine;
-	nonoWedge = _nonoWedge;
+	nonoTheme = _nonoTheme;
   gameOverWin = _gameOverWin;
   gameOverFail = _gameOverFail;
   fntColor = _fntColor;
   hitSprite = _hitSprite;
+	//  _hudTickerBG, _hudTimerCircle
 };
 
 // A single circle
@@ -44,6 +45,15 @@ TrailTheme = function(_color, _lineWidth, _maxList) constructor {
 	maxList = _maxList; // This is the max number of points in a trail
 }
 
+NonoTheme = function(_bomb, _bullet, _ship, _singleBlade, _turbine, _wedge) constructor {
+	bomb = _bomb;
+	bullet = _bullet;
+	ship = _ship;
+	singleBlade = _singleBlade;
+	turbine = _turbine;
+	wedge = _wedge;
+}
+
 circleThemeTemplate = new CircleTheme(
 	"Template",
 	sprCircleBlue, // main sprite
@@ -60,6 +70,15 @@ trailThemeTemplate = new TrailTheme(
 	c_white,
 	2,
 	50,
+);
+
+nonoThemeTemplate = new NonoTheme(
+	sprNoBomb, 
+	sprNoBullet, 
+	sprNoShip, 
+	sprNoSingleBlade, 
+	sprNoTurbine, 
+	sprNoWedge,
 );
 
 
@@ -137,6 +156,15 @@ circleThemeYellow = new CircleTheme(
 	),
 );
 
+nonoThemeLoop = new NonoTheme(
+	sprNoBomb, 
+	sprNoBullet, 
+	sprNoShip, 
+	sprNoSingleBlade, 
+	sprNoTurbine, 
+	sprNoWedge,
+);
+
 
 /////////////////////////////////
 // Stuck In The Bloop Sub-Themes
@@ -212,6 +240,14 @@ circleThemeBloopWhite = new CircleTheme(
 	),
 );
 
+nonoThemeBloop = new NonoTheme(
+	sprNoBombBloop, 
+	sprNoBulletBloop, 
+	sprNoShipBloop, 
+	sprNoSingleBladeBloop, 
+	sprNoTurbineBloop, 
+	sprNoWedgeBloop,
+);
 
 
 ///////////////////////////////
@@ -288,6 +324,14 @@ circleThemeLooYellow = new CircleTheme(
 	),
 );
 
+nonoThemeLoo = new NonoTheme(
+	sprNoBombLoo, 
+	sprNoBulletLoo, 
+	sprNoShipLoo, 
+	sprNoSingleBladeLoo, 
+	sprNoTurbineLoo, 
+	sprNoWedgeLoo,
+);
 
 
 // Full Theme definitions
@@ -304,12 +348,7 @@ global.stuckInTheLoopTheme = new ColorTheme(
 	],
 	$5b2c2b, // background color (behind the tiled background sprites)
 	sprBackgroundLoop,
-	sprNoBomb, 
-	sprNoBullet, 
-	sprNoShip, 
-	sprNoSingleBlade,
-	sprNoTurbine, 
-	sprNoWedge,
+	nonoThemeLoop,
   sprGOWin,
   sprGOFail,
   c_white,
@@ -331,12 +370,7 @@ global.stuckInTheBloopTheme = new ColorTheme(
 	],
 	$230a06, // background color (behind the tiled background sprites)
 	sprBackgroundBloop,
-	sprNoBomb, 
-	sprNoBullet, 
-	sprNoShip, 
-	sprNoSingleBlade,
-	sprNoTurbine, 
-	sprNoWedge,
+	nonoThemeBloop,
   sprBloopGOWin,
   sprBloopGOFail,
   c_white,
@@ -359,12 +393,7 @@ global.stuckInTheLooTheme = new ColorTheme(
 	],
 	$e8faff, // background color (behind the tiled background sprites)
 	sprBackgroundLoo,
-	sprNoBomb, 
-	sprNoBullet, 
-	sprNoShip, 
-	sprNoSingleBlade,
-	sprNoTurbine, 
-	sprNoWedge,
+	nonoThemeLoo,
   sprLooGOWin,
   sprLooGOFail,
   c_black,
