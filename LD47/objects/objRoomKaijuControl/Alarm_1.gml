@@ -13,6 +13,11 @@ with (objAttachable) {
   
   var furthest = instance_furthest(x, y, objAttachable);
   var curDist = distance_to_object(furthest);
+  
+  if (numAttached == 1) {      
+    curDist = 0;
+    furthest = self.id; 
+  }
   if (distance_to_object(objPlayer) > curDist) {
     furthest = objPlayer; 
     curDist = distance_to_object(furthest) + objPlayer.radius / 2;    

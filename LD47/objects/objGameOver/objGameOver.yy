@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprGameOver",
-    "path": "sprites/sprGameOver/sprGameOver.yy",
+    "name": "sprGOWin",
+    "path": "sprites/sprGOWin/sprGOWin.yy",
   },
   "solid": false,
   "visible": true,

@@ -6,7 +6,8 @@
 
 // An overall theme (Stuck In The Loop, Stuck In The Loop, etc.)
 ColorTheme = function(_name, _playerCircleTheme, _circleThemes, _backgroundColor, _backgroundImage,
-											_nonoBomb, _nonoBullet, _nonoShip, _nonoSingleBlade, _nonoTurbine, _nonoWedge) constructor {
+											_nonoBomb, _nonoBullet, _nonoShip, _nonoSingleBlade, _nonoTurbine, _nonoWedge,
+                      _gameOverWin, _gameOverFail, _fntColor) constructor {
 	name = _name;
 	// CircleTheme
 	playerCircleTheme = _playerCircleTheme
@@ -21,6 +22,9 @@ ColorTheme = function(_name, _playerCircleTheme, _circleThemes, _backgroundColor
 	nonoSingleBlade = _nonoSingleBlade;
 	nonoTurbine = _nonoTurbine;
 	nonoWedge = _nonoWedge;
+  gameOverWin = _gameOverWin;
+  gameOverFail = _gameOverFail;
+  fntColor = _fntColor;
 };
 
 // A single circle
@@ -305,6 +309,9 @@ global.stuckInTheLoopTheme = new ColorTheme(
 	sprNoSingleBlade,
 	sprNoTurbine, 
 	sprNoWedge,
+  sprGOWin,
+  sprGOFail,
+  c_white,
 );
 
 ////////////////////////////
@@ -328,6 +335,9 @@ global.stuckInTheBloopTheme = new ColorTheme(
 	sprNoSingleBlade,
 	sprNoTurbine, 
 	sprNoWedge,
+  sprBloopGOWin,
+  sprBloopGOFail,
+  c_white,
 );
 
 ////////////////////////////
@@ -352,6 +362,9 @@ global.stuckInTheLooTheme = new ColorTheme(
 	sprNoSingleBlade,
 	sprNoTurbine, 
 	sprNoWedge,
+  sprLooGOWin,
+  sprLooGOFail,
+  c_black,
 );
 
 // Set up the global values

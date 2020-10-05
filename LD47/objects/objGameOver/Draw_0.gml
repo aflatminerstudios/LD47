@@ -7,12 +7,14 @@ var oldAlign = draw_get_halign();
    
 //Set vars
 draw_set_font(fntGameOver);
-draw_set_color(c_white);
+draw_set_color(global.currentTheme.fntColor);
 draw_set_halign(fa_left);
   
 //Shader
-shader_set(shd_greyscale);
-shader_set_uniform_f(objShaderControl.fade, objShaderControl.fadeAmount);  
+if (objShaderControl.fadeAmount != 0) {
+  shader_set(shd_greyscale);
+  shader_set_uniform_f(objShaderControl.fade, objShaderControl.fadeAmount);  
+}
 draw_self();
 
 if (style == "Kaiju") {
@@ -35,10 +37,18 @@ if (style == "Kaiju") {
 }
 
 if (style == "Obstacle") {
-  totalScore = (maxTimer - timer)/room_speed * numAttached * dist * sqrt(totalSize);
+  
+  if (won) {
+    totalScore = (maxTimer - timer)/room_speed * (numAttached) * (dist) * sqrt(totalSize);
+  } else {
+    totalScore = sqrt(numAttached * dist * totalSize);
+  }
+  
+  if (sprite_index == sprGOFail) {
+    draw_set_color(c_black);
+  }
 
-
-  show_debug_message( string((maxTimer - timer)) + "ABCD");
+  
   //Labels
   draw_text(x - 198, y - 68, "Time: "); 
   draw_text(x - 198, y - 30, "Loops attached: ");
@@ -54,7 +64,9 @@ if (style == "Obstacle") {
   }
 
 //Reset everything
-shader_reset();
+if (objShaderControl.fadeAmount != 0) {
+  shader_reset();
+}
 draw_set_halign(oldAlign);
 draw_set_color(oldColor);
 draw_set_font(oldFont);

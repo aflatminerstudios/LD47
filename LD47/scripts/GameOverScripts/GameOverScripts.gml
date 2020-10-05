@@ -4,10 +4,22 @@
 ///@function scrGameOverCleanup(controller)
 ///@param controller which controller called this
 function scrGameOverCleanup(controller) {
+  //Make it so player can't move
   with (objPlayer) {
     frozen = true; 
   }
+  
+  //Remove excess objects
   with (controller) {
+    instance_destroy(); 
+  }
+  with (objTicker) {
+    instance_destroy();
+  }
+  with (objTickerText) {
+    instance_destroy(); 
+  }  
+  with (objDetached) {
     instance_destroy(); 
   }
 }
@@ -21,7 +33,7 @@ function scrSpawnGameOver(controller, which) {
   var camWidth = camera_get_view_width(view_camera[0]);
   var camHeight = camera_get_view_height(view_camera[0]);
   instance = instance_create_layer(camX + camWidth / 2, camY + camHeight / 2, "UI", which);
-
+  
   return instance;
 }
 
@@ -39,8 +51,8 @@ function scrGameOverKaiju(controller, numAttached, totalSize, dist, bboxSize) {
   instance.totalSize = totalSize;
   instance.dist = dist;
   instance.bboxSize = bboxSize;
+  instance.sprite_index = global.currentTheme.gameOverWin;
   
-  //John TODO:  change sprite based on theme
 }
 ///@function scrGameOverObstacle(controller)
 ///@param controller which controller called this
@@ -60,11 +72,17 @@ function scrGameOverObstacle(controller, won) {
   var top = objPlayer.y - objPlayer.radius / 2;
   var bottom = objPlayer.y + objPlayer.radius / 2;
 
+
   with (objAttachable) {
     totalSize += radius;
   
     var furthest = instance_furthest(x, y, objAttachable);
+
     var curDist = distance_to_object(furthest);
+    if (numAttached == 1) {      
+      curDist = 0;
+      furthest = self.id; 
+    }
     if (distance_to_object(objPlayer) > curDist) {
       furthest = objPlayer; 
       curDist = distance_to_object(furthest) + objPlayer.radius / 2;    
@@ -101,11 +119,11 @@ function scrGameOverObstacle(controller, won) {
   instance.totalSize = totalSize;
   instance.won = won;
   
-  //John TODO:  change sprite based on theme and winning
+  
   if (won) {
-    
+    instance.sprite_index = global.currentTheme.gameOverWin;  
   } else {
-    
+    instance.sprite_index = global.currentTheme.gameOverFail;
   }
   
 }
