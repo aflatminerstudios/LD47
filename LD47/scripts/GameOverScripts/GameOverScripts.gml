@@ -22,6 +22,9 @@ function scrGameOverCleanup(controller) {
   with (objDetached) {
     instance_destroy(); 
   }
+  with (objNoNoParent) {
+    instance_destroy(); 
+  }
 }
 
 ///@function scrGameOverKaiju(controller)
@@ -32,7 +35,7 @@ function scrSpawnGameOver(controller, which) {
   var camY = camera_get_view_y(view_camera[0]);
   var camWidth = camera_get_view_width(view_camera[0]);
   var camHeight = camera_get_view_height(view_camera[0]);
-  instance = instance_create_layer(camX + camWidth / 2, camY + camHeight / 2, "UI", which);
+  instance = instance_create_layer(camX + 400, camY + 80, "UI", which);
   
   return instance;
 }

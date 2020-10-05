@@ -8,14 +8,14 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 505,
-  "bbox_top": 1,
-  "bbox_bottom": 386,
+  "bbox_right": 799,
+  "bbox_top": 0,
+  "bbox_bottom": 159,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 506,
-  "height": 387,
+  "width": 800,
+  "height": 160,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"c13f0fd0-6770-4320-83b3-925e8d1a4337","path":"sprites/sprGOFail/sprGOFail.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"c13f0fd0-6770-4320-83b3-925e8d1a4337","path":"sprites/sprGOFail/sprGOFail.yy",},"LayerId":{"name":"ffe4aac4-5397-433f-836a-94b30bd59bb8","path":"sprites/sprGOFail/sprGOFail.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprGOFail","path":"sprites/sprGOFail/sprGOFail.yy",},"resourceVersion":"1.0","name":"c13f0fd0-6770-4320-83b3-925e8d1a4337","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"07b5f1b0-93fe-499a-a276-67ef0d52daa7","path":"sprites/sprGOFail/sprGOFail.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"07b5f1b0-93fe-499a-a276-67ef0d52daa7","path":"sprites/sprGOFail/sprGOFail.yy",},"LayerId":{"name":"7dbb74f6-8d34-4cec-bf80-7ef01de0289d","path":"sprites/sprGOFail/sprGOFail.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprGOFail","path":"sprites/sprGOFail/sprGOFail.yy",},"resourceVersion":"1.0","name":"07b5f1b0-93fe-499a-a276-67ef0d52daa7","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"sprGOFail","path":"sprites/sprGOFail/sprGOFail.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"a5de93fa-b888-49b6-a41e-70d5974d2874","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c13f0fd0-6770-4320-83b3-925e8d1a4337","path":"sprites/sprGOFail/sprGOFail.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"0fc1773f-aacb-45cd-b3f8-10649b9db0bf","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"07b5f1b0-93fe-499a-a276-67ef0d52daa7","path":"sprites/sprGOFail/sprGOFail.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -54,8 +54,8 @@
     "backdropHeight": 768,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 253,
-    "yorigin": 193,
+    "xorigin": 400,
+    "yorigin": 80,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprGOFail","path":"sprites/sprGOFail/sprGOFail.yy",},
@@ -65,7 +65,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"ffe4aac4-5397-433f-836a-94b30bd59bb8","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"7dbb74f6-8d34-4cec-bf80-7ef01de0289d","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
     "name": "GameOverOverlays",

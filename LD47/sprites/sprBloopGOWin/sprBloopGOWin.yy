@@ -8,14 +8,14 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 505,
-  "bbox_top": 1,
-  "bbox_bottom": 386,
+  "bbox_right": 799,
+  "bbox_top": 0,
+  "bbox_bottom": 159,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 506,
-  "height": 387,
+  "width": 800,
+  "height": 160,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"fe1c6dd1-bc84-4537-b64d-7c401f397464","path":"sprites/sprBloopGOWin/sprBloopGOWin.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"fe1c6dd1-bc84-4537-b64d-7c401f397464","path":"sprites/sprBloopGOWin/sprBloopGOWin.yy",},"LayerId":{"name":"2637d57c-02af-42fd-bcf8-b02bf49d85da","path":"sprites/sprBloopGOWin/sprBloopGOWin.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprBloopGOWin","path":"sprites/sprBloopGOWin/sprBloopGOWin.yy",},"resourceVersion":"1.0","name":"fe1c6dd1-bc84-4537-b64d-7c401f397464","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"c38ae93c-a9fb-4488-8f57-5c9a513c1f85","path":"sprites/sprBloopGOWin/sprBloopGOWin.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"c38ae93c-a9fb-4488-8f57-5c9a513c1f85","path":"sprites/sprBloopGOWin/sprBloopGOWin.yy",},"LayerId":{"name":"a7573dd6-e349-4adb-9e6a-0d7260db9cef","path":"sprites/sprBloopGOWin/sprBloopGOWin.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprBloopGOWin","path":"sprites/sprBloopGOWin/sprBloopGOWin.yy",},"resourceVersion":"1.0","name":"c38ae93c-a9fb-4488-8f57-5c9a513c1f85","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"sprBloopGOWin","path":"sprites/sprBloopGOWin/sprBloopGOWin.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"0fc9d3ee-4335-441e-9962-74427792400a","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fe1c6dd1-bc84-4537-b64d-7c401f397464","path":"sprites/sprBloopGOWin/sprBloopGOWin.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"16664209-dbaf-4ce4-b9a1-777c4dc9533c","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c38ae93c-a9fb-4488-8f57-5c9a513c1f85","path":"sprites/sprBloopGOWin/sprBloopGOWin.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -54,8 +54,8 @@
     "backdropHeight": 768,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 253,
-    "yorigin": 193,
+    "xorigin": 400,
+    "yorigin": 80,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprBloopGOWin","path":"sprites/sprBloopGOWin/sprBloopGOWin.yy",},
@@ -65,7 +65,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"2637d57c-02af-42fd-bcf8-b02bf49d85da","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"a7573dd6-e349-4adb-9e6a-0d7260db9cef","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
     "name": "GameOverOverlays",

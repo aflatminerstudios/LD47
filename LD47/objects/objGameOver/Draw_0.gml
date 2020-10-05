@@ -17,23 +17,25 @@ if (objShaderControl.fadeAmount != 0) {
 }
 draw_self();
 
+var text1 = "Loops attached: ";
+var text2 = "Total loop size: ";
+var text3 = "Length: ";
+var text4 = "Total score: ";
+
+var score1 = 0;
+var score2 = 0;
+var score3 = 0;
+var score4 = 0;
+
 if (style == "Kaiju") {
 
   totalScore = ((totalSize +  sqrt(bboxSize) + dist) * numAttached ) ;
-
-  //Labels
-  draw_text(x - 198, y - 68, "Loops attached: "); 
-  draw_text(x - 198, y - 30, "Total loop size: ");
-  draw_text(x - 198, y + 6, "Length: ");
-  draw_text(x - 198, y + 46, "Total score: ");
   
-  //Scores
-  draw_set_halign(fa_right);
-  draw_text(x + 155, y - 68, scrAddSeparator(string_format(numAttached, 0, 0), ",", 3));
-  draw_text(x + 155, y - 30, scrAddSeparator(string_format(totalSize, 0, 0), ",", 3));
-  draw_text(x + 155, y + 6, scrAddSeparator(string_format(dist, 0, 0), ",", 3));
-  draw_text(x + 155, y + 46, scrAddSeparator(string_format(totalScore, 0, 0), ",", 3));
-  
+  score1 = scrAddSeparator(string_format(numAttached, 0, 0), ",", 3);
+  score2 = scrAddSeparator(string_format(totalSize, 0, 0), ",", 3);
+  score3 = scrAddSeparator(string_format(dist, 0, 0), ",", 3);
+  score4 = scrAddSeparator(string_format(totalScore, 0, 0), ",", 3);
+    
 }
 
 if (style == "Obstacle") {
@@ -48,25 +50,19 @@ if (style == "Obstacle") {
     draw_set_color(c_black);
   }
 
+  text1 = "Time: ";
+  text2 = "Loops attached: ";
+  text3 = "Length: ";
+  text4 = "Total score: ";
   
-  //Labels
-  draw_text(x - 198, y - 68, "Time: "); 
-  draw_text(x - 198, y - 30, "Loops attached: ");
-  draw_text(x - 198, y + 6, "Length: ");
-  draw_text(x - 198, y + 46, "Total score: ");
+  var seconds = timer/room_speed;
+	var timeString = string_format(seconds, 0, 2) + " s"
+  score1 = timeString;
+  score2 = scrAddSeparator(string_format(numAttached, 0, 0), ",", 3);
+  score3 = scrAddSeparator(string_format(dist, 0, 0), ",", 3);
+  score4 = scrAddSeparator(string_format(totalScore, 0, 0), ",", 3);
   
-  //Scores
-  draw_set_halign(fa_right);
-  draw_text(x + 155, y - 68, string_format(timer / room_speed, 0, 2) + " s");
-  draw_text(x + 155, y - 30, scrAddSeparator(string_format(numAttached, 0, 0), ",", 3));
-  draw_text(x + 155, y + 6, scrAddSeparator(string_format(dist, 0, 0), ",", 3));
-  draw_text(x + 155, y + 46, scrAddSeparator(string_format(totalScore, 0, 0), ",", 3));
   }
-
-//Reset everything
-if (objShaderControl.fadeAmount != 0) {
-  shader_reset();
-}
 
 if (style == "BulletBoss") {
 
@@ -75,20 +71,40 @@ if (style == "BulletBoss") {
   //totalScore = ((totalSize + sqrt(bboxSize) + dist) * numAttached * numAttached);
 	totalScore = timer * 2 + ships * 1 + loops*5;
 
-  //Labels
-  draw_text(x - 198, y - 68, "Time survived: "); 
-  draw_text(x - 198, y - 30, "Ships destroyed: ");
-  draw_text(x - 198, y + 6,  "Loops attached: ");
-  draw_text(x - 198, y + 46, "Total score: ");
+  text1 = "Time survived: ";
+  text2 = "Ships destroyed: ";
+  text3 = "Loops attached: ";
+  text4 = "Total score: ";
   
+  var seconds = timer/room_speed;
+	var timeString = string_format(seconds, 0, 2) + " s"
+  score1 = timeString;
+  score2 = scrAddSeparator(string_format(ships, 0, 0), ",", 3)
+  score3 = scrAddSeparator(string_format(loops, 0, 0), ",", 3)
+  score4 = scrAddSeparator(string_format(totalScore, 0, 0), ",", 3);
+
   //Scores
   draw_set_halign(fa_right);
-	var seconds = timer/room_speed;
-	var timeString = string_format(seconds, 0, 2) + " s"
-	draw_text(x + 155, y - 68, timeString);
-  draw_text(x + 155, y - 30, scrAddSeparator(string_format(ships, 0, 0), ",", 3));
-  draw_text(x + 155, y + 6, scrAddSeparator(string_format(loops, 0, 0), ",", 3));
-  draw_text(x + 155, y + 46, scrAddSeparator(string_format(totalScore, 0, 0), ",", 3));
+}
+
+//Labels
+draw_text(x - 360, y - 50, text1); 
+draw_text(x - 360, y - 20, text2);
+draw_text(x - 360, y + 10, text3);
+draw_text(x - 360, y + 40, text4);
+
+//Scores
+draw_set_halign(fa_right);
+draw_text(x - 15, y - 50, score1);
+draw_text(x - 15, y - 20, score2);
+draw_text(x - 15, y + 10, score3);
+draw_text(x - 15, y + 40, score4);
+
+
+
+//Reset everything
+if (objShaderControl.fadeAmount != 0) {
+  shader_reset();
 }
 
 draw_set_halign(oldAlign);
