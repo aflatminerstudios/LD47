@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"97d725b4-eb7a-41fe-92ee-6226f3f20416","path":"sprites/sprHUDTickerTapeBG/sprHUDTickerTapeBG.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"97d725b4-eb7a-41fe-92ee-6226f3f20416","path":"sprites/sprHUDTickerTapeBG/sprHUDTickerTapeBG.yy",},"LayerId":{"name":"39a05502-208b-47dc-9ab4-e825c434a68c","path":"sprites/sprHUDTickerTapeBG/sprHUDTickerTapeBG.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprHUDTickerTapeBG","path":"sprites/sprHUDTickerTapeBG/sprHUDTickerTapeBG.yy",},"resourceVersion":"1.0","name":"97d725b4-eb7a-41fe-92ee-6226f3f20416","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"4b47bb0b-fa43-4ee4-83a9-73e6ddae7e95","path":"sprites/sprLooHUDTickerTapeBG/sprLooHUDTickerTapeBG.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"4b47bb0b-fa43-4ee4-83a9-73e6ddae7e95","path":"sprites/sprLooHUDTickerTapeBG/sprLooHUDTickerTapeBG.yy",},"LayerId":{"name":"74c5b029-da7a-4968-bdc5-afaba0ba0bce","path":"sprites/sprLooHUDTickerTapeBG/sprLooHUDTickerTapeBG.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprLooHUDTickerTapeBG","path":"sprites/sprLooHUDTickerTapeBG/sprLooHUDTickerTapeBG.yy",},"resourceVersion":"1.0","name":"4b47bb0b-fa43-4ee4-83a9-73e6ddae7e95","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"sprHUDTickerTapeBG","path":"sprites/sprHUDTickerTapeBG/sprHUDTickerTapeBG.yy",},
+    "spriteId": {"name":"sprLooHUDTickerTapeBG","path":"sprites/sprLooHUDTickerTapeBG/sprLooHUDTickerTapeBG.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"6d9ccd4f-ad34-4813-9e2e-25f5e4249fb2","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"97d725b4-eb7a-41fe-92ee-6226f3f20416","path":"sprites/sprHUDTickerTapeBG/sprHUDTickerTapeBG.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"30f4fdf2-cb7f-47c2-a757-ff8c62806fe1","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4b47bb0b-fa43-4ee4-83a9-73e6ddae7e95","path":"sprites/sprLooHUDTickerTapeBG/sprLooHUDTickerTapeBG.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,21 +58,21 @@
     "yorigin": 53,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sprHUDTickerTapeBG","path":"sprites/sprHUDTickerTapeBG/sprHUDTickerTapeBG.yy",},
+    "parent": {"name":"sprLooHUDTickerTapeBG","path":"sprites/sprLooHUDTickerTapeBG/sprLooHUDTickerTapeBG.yy",},
     "resourceVersion": "1.3",
-    "name": "sprHUDTickerTapeBG",
+    "name": "sprLooHUDTickerTapeBG",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"39a05502-208b-47dc-9ab4-e825c434a68c","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"74c5b029-da7a-4968-bdc5-afaba0ba0bce","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
     "name": "GUI",
     "path": "folders/Sprites/GUI.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sprHUDTickerTapeBG",
+  "name": "sprLooHUDTickerTapeBG",
   "tags": [],
   "resourceType": "GMSprite",
 }

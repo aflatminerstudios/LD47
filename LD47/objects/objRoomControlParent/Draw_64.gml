@@ -8,5 +8,5 @@ if (!playing) {
   theTime = max(ceil((preTime + zoomTime - timer)/room_speed), 0);
 }
 
-scrDrawTimer(theTime, 400, 32, c_red);
+scrDrawTimer(theTime, 400, 32, global.currentTheme.fntColor);
 

@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"13fbbe2a-b6bc-4ea3-91b3-82c8ac2bcaf4","path":"sprites/sprHUDTimerCircleBloop/sprHUDTimerCircleBloop.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"13fbbe2a-b6bc-4ea3-91b3-82c8ac2bcaf4","path":"sprites/sprHUDTimerCircleBloop/sprHUDTimerCircleBloop.yy",},"LayerId":{"name":"5db499c2-7bed-40f9-948f-edf511a3247e","path":"sprites/sprHUDTimerCircleBloop/sprHUDTimerCircleBloop.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprHUDTimerCircleBloop","path":"sprites/sprHUDTimerCircleBloop/sprHUDTimerCircleBloop.yy",},"resourceVersion":"1.0","name":"13fbbe2a-b6bc-4ea3-91b3-82c8ac2bcaf4","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"d3990c84-f34e-4dfc-b958-29f982955d73","path":"sprites/sprBloopHUDTimerCircle/sprBloopHUDTimerCircle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"d3990c84-f34e-4dfc-b958-29f982955d73","path":"sprites/sprBloopHUDTimerCircle/sprBloopHUDTimerCircle.yy",},"LayerId":{"name":"041a9ee6-9a44-4f8a-a254-403a189570d9","path":"sprites/sprBloopHUDTimerCircle/sprBloopHUDTimerCircle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprBloopHUDTimerCircle","path":"sprites/sprBloopHUDTimerCircle/sprBloopHUDTimerCircle.yy",},"resourceVersion":"1.0","name":"d3990c84-f34e-4dfc-b958-29f982955d73","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"sprHUDTimerCircleBloop","path":"sprites/sprHUDTimerCircleBloop/sprHUDTimerCircleBloop.yy",},
+    "spriteId": {"name":"sprBloopHUDTimerCircle","path":"sprites/sprBloopHUDTimerCircle/sprBloopHUDTimerCircle.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"95df32ff-a62b-4d1a-8c07-9c2b2b2c9e10","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"13fbbe2a-b6bc-4ea3-91b3-82c8ac2bcaf4","path":"sprites/sprHUDTimerCircleBloop/sprHUDTimerCircleBloop.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"68868a9d-7eba-4ceb-b353-5074f50603ae","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d3990c84-f34e-4dfc-b958-29f982955d73","path":"sprites/sprBloopHUDTimerCircle/sprBloopHUDTimerCircle.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,21 +58,21 @@
     "yorigin": 32,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sprHUDTimerCircleBloop","path":"sprites/sprHUDTimerCircleBloop/sprHUDTimerCircleBloop.yy",},
+    "parent": {"name":"sprBloopHUDTimerCircle","path":"sprites/sprBloopHUDTimerCircle/sprBloopHUDTimerCircle.yy",},
     "resourceVersion": "1.3",
-    "name": "sprHUDTimerCircleBloop",
+    "name": "sprBloopHUDTimerCircle",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"5db499c2-7bed-40f9-948f-edf511a3247e","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"041a9ee6-9a44-4f8a-a254-403a189570d9","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
     "name": "GUI",
     "path": "folders/Sprites/GUI.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sprHUDTimerCircleBloop",
+  "name": "sprBloopHUDTimerCircle",
   "tags": [],
   "resourceType": "GMSprite",
 }

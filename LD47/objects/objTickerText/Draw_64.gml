@@ -7,7 +7,7 @@ var oldColor = draw_get_color();
 var oldAlign = draw_get_halign();    
         
 draw_set_font(fntTicker);
-draw_set_color(global.currentTheme.fntColor);
+draw_set_color(global.currentTheme.tickerColor);
 draw_set_halign(fa_center);
 
 if (objShaderControl.fadeAmount != 0) {

@@ -13,8 +13,8 @@ placeholder = instance_create_layer(room_width/2, room_height/2, "Glompables", o
 alarm[0] = glompableSpawnTime;
 
 playing = false;
-preTime = 2 * room_speed;
-zoomTime = 1 * room_speed;
+preTime = 1 * room_speed;
+zoomTime = 2 * room_speed;
 zoomStart = 1;
 zoomTarget = 0.5;
 zoom = zoomStart;
@@ -39,7 +39,7 @@ view_camera[0] = camera_create_view(0, 0, room_width, room_height, 0, noone, 5, 
 
 //For ticker text
 ticker = instance_create_layer(400, 53.5, "UI", objTicker);
-currentText = "";
+
 
 //Create other controllers
 instance_create_layer(0, 0, "Controllers", objSpiroControl);

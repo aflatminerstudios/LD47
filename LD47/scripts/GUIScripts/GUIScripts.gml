@@ -11,17 +11,23 @@ function scrDrawTimer(time, xCoord, yCoord, timerColor){
   draw_set_font(fntTimer);
   draw_set_color(timerColor);
   draw_set_halign(fa_center);
-  shader_set(shd_greyscale);
-  shader_set_uniform_f(objShaderControl.fade, objShaderControl.fadeAmount);
-  draw_sprite(sprHUDTimerCircle, 0, xCoord, yCoord);
+  
+  if (objShaderControl.fadeAmount != 0) {
+    shader_set(shd_greyscale);
+    shader_set_uniform_f(objShaderControl.fade, objShaderControl.fadeAmount);    
+  }
+  
+  draw_sprite(global.currentTheme.hudTimerCircle, 0, xCoord, yCoord);
 	
 	var timeString = string(time);
 	if(room == roomBulletBoss)
 		timeString = string_format(time, 0, 2);
 		
-  
+  if (objShaderControl.fadeAmount != 0) {
+    shader_reset();
+  }
   draw_text_color(xCoord, yCoord + 8, time, timerColor, timerColor, timerColor, timerColor, 1);
-  shader_reset();
+
   draw_set_halign(oldAlign);
   draw_set_color(oldColor);
   draw_set_font(oldFont);

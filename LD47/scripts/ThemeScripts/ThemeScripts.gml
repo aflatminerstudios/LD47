@@ -12,7 +12,8 @@ function scrApplyNonoTheme(nonoTheme) {
 
 // An overall theme (Stuck In The Loop, Stuck In The Loop, etc.)
 ColorTheme = function(_name, _playerCircleTheme, _circleThemes, _backgroundColor, _backgroundImage,
-											_nonoTheme, _gameOverWin, _gameOverFail, _fntColor, _hitSprite) constructor {
+											_nonoTheme, _gameOverWin, _gameOverFail, _fntColor, _hitSprite,
+                      _hudTickerBG, _hudTimerCircle, _tickerColor) constructor {
 	name = _name;
 	// CircleTheme
 	playerCircleTheme = _playerCircleTheme
@@ -26,7 +27,9 @@ ColorTheme = function(_name, _playerCircleTheme, _circleThemes, _backgroundColor
   gameOverFail = _gameOverFail;
   fntColor = _fntColor;
   hitSprite = _hitSprite;
-	//  _hudTickerBG, _hudTimerCircle
+	hudTickerBG =  _hudTickerBG; 
+  hudTimerCircle = _hudTimerCircle;
+  tickerColor = _tickerColor;
 };
 
 // A single circle
@@ -352,7 +355,10 @@ global.stuckInTheLoopTheme = new ColorTheme(
   sprGOWin,
   sprGOFail,
   c_white,
-  sprLoopHit
+  sprLoopHit,
+  sprHUDTickerTapeBG,
+  sprHUDTimerCircle,
+  c_white
 );
 
 ////////////////////////////
@@ -374,7 +380,10 @@ global.stuckInTheBloopTheme = new ColorTheme(
   sprBloopGOWin,
   sprBloopGOFail,
   c_white,
-  sprBloopHit
+  sprBloopHit,
+  sprBloopHUDTickerTapeBG,
+  sprBloopHUDTimerCircle,
+  c_white
 );
 
 ////////////////////////////
@@ -398,8 +407,55 @@ global.stuckInTheLooTheme = new ColorTheme(
   sprLooGOFail,
   c_black,
   sprLooHit,
+  sprLooHUDTickerTapeBG,
+  sprLooHUDTimerCircle,
+  $02e4ff
 );
 
 // Set up the global values
 global.currentTheme = global.stuckInTheLoopTheme;
 global.colorBlindModeOn = true;
+
+
+//Function for changing theme dynamically
+/// scrSetTheme
+function scrApplyTheme() {
+  var theme = global.currentTheme;
+  
+  with (objBtnModeSelect) {
+    if (theme.name == "Stuck In The Loo") {      
+      onButton = onLoo;
+      offButton = offLoo;
+    } else {
+      onButton = onBase;
+      offButton = offBase;
+    }
+  }
+  
+  with (objCircleParent) {
+    circleTheme = global.currentTheme.circleThemes[ irandom_range(0, array_length(global.currentTheme.circleThemes)-1) ]; 
+  }
+ 
+  if (room != roomTitleScreen) {
+    // Set up the BG based on the current theme
+    // This coud be moved to a script and called anytime inside a game mode
+    var colorBGLayerId = layer_get_id("Background");
+    var colorBGId = layer_background_get_id(colorBGLayerId);
+    layer_background_blend(colorBGId, global.currentTheme.backgroundImage);
+
+    var imageBGLayerId = layer_get_id("BackgroundImage");
+    var imageBGId = layer_background_get_id(imageBGLayerId);
+    layer_background_sprite(imageBGId, global.currentTheme.backgroundImage);
+    layer_background_htiled(imageBGId, true);
+    layer_background_vtiled(imageBGId, true); 
+ 
+  }
+  with (objGameOver) {
+   if (won) {
+     sprite_index = global.currentTheme.gameOverWin; 
+   } else {
+     sprite_index = global.currentTheme.gameOverFail; 
+   }
+  }
+ 
+}

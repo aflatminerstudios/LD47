@@ -9,16 +9,6 @@ function scrSetThemeOnController(type){
     theme = type;
   }
   
-  with (objBtnModeSelect) {
-    if (type == "Loo") {      
-      onButton = onLoo;
-      offButton = offLoo;
-    } else {
-      onButton = onBase;
-      offButton = offBase;
-    }
-  }
-  
   if (type == "Loop") {
     global.currentTheme = global.stuckInTheLoopTheme;
   } else if (type == "Loo") {
@@ -26,6 +16,8 @@ function scrSetThemeOnController(type){
   } else {
     global.currentTheme = global.stuckInTheBloopTheme;
   }
+  
+  scrApplyTheme();
   
   scrSetSelectButtons();  
 }

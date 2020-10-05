@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprHUDtickerTapeBG",
-    "path": "sprites/sprHUDtickerTapeBG/sprHUDtickerTapeBG.yy",
+    "name": "sprHUDTickerTapeBG",
+    "path": "sprites/sprHUDTickerTapeBG/sprHUDTickerTapeBG.yy",
   },
   "solid": false,
   "visible": true,
