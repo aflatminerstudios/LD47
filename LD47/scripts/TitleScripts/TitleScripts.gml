@@ -70,7 +70,7 @@ function scrPlayGame() {
   } else if (mode == "Obstacle") {
     targetRoom = choose(roomObstacle, roomObstacle2); 
   } else if (mode == "Fighters") {
-    targetRoom = roomBulletBoss; 
+    targetRoom = choose(roomBulletBoss, roomBulletBoss2); 
   }
   
   

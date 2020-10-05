@@ -80,6 +80,7 @@
     {"id":{"name":"sprGlowPink","path":"sprites/sprGlowPink/sprGlowPink.yy",},"order":1,},
     {"id":{"name":"objGlompable","path":"objects/objGlompable/objGlompable.yy",},"order":0,},
     {"id":{"name":"sprBtnLooOn","path":"sprites/sprBtnLooOn/sprBtnLooOn.yy",},"order":20,},
+    {"id":{"name":"roomBulletBoss2","path":"rooms/roomBulletBoss2/roomBulletBoss2.yy",},"order":8,},
     {"id":{"name":"sprGOWin","path":"sprites/sprGOWin/sprGOWin.yy",},"order":3,},
     {"id":{"name":"sprCreditsButton","path":"sprites/sprCreditsButton/sprCreditsButton.yy",},"order":2,},
     {"id":{"name":"objRoomObstacleControl","path":"objects/objRoomObstacleControl/objRoomObstacleControl.yy",},"order":4,},
@@ -242,6 +243,7 @@
     {"name":"roomObstacle","path":"rooms/roomObstacle/roomObstacle.yy",},
     {"name":"roomBulletBoss","path":"rooms/roomBulletBoss/roomBulletBoss.yy",},
     {"name":"roomObstacle2","path":"rooms/roomObstacle2/roomObstacle2.yy",},
+    {"name":"roomBulletBoss2","path":"rooms/roomBulletBoss2/roomBulletBoss2.yy",},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},

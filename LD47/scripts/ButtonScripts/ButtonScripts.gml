@@ -5,7 +5,7 @@ function scrPressMode() {
 }
 
 function scrPressReplay() {
-  room_restart();
+  scrPlayGame();
 }
 
 function scrPressTheme() {
