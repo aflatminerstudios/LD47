@@ -31,6 +31,15 @@ function scrGameOverCleanup(controller) {
 ///@param controller which controller called this
 ///@param which which object to spanw
 function scrSpawnGameOver(controller, which) {
+    
+  /*var camWidth = camera_get_view_width(view_camera[0]);
+  var camHeight = camera_get_view_height(view_camera[0]);
+  var camX = objPlayer.x - camWidth / 2;//camera_get_view_x(view_camera[0]);
+  var camY = objPlayer.y - camHeight / 2;;//camera_get_view_y(view_camera[0]);
+  
+  camera_set_view_pos(view_camera[0], camX, camY);
+  camera_set_view_target(view_camera[0], objPlayer);*/  
+    
   var camX = camera_get_view_x(view_camera[0]);
   var camY = camera_get_view_y(view_camera[0]);
   var camWidth = camera_get_view_width(view_camera[0]);
@@ -137,7 +146,7 @@ function scrGameOverObstacle(controller, won) {
 ///@param shipsDestroyed Furthest distance
 ///@param timeSurvived Time on clock on game over
 function scrGameOverBulletBoss(controller, totalAttached, shipsDestroyed, timeSurvived) {
-  
+  show_debug_message("In bullet boss");
   instance = scrSpawnGameOver(self.id, objGameOver);
   scrGameOverCleanup(controller);
   instance.style = "BulletBoss";

@@ -56,7 +56,7 @@ if (style == "Obstacle") {
   text4 = "Total score: ";
   
   var seconds = timer/room_speed;
-	var timeString = string_format(seconds, 0, 2) + " s"
+	var timeString = string_format(seconds, 0, 2) + "s"
   score1 = timeString;
   score2 = scrAddSeparator(string_format(numAttached, 0, 0), ",", 3);
   score3 = scrAddSeparator(string_format(dist, 0, 0), ",", 3);
@@ -77,21 +77,20 @@ if (style == "BulletBoss") {
   text4 = "Total score: ";
   
   var seconds = timer/room_speed;
-	var timeString = string_format(seconds, 0, 2) + " s"
+	var timeString = string_format(seconds, 0, 2) + "s"
   score1 = timeString;
   score2 = scrAddSeparator(string_format(ships, 0, 0), ",", 3)
   score3 = scrAddSeparator(string_format(loops, 0, 0), ",", 3)
   score4 = scrAddSeparator(string_format(totalScore, 0, 0), ",", 3);
 
-  //Scores
-  draw_set_halign(fa_right);
+  
 }
 
 //Labels
-draw_text(x - 360, y - 50, text1); 
-draw_text(x - 360, y - 20, text2);
-draw_text(x - 360, y + 10, text3);
-draw_text(x - 360, y + 40, text4);
+draw_text(x - 370, y - 50, text1); 
+draw_text(x - 370, y - 20, text2);
+draw_text(x - 370, y + 10, text3);
+draw_text(x - 370, y + 40, text4);
 
 //Scores
 draw_set_halign(fa_right);
