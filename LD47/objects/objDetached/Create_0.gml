@@ -27,6 +27,3 @@ skip = false;
 skipCount = 0;
 maxSkipCount = room_speed * 0.55;
 created = 0;
-
-
-alarm[1] = 2;

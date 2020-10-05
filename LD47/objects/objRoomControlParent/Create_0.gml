@@ -48,8 +48,10 @@ instance_create_layer(0, 0, "Controllers", objSpiroControl);
 var glowDepth = layer_get_depth(layer_get_id("Glompables")) + 50;
 instance_create_depth(0, 0, glowDepth, objCircleGlowRenderer);
 
+textList = ds_list_create();
 
-
+ds_list_add(textList, "The only limit is yourself.", "Keep it up!", "Don't stop believing!", "I believe in you!", "Watch out!!");
+canSpawnText = true;
 
 //REMOVE: Sets volume of everything to zero
 var num = audio_get_listener_count();

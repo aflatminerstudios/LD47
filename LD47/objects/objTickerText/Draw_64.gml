@@ -14,16 +14,28 @@ if (objShaderControl.fadeAmount != 0) {
   shader_set(shd_greyscale);
   shader_set_uniform_f(objShaderControl.fade, objShaderControl.fadeAmount);    
 }
-draw_text(x + textOffset, y, text);
+draw_text(textOffset, y, text);
 
 if (objShaderControl.fadeAmount != 0) {
   shader_reset();
 }
 
+
+var location = textOffset + string_width(text);
+
 //This is here to get the proper width
-if (x + textOffset + string_width(text) <= textEnd) {
+if (location <= textEnd) {
   //show_debug_message("Destroying!");
+  if (instance_number(objTickerText) <= 1) {
+    show_message("Setting to true");
+    objRoomControlParent.canSpawnText = true;     
+  }
   instance_destroy();
+} else if (location <= 2 * camera_get_view_width(view_camera[0]) / 3) {
+  if (instance_number(objTickerText) <= 1 && objRoomControlParent.alarm[5] <= 0) {
+    
+    objRoomControlParent.alarm[5] = irandom_range(1, room_speed/2);
+  }
 }
 
 draw_set_halign(oldAlign);

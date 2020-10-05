@@ -13,7 +13,7 @@ maxTimer = room_speed * 30;
 preTime = 1 * room_speed;
 zoomTime = 2 * room_speed;
 zoomStart = 1;
-zoomTarget = 0.25;
+zoomTarget = (1/3);
 zoom = zoomStart;
 alarm[4] = preTime + zoomTime;
 

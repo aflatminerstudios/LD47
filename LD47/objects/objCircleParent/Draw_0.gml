@@ -38,4 +38,4 @@ draw_set_valign(fa_middle);
 // theme name
 //draw_text_transformed(x, y, circleTheme.name, 1, 1, 0);
 // radius
-draw_text_transformed(x, y, radius, 1, 1, 0);
+//draw_text_transformed(x, y, radius, 1, 1, 0);

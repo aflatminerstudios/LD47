@@ -11,10 +11,15 @@ if (keyboard_check_pressed(vk_escape)) {
 
 timer++;
 
-if (instance_number(objTickerText) == 0) {
+
+//show_debug_message(string(canSpawnText) + " alarm: " + string(alarm[5]));
+
+if ((zoom <= zoomTarget) && canSpawnText) {
+  var r = irandom_range(0, ds_list_size(textList) - 1);
+  var theText = textList[| r];
   
-  scrScrollText(ticker, "Here is some text text!");
-  
+  scrScrollText(ticker, theText);
+  canSpawnText = false;
 }
 
 if (!playing) {
@@ -24,3 +29,4 @@ if (!playing) {
   }
   
 }
+
