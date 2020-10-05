@@ -20,7 +20,7 @@ if (ready) {
   } else if (keyboard_check_pressed(ord("K"))) {
     room_goto(roomKaiju); 
   } else if (keyboard_check_pressed(ord("O"))) {
-    room_goto(roomObstacle); 
+    room_goto(roomObstacle2); 
   } else if (keyboard_check_pressed(ord("B"))) {
     room_goto(roomBulletBoss); 
   } else if (keyboard_check_pressed(ord("T"))) {

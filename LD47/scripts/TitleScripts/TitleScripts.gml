@@ -68,7 +68,7 @@ function scrPlayGame() {
   if (mode == "Collector") {
     targetRoom = roomKaiju;
   } else if (mode == "Obstacle") {
-    targetRoom = roomObstacle; 
+    targetRoom = choose(roomObstacle, roomObstacle2); 
   } else if (mode == "Fighters") {
     targetRoom = roomBulletBoss; 
   }

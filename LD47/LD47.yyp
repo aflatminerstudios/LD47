@@ -113,6 +113,7 @@
     {"id":{"name":"objReadyGo","path":"objects/objReadyGo/objReadyGo.yy",},"order":2,},
     {"id":{"name":"sprBloopGOFail","path":"sprites/sprBloopGOFail/sprBloopGOFail.yy",},"order":0,},
     {"id":{"name":"sprLooHit","path":"sprites/sprLooHit/sprLooHit.yy",},"order":2,},
+    {"id":{"name":"roomObstacle2","path":"rooms/roomObstacle2/roomObstacle2.yy",},"order":7,},
     {"id":{"name":"sprHUDtickerTapeBGBloop","path":"sprites/sprHUDtickerTapeBGBloop/sprHUDtickerTapeBGBloop.yy",},"order":6,},
     {"id":{"name":"objTestMichaControl","path":"objects/objTestMichaControl/objTestMichaControl.yy",},"order":8,},
     {"id":{"name":"sprBtnPlay","path":"sprites/sprBtnPlay/sprBtnPlay.yy",},"order":29,},
@@ -129,6 +130,7 @@
     {"id":{"name":"objNoNoTurbine","path":"objects/objNoNoTurbine/objNoNoTurbine.yy",},"order":3,},
     {"id":{"name":"afm_sprButtonUp","path":"sprites/afm_sprButtonUp/afm_sprButtonUp.yy",},"order":0,},
     {"id":{"name":"sprHUDtickerTapeBGLoo","path":"sprites/sprHUDtickerTapeBGLoo/sprHUDtickerTapeBGLoo.yy",},"order":7,},
+    {"id":{"name":"objRoomObstacleControl2","path":"objects/objRoomObstacleControl2/objRoomObstacleControl2.yy",},"order":6,},
     {"id":{"name":"objBtnThemeSelect","path":"objects/objBtnThemeSelect/objBtnThemeSelect.yy",},"order":4,},
     {"id":{"name":"sprCircleBloopNavy","path":"sprites/sprCircleBloopNavy/sprCircleBloopNavy.yy",},"order":2,},
     {"id":{"name":"objNoNoBomb","path":"objects/objNoNoBomb/objNoNoBomb.yy",},"order":2,},
@@ -239,6 +241,7 @@
     {"name":"roomKaiju","path":"rooms/roomKaiju/roomKaiju.yy",},
     {"name":"roomObstacle","path":"rooms/roomObstacle/roomObstacle.yy",},
     {"name":"roomBulletBoss","path":"rooms/roomBulletBoss/roomBulletBoss.yy",},
+    {"name":"roomObstacle2","path":"rooms/roomObstacle2/roomObstacle2.yy",},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
