@@ -78,7 +78,7 @@ function scrPlayGame() {
   } else if (mode == "Obstacle") {
     targetRoom = roomObstacle; 
   } else if (mode == "Fighters") {
-    targetRoom = roomTitleScreen; 
+    targetRoom = roomBulletBoss; 
   }
   
   
