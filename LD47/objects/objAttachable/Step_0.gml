@@ -24,3 +24,12 @@ if (place_meeting(x, y, objNoNoParent)) {
   y = oldY;  
   scrDetachAttachable(self.id, collObject);
 }
+
+//if (place_meeting(x, y, objNoNoBullet)) {
+//  var collObject = instance_place(x, y, objNoNoBullet);
+//  x = oldX;
+//  y = oldY;  
+//  scrDetachAttachable(self.id, collObject);
+//	instance_destroy(collObject);
+//	instance_destroy();
+//} else 

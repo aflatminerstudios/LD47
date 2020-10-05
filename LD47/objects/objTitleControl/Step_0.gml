@@ -21,6 +21,8 @@ if (ready) {
     room_goto(roomKaiju); 
   } else if (keyboard_check_pressed(ord("O"))) {
     room_goto(roomObstacle); 
+  } else if (keyboard_check_pressed(ord("B"))) {
+    room_goto(roomBulletBoss); 
   } else if (keyboard_check_pressed(ord("T"))) {
     if(global.currentTheme == global.stuckInTheLoopTheme)
 			global.currentTheme = global.stuckInTheBloopTheme;

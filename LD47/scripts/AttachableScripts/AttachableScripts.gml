@@ -3,9 +3,11 @@
 function scrAttachGlompableToObject(glompableInstance, parentAttachableInstance){
 	
 	// You can only attach to the player or objects who inherit from objAttachable
-	if (object_is_ancestor(parentAttachableInstance.object_index, objAttachable) ||
-	    object_is_ancestor(parentAttachableInstance.object_index, objPlayer)) {
-		show_debug_message("Warning: The target instance (" + string(parentAttachableInstance) + ") cannot be attached to. (Does it inherit from objAttachable?");
+	if (parentAttachableInstance.object_index != objAttachable &&
+			parentAttachableInstance.object_index != objPlayer &&
+			!object_is_ancestor(parentAttachableInstance.object_index, objAttachable) &&
+	    !object_is_ancestor(parentAttachableInstance.object_index, objPlayer)) {
+		show_debug_message("Warning: The target instance (" + string(parentAttachableInstance.id) + ") cannot be attached to. (Does it inherit from objAttachable?");
 		return;
 	}
 	
@@ -29,7 +31,10 @@ function scrAttachGlompableToObject(glompableInstance, parentAttachableInstance)
 
 	// Create a new instance of objAttachable
 	// Make this accept a specific object_index defined in the glompable (child of objAttachable) --  Micha TODO
-	var newAttachable = instance_create_layer(glompableInstance.x, glompableInstance.y, glompableInstance.layer, objAttachable);
+	var newObjectIndex = objAttachable;
+	if(room == roomBulletBoss)
+		newObjectIndex = objAttachableShooter;
+	var newAttachable = instance_create_layer(glompableInstance.x, glompableInstance.y, glompableInstance.layer, newObjectIndex);
 	instance_destroy(glompableInstance);
 	with(newAttachable) {
 	//with(glompableInstance) {

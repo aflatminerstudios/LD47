@@ -3,7 +3,6 @@
 
 event_inherited();
 
-
 root = noone;
 distanceFromRoot = 0;
 angleFromRoot = 0;
