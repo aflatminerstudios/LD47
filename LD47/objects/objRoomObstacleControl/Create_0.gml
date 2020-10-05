@@ -28,3 +28,5 @@ var theText = "Collect loops and get to the goal!";
 var tickerInstance = scrScrollText(ticker, theText);
 canSpawnText = false;
 tickerInstance.textOffset = room_width/3;
+
+alarm[6] = preTime + zoomTime + room_speed/2;

@@ -14,6 +14,7 @@ spawnPoint[0] = x + lengthdir_x(radius + bullet.radius + 1, angle);
 spawnPoint[1] = y + lengthdir_y(radius + bullet.radius + 1, angle);
 bullet.x = spawnPoint[0];
 bullet.y = spawnPoint[1];
+show_debug_message("Shooting");
 
 
 alarm[9] = room_speed/bulletsPerSecond;

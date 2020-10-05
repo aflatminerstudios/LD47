@@ -25,6 +25,7 @@
     {"isDnD":false,"eventNum":74,"eventType":8,"collisionObjectId":null,"parent":{"name":"objRoomObstacleControl","path":"objects/objRoomObstacleControl/objRoomObstacleControl.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"objRoomObstacleControl","path":"objects/objRoomObstacleControl/objRoomObstacleControl.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":1,"eventType":2,"collisionObjectId":null,"parent":{"name":"objRoomObstacleControl","path":"objects/objRoomObstacleControl/objRoomObstacleControl.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":6,"eventType":2,"collisionObjectId":null,"parent":{"name":"objRoomObstacleControl","path":"objects/objRoomObstacleControl/objRoomObstacleControl.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
