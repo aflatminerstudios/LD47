@@ -80,7 +80,7 @@ function scrAttachGlompableToObject(glompableInstance, parentAttachableInstance)
 
 function scrDetachAttachable(attachable, collObject) {
   var newDetached = instance_create_layer(attachable.x, attachable.y, attachable.layer, objDetached);
-  show_debug_message("Detaching " + string(attachable));
+  
   with (newDetached) {
     self.parentAttachable = attachable.parentAttachable;
 		

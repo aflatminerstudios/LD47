@@ -17,7 +17,14 @@ while (place_meeting(x, y, objNoNoParent)) {
   count++;
   var collObject = instance_place(x, y, objNoNoParent);
 
+  
+
   internalAngle = point_direction(x, y, collObject.x, collObject.y);//, x, y);
+  
+  /*if (collObject.object_index == objNoNoTurbine) {
+    show_debug_message(string(x) + ", " + string(y) + " : " + string(collObject.x) + " " + string(collObject.y));
+    show_debug_message(internalAngle);
+  }*/
   
   var xx = x + lengthdir_x(sprite_width / 2, internalAngle);
   var yy = y + lengthdir_y(sprite_height / 2, internalAngle);

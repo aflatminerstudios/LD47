@@ -25,7 +25,7 @@ image_yscale = scale;
 
 skip = false;
 skipCount = 0;
-maxSkipCount = room_speed * 0.5;
+maxSkipCount = room_speed * 0.55;
 created = 0;
 
 
