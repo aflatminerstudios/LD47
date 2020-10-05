@@ -57,6 +57,7 @@ function scrSetSelectButtons() {
 
     }    
   }
+  scrApplyTheme();
 }
 
 /// @function scrPlayGame()

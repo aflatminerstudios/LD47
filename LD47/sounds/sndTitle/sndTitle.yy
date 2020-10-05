@@ -1,6 +1,6 @@
 {
   "compression": 0,
-  "volume": 0.0,
+  "volume": 1.0,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndTitle.mp3",
-  "duration": 8.677653,
+  "duration": 73.5396957,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

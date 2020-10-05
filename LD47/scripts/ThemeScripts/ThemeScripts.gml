@@ -13,7 +13,7 @@ function scrApplyNonoTheme(nonoTheme) {
 // An overall theme (Stuck In The Loop, Stuck In The Loop, etc.)
 ColorTheme = function(_name, _playerCircleTheme, _circleThemes, _backgroundColor, _backgroundImage,
 											_nonoTheme, _gameOverWin, _gameOverFail, _fntColor, _hitSprite,
-                      _hudTickerBG, _hudTimerCircle, _tickerColor) constructor {
+                      _hudTickerBG, _hudTimerCircle, _tickerColor, _music) constructor {
 	name = _name;
 	// CircleTheme
 	playerCircleTheme = _playerCircleTheme
@@ -30,6 +30,7 @@ ColorTheme = function(_name, _playerCircleTheme, _circleThemes, _backgroundColor
 	hudTickerBG =  _hudTickerBG; 
   hudTimerCircle = _hudTimerCircle;
   tickerColor = _tickerColor;
+  music = _music;
 };
 
 // A single circle
@@ -358,7 +359,8 @@ global.stuckInTheLoopTheme = new ColorTheme(
   sprLoopHit,
   sprHUDTickerTapeBG,
   sprHUDTimerCircle,
-  c_white
+  c_white,
+  sndLoop
 );
 
 ////////////////////////////
@@ -383,7 +385,8 @@ global.stuckInTheBloopTheme = new ColorTheme(
   sprBloopHit,
   sprBloopHUDTickerTapeBG,
   sprBloopHUDTimerCircle,
-  c_white
+  c_white,
+  sndBloop
 );
 
 ////////////////////////////
@@ -409,7 +412,8 @@ global.stuckInTheLooTheme = new ColorTheme(
   sprLooHit,
   sprLooHUDTickerTapeBG,
   sprLooHUDTimerCircle,
-  $02e4ff
+  $02e4ff,
+  sndLoo
 );
 
 // Set up the global values
@@ -436,7 +440,7 @@ function scrApplyTheme() {
     circleTheme = global.currentTheme.circleThemes[ irandom_range(0, array_length(global.currentTheme.circleThemes)-1) ]; 
   }
  
-  if (room != roomTitleScreen) {
+  
     // Set up the BG based on the current theme
     // This coud be moved to a script and called anytime inside a game mode
     var colorBGLayerId = layer_get_id("Background");
@@ -449,13 +453,17 @@ function scrApplyTheme() {
     layer_background_htiled(imageBGId, true);
     layer_background_vtiled(imageBGId, true); 
  
-  }
+  
   with (objGameOver) {
    if (won) {
      sprite_index = global.currentTheme.gameOverWin; 
    } else {
      sprite_index = global.currentTheme.gameOverFail; 
    }
+  }
+  
+  with (objMusicControl) {
+    music = global.currentTheme.music;
   }
  
 }
