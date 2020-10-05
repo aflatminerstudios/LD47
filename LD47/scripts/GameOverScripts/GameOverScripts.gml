@@ -46,7 +46,7 @@ function scrGameOverKaiju(controller, numAttached, totalSize, dist, bboxSize) {
   
   instance = scrSpawnGameOver(self.id, objGameOver);
   scrGameOverCleanup(controller);
-  instance.style = "BulletBoss";
+  instance.style = "Kaiju";
   instance.numAttached = numAttached;
   instance.totalSize = totalSize;
   instance.dist = dist;

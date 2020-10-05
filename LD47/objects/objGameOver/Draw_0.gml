@@ -19,7 +19,7 @@ draw_self();
 
 if (style == "Kaiju") {
 
-  totalScore = ((totalSize +  sqrt(bboxSize) + dist) * numAttached * numAttached ) ;
+  totalScore = ((totalSize +  sqrt(bboxSize) + dist) * numAttached ) ;
 
   //Labels
   draw_text(x - 198, y - 68, "Loops attached: "); 

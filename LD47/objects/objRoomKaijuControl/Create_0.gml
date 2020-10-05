@@ -2,16 +2,16 @@
 // You can write your code in this editor
 
 event_inherited();
-maxTimer = room_speed * 15;
+maxTimer = room_speed * 20;
 
-startingGlompables = 35;
+startingGlompables = 80;
 glompableSpawnTime = room_speed * 2;
 
 //Redefine zooming behavior
 preTime = 1 * room_speed;
 zoomTime = 2 * room_speed;
 zoomStart = 1;
-zoomTarget = (1/3);
+zoomTarget = (1/5);
 zoom = zoomStart;
 alarm[4] = preTime + zoomTime;
 
