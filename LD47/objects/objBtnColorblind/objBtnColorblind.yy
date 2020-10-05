@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprColorBlindOff",
-    "path": "sprites/sprColorBlindOff/sprColorBlindOff.yy",
+    "name": "sprColorBlindOn",
+    "path": "sprites/sprColorBlindOn/sprColorBlindOn.yy",
   },
   "solid": false,
   "visible": true,
@@ -23,7 +23,9 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"objBtnColorblind","path":"objects/objBtnColorblind/objBtnColorblind.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
