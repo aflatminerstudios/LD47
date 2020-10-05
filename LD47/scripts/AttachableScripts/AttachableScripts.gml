@@ -18,8 +18,9 @@ function scrAttachGlompableToObject(glompableInstance, parentAttachableInstance)
 	var imageIndex = glompableInstance.image_index;
 	var imageAngle = glompableInstance.image_angle;
 	var imageSpeed = glompableInstance.image_speed;
-	var imageXScale = glompableInstance.image_xscale;
-	var imageYScale = glompableInstance.image_yscale;
+  var scale = (radius*2.0)/sprite_get_width(sprite_index);
+	var imageXScale = scale;
+	var imageYScale = scale;
 	var internalAngle = glompableInstance.internalAngle;
 	var baseAngularSpeedPerFrame = glompableInstance.baseAngularSpeedPerFrame;
 	var angularSpeedPerFrame = glompableInstance.angularSpeedPerFrame;
