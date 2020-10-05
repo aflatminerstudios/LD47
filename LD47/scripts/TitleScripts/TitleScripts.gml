@@ -46,20 +46,23 @@ function scrSetSelectButtons() {
     if (type == t) {
       sprite_index = onButton;  
     } else {
-      sprite_index = offButton;
-      show_debug_message(type);
+      sprite_index = offButton;      
     }    
   }
   
   with (objBtnModeSelect) {
+    if (t == "Loo") {      
+      onButton = onLoo;
+      offButton = offLoo;
+    } else {
+      onButton = onBase;
+      offButton = offBase;
+    }
     if (type == m) {
-      sprite_index = onButton;  
-      show_debug_message(type + "XXXX");
-      show_debug_message(string(sprite_index) + ", " + string(sprBtnModeFightersOn));
+      sprite_index = onButton;      
     } else {
       sprite_index = offButton;
-      show_debug_message(type);
-      show_debug_message(string(sprite_index) + ", " + string(sprBtnModeCollectOff) + ", " + string(sprBtnModeObstacleOff));
+
     }    
   }
 }
