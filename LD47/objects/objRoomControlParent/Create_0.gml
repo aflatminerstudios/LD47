@@ -65,3 +65,4 @@ for( var i = 0; i < num; i++;)
 won = false;
 
 readyGo = noone;
+count = 0;

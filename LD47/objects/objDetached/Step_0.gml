@@ -38,7 +38,7 @@ if (collObject != noone && collObject.object_index != objNoNoShip && collObject.
     }
   
     if (!skip) {
-   
+      audio_play_sound(global.currentTheme.sndHit, 100, false);
       var instance = instance_create_depth(xx, yy, depth - 1, objHit);
       instance.image_angle = internalAngle + 90;
       created++;

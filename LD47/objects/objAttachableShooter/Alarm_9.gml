@@ -4,6 +4,8 @@
 var totalVelocity = root.angularSpeedPerFrame*distanceFromRoot
 var forwardAngle = angleFromRoot-90;
 
+//var dirToPlayer = point_direction(x, y, objPlayer.x, objPlayer.y);
+
 
 var bullet = instance_create_layer(0, 0, self.layer, objYesYesBullet);
 bullet.direction = angle;

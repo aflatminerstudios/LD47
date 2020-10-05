@@ -10,14 +10,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "sndBeep.mp3",
-  "duration": 2.749563,
+  "soundFile": "sndBaseHit.mp3",
+  "duration": 2.645313,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sndBeep",
+  "name": "sndBaseHit",
   "tags": [],
   "resourceType": "GMSound",
 }

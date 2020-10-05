@@ -10,8 +10,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "sndLongBeep.wav",
-  "duration": 0.712596,
+  "soundFile": "sndLongBeep.mp3",
+  "duration": 3.479313,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

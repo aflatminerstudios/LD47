@@ -33,7 +33,7 @@ function scrAttachGlompableToObject(glompableInstance, parentAttachableInstance)
 	// Create a new instance of objAttachable
 	// Make this accept a specific object_index defined in the glompable (child of objAttachable) --  Micha TODO
 	var newObjectIndex = objAttachable;
-	if(room == roomBulletBoss)
+	if(room == roomBulletBoss || room == roomBulletBoss2)
 		newObjectIndex = objAttachableShooter;
 	var newAttachable = instance_create_layer(glompableInstance.x, glompableInstance.y, glompableInstance.layer, newObjectIndex);
 	instance_destroy(glompableInstance);
@@ -81,6 +81,11 @@ function scrAttachGlompableToObject(glompableInstance, parentAttachableInstance)
 	
 	if(instance_exists(objRoomBulletBossControl))
 		objRoomBulletBossControl.totalAttached++;
+  
+  
+  if (room != roomTitleScreen) {
+    audio_play_sound(global.currentTheme.sndAttach, 100, false);
+  }
 }
 
 ///@function scrDetachAttachable(attachable)
@@ -118,13 +123,15 @@ function scrDetachAttachable(attachable, collObject, isActualCollision) {
     
     if (isActualCollision) {
       self.alarm[1] = 2;
+      audio_play_sound(global.currentTheme.sndHit, 100, false);      
     }
     /*
     var instance = instance_create_depth(x, y, depth - 1, objHit);
     instance.image_angle = self.internalAngle + 90;
     self.skip = true;
     self.skipCount = 0;
-    */
+    */    
+    
   }
   
   with (objAttachable) {

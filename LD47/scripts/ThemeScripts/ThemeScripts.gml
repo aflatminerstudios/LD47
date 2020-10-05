@@ -13,7 +13,7 @@ function scrApplyNonoTheme(nonoTheme) {
 // An overall theme (Stuck In The Loop, Stuck In The Loop, etc.)
 ColorTheme = function(_name, _playerCircleTheme, _circleThemes, _backgroundColor, _backgroundImage,
 											_nonoTheme, _gameOverWin, _gameOverFail, _fntColor, _hitSprite,
-                      _hudTickerBG, _hudTimerCircle, _tickerColor, _music) constructor {
+                      _hudTickerBG, _hudTimerCircle, _tickerColor, _music, _sndHit, _sndAttach) constructor {
 	name = _name;
 	// CircleTheme
 	playerCircleTheme = _playerCircleTheme
@@ -31,6 +31,8 @@ ColorTheme = function(_name, _playerCircleTheme, _circleThemes, _backgroundColor
   hudTimerCircle = _hudTimerCircle;
   tickerColor = _tickerColor;
   music = _music;
+  sndHit = _sndHit;
+  sndAttach = _sndAttach;
 };
 
 // A single circle
@@ -360,7 +362,9 @@ global.stuckInTheLoopTheme = new ColorTheme(
   sprHUDTickerTapeBG,
   sprHUDTimerCircle,
   c_white,
-  sndLoop
+  sndLoop,
+  sndBaseHit,
+  sndBaseAttach
 );
 
 ////////////////////////////
@@ -386,7 +390,9 @@ global.stuckInTheBloopTheme = new ColorTheme(
   sprBloopHUDTickerTapeBG,
   sprBloopHUDTimerCircle,
   c_white,
-  sndBloop
+  sndBloop,
+  sndBaseHit,
+  sndBaseAttach
 );
 
 ////////////////////////////
@@ -413,7 +419,9 @@ global.stuckInTheLooTheme = new ColorTheme(
   sprLooHUDTickerTapeBG,
   sprLooHUDTimerCircle,
   $02e4ff,
-  sndLoo
+  sndLoo,
+  sndLooHit,
+  sndLooAttach
 );
 
 // Set up the global values

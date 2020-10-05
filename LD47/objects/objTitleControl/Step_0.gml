@@ -13,11 +13,11 @@ if (ready) {
 			targetView = "title";
 		else if(targetView == "title")
 			targetView = "credits";
-  } else if (keyboard_check_pressed(ord("M"))) {
+  } /*else if (keyboard_check_pressed(ord("M"))) {
     room_goto(roomTestMicha);
-  } else if (keyboard_check_pressed(ord("J"))) {
+  } */else if (keyboard_check_pressed(ord("J"))) {
     room_goto(roomJohnTest);
-  } else if (keyboard_check_pressed(ord("K"))) {
+  } /*else if (keyboard_check_pressed(ord("K"))) {
     room_goto(roomKaiju); 
   } else if (keyboard_check_pressed(ord("O"))) {
     room_goto(roomObstacle2); 
@@ -32,7 +32,7 @@ if (ready) {
 			global.currentTheme = global.stuckInTheLoopTheme;
   } else if (keyboard_check_pressed(ord("Y"))) {
     global.colorBlindModeOn = !global.colorBlindModeOn;
-  } else if (keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_space)) {
+  } */else if (keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_space)) {
     scrPlayGame(); 
   }
   /*else if (keyboard_check_pressed(vk_anykey)) {// || mouse_check_button_pressed(mb_any)) {

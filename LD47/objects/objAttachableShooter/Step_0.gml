@@ -30,7 +30,8 @@ if (place_meeting(x, y, objNoNoShip)) {
   scrDetachAttachable(self.id, collObject, false);
 	instance_destroy(collObject);
 	if(instance_exists(objRoomBulletBossControl))
-		objRoomBulletBossControl.shipsDestroyed++;
+		objRoomBulletBossControl.shipsDestroyed++;  
+  audio_play_sound(global.currentTheme.sndHit, 100, false);  
 } else if (place_meeting(x, y, objNoNoBullet)) {
   var collObject = instance_place(x, y, objNoNoBullet);
   x = oldX;
@@ -39,10 +40,12 @@ if (place_meeting(x, y, objNoNoShip)) {
 	instance_destroy(collObject);
 	if(instance_exists(objRoomBulletBossControl))
 		objRoomBulletBossControl.shipsDestroyed++;
+  audio_play_sound(global.currentTheme.sndHit, 100, false);  
 } else if (place_meeting(x, y, objNoNoParent)) {
   var collObject = instance_place(x, y, objNoNoParent);
   x = oldX;
   y = oldY;  
   scrDetachAttachable(self.id, collObject, true);
+  
 }
 
