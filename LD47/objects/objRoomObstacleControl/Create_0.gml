@@ -5,7 +5,7 @@
 event_inherited();
 
 //Redefine random glompable spawns during level
-glompableSpawnTime = room_speed * 3;
+glompableSpawnTime = room_speed * 2;
 alarm[0] = glompableSpawnTime;
 maxTimer = room_speed * 30;
 

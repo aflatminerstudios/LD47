@@ -22,4 +22,8 @@ bboxSize = 0;
 timer = 0;
 maxTimer = 0;
 
+//BulletBoss variables
+ship = 0;
+
+
 won = true;

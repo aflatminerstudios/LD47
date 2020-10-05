@@ -12,38 +12,39 @@ var count = 0;
 
 var tempSpeed = speedPerFrame;
 
-
-while (place_meeting(x, y, objNoNoParent)) {
-  count++;
-  var collObject = instance_place(x, y, objNoNoParent);
-
+var collObject = instance_place(x, y, objNoNoParent);
+if (collObject != noone && collObject.object_index != objNoNoShip && collObject.object_index != objNoNoBullet) {
+  while (place_meeting(x, y, objNoNoParent)) {
+    count++;
+    collObject = instance_place(x, y, objNoNoParent);
   
-
-  internalAngle = point_direction(x, y, collObject.x, collObject.y);//, x, y);
   
-  /*if (collObject.object_index == objNoNoTurbine) {
-    show_debug_message(string(x) + ", " + string(y) + " : " + string(collObject.x) + " " + string(collObject.y));
-    show_debug_message(internalAngle);
-  }*/
+    internalAngle = point_direction(x, y, collObject.x, collObject.y);//, x, y);
   
-  var xx = x + lengthdir_x(sprite_width / 2, internalAngle);
-  var yy = y + lengthdir_y(sprite_height / 2, internalAngle);
+    /*if (collObject.object_index == objNoNoTurbine) {
+      show_debug_message(string(x) + ", " + string(y) + " : " + string(collObject.x) + " " + string(collObject.y));
+      show_debug_message(internalAngle);
+    }*/
   
-  x = x + lengthdir_x(tempSpeed, internalAngle);
-  y = y + lengthdir_y(tempSpeed, internalAngle);    
+    var xx = x + lengthdir_x(sprite_width / 2, internalAngle);
+    var yy = y + lengthdir_y(sprite_height / 2, internalAngle);
   
-  if (count > 300) {
-    count = 0;
-    tempSpeed *= 2;
-  }
+    x = x + lengthdir_x(tempSpeed, internalAngle);
+    y = y + lengthdir_y(tempSpeed, internalAngle);    
   
-  if (!skip) {
+    if (count > 300) {
+      count = 0;
+      tempSpeed *= 2;
+    }
+  
+    if (!skip) {
    
-    var instance = instance_create_depth(xx, yy, depth - 1, objHit);
-    instance.image_angle = internalAngle + 90;
-    created++;
-    skip = true;
-    skipCount = 0;
+      var instance = instance_create_depth(xx, yy, depth - 1, objHit);
+      instance.image_angle = internalAngle + 90;
+      created++;
+      skip = true;
+      skipCount = 0;
+    }
   }
 }
 

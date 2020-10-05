@@ -139,8 +139,8 @@ function scrGameOverBulletBoss(controller, totalAttached, shipsDestroyed, timeSu
   scrGameOverCleanup(controller);
   instance.style = "BulletBoss";
   instance.numAttached = totalAttached; // Using this for total attached count during round
-  instance.totalSize = shipsDestroyed; // Using this for ships destroyed
-  instance.dist = timeSurvived; // Using this for time survived
+  instance.ships = shipsDestroyed; // Using this for ships destroyed
+  instance.timer = timeSurvived; // Using this for time survived
   instance.sprite_index = global.currentTheme.gameOverWin;
   
 }

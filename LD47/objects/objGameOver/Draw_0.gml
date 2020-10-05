@@ -39,7 +39,7 @@ if (style == "Kaiju") {
 if (style == "Obstacle") {
   
   if (won) {
-    totalScore = (maxTimer - timer)/room_speed * (numAttached) * (dist) * sqrt(totalSize);
+    totalScore = sqrt((maxTimer - timer)/room_speed * (maxTimer - timer)/room_speed * (numAttached) * (dist) * sqrt(totalSize));
   } else {
     totalScore = sqrt(numAttached * dist * totalSize);
   }
@@ -71,10 +71,9 @@ if (objShaderControl.fadeAmount != 0) {
 if (style == "BulletBoss") {
 
 	var loops = numAttached;
-	var time = dist; // Using this for time survived
-	var ships = totalSize; // Using this for ships destroyed
+
   //totalScore = ((totalSize + sqrt(bboxSize) + dist) * numAttached * numAttached);
-	totalScore = time * 1 + ships * 1 + loops*5;
+	totalScore = timer * 2 + ships * 1 + loops*5;
 
   //Labels
   draw_text(x - 198, y - 68, "Time survived: "); 
@@ -84,8 +83,8 @@ if (style == "BulletBoss") {
   
   //Scores
   draw_set_halign(fa_right);
-	var seconds = time/60;
-	var timeString = string_format(seconds, 0, 1) + "\""
+	var seconds = timer/room_speed;
+	var timeString = string_format(seconds, 0, 2) + " s"
 	draw_text(x + 155, y - 68, timeString);
   draw_text(x + 155, y - 30, scrAddSeparator(string_format(ships, 0, 0), ",", 3));
   draw_text(x + 155, y + 6, scrAddSeparator(string_format(loops, 0, 0), ",", 3));

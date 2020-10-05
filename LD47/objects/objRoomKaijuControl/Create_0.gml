@@ -4,9 +4,16 @@
 event_inherited();
 maxTimer = room_speed * 15;
 
-startingGlompables = 25;
-glompableSpawnTime = room_speed * 3;
+startingGlompables = 35;
+glompableSpawnTime = room_speed * 2;
 
+//Redefine zooming behavior
+preTime = 1 * room_speed;
+zoomTime = 2 * room_speed;
+zoomStart = 1;
+zoomTarget = (1/3);
+zoom = zoomStart;
+alarm[4] = preTime + zoomTime;
 
 scrSpawnStartingGlompables(self.id);
 
