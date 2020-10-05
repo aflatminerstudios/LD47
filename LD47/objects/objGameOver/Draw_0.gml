@@ -35,8 +35,10 @@ if (style == "Kaiju") {
 }
 
 if (style == "Obstacle") {
-  totalScore = (maxTimer - timer) * numAttached * dist;
+  totalScore = (maxTimer - timer)/room_speed * numAttached * dist * sqrt(totalSize);
 
+
+  show_debug_message( string((maxTimer - timer)) + "ABCD");
   //Labels
   draw_text(x - 198, y - 68, "Time: "); 
   draw_text(x - 198, y - 30, "Loops attached: ");
@@ -49,7 +51,7 @@ if (style == "Obstacle") {
   draw_text(x + 155, y - 30, scrAddSeparator(string_format(numAttached, 0, 0), ",", 3));
   draw_text(x + 155, y + 6, scrAddSeparator(string_format(dist, 0, 0), ",", 3));
   draw_text(x + 155, y + 46, scrAddSeparator(string_format(totalScore, 0, 0), ",", 3));
-}
+  }
 
 //Reset everything
 shader_reset();
