@@ -18,17 +18,33 @@ while (place_meeting(x, y, objNoNoParent)) {
   var collObject = instance_place(x, y, objNoNoParent);
 
   internalAngle = point_direction(x, y, collObject.x, collObject.y);//, x, y);
-
+  
+  var xx = x + lengthdir_x(sprite_width / 2, internalAngle);
+  var yy = y + lengthdir_y(sprite_height / 2, internalAngle);
+  
   x = x + lengthdir_x(tempSpeed, internalAngle);
   y = y + lengthdir_y(tempSpeed, internalAngle);    
-  show_debug_message(internalAngle);
+  
   if (count > 300) {
     count = 0;
     tempSpeed *= 2;
   }
   
-  skip = true;
-  skipCount = 0;
+  if (!skip) {
+   
+    var instance = instance_create_depth(xx, yy, depth - 1, objHit);
+    instance.image_angle = internalAngle + 90;
+    created++;
+    skip = true;
+    skipCount = 0;
+  }
+}
+
+if (skip) {
+  skipCount++; 
+  if (skipCount > maxSkipCount) {
+    skip = false; 
+  }
 }
 
 

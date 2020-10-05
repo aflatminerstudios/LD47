@@ -76,7 +76,9 @@ function scrAttachGlompableToObject(glompableInstance, parentAttachableInstance)
 
 ///@function scrDetachAttachable(attachable)
 ///@param attachable The attachable to detach
-function scrDetachAttachable(attachable) {
+///@param collObject the object being collided with
+
+function scrDetachAttachable(attachable, collObject) {
   var newDetached = instance_create_layer(attachable.x, attachable.y, attachable.layer, objDetached);
   show_debug_message("Detaching " + string(attachable));
   with (newDetached) {
@@ -103,6 +105,13 @@ function scrDetachAttachable(attachable) {
     //self.dotColor = attachable.dotColor;
     self.stepsBetweenPoints = attachable.stepsBetweenPoints;
     self.alarm[0] = self.stepsBetweenPoints;
+    
+    /*
+    var instance = instance_create_depth(x, y, depth - 1, objHit);
+    instance.image_angle = self.internalAngle + 90;
+    self.skip = true;
+    self.skipCount = 0;
+    */
   }
   
   with (objAttachable) {

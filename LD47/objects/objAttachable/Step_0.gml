@@ -19,7 +19,8 @@ if(root) {
 }
 
 if (place_meeting(x, y, objNoNoParent)) {
+  var collObject = instance_place(x, y, objNoNoParent);
   x = oldX;
-  y = oldY;
-  scrDetachAttachable(self.id);
+  y = oldY;  
+  scrDetachAttachable(self.id, collObject);
 }
