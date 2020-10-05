@@ -41,13 +41,13 @@ TrailTheme = function(_color, _lineWidth, _maxList) constructor {
 
 circleThemeTemplate = new CircleTheme(
 	"Template",
-	sprCircleBlue,
-	sprGlowBlue,
-	sprInsertBlueHoop,
+	sprCircleBlue, // main sprite
+	sprGlowBlue, // glow underneath
+	sprInsertBlueHoop, // visual assist (inside circle)
 	new TrailTheme(
-		c_white,
-		2,
-		50,
+		c_white, // trail color
+		2, // trail width in pixels
+		50, // maximum points on the trail
 	),
 );
 
@@ -57,8 +57,9 @@ trailThemeTemplate = new TrailTheme(
 	50,
 );
 
-////////////////////////////
-// Stuck In The Loop Theme
+
+////////////////////////////////
+// Stuck In The Loop Sub-Themes
 playerCircleThemeLoop = new CircleTheme(
 	"Player",
 	sprCircleMultilines,
@@ -131,6 +132,161 @@ circleThemeYellow = new CircleTheme(
 	),
 );
 
+
+/////////////////////////////////
+// Stuck In The Bloop Sub-Themes
+circleThemeBloopBlue = new CircleTheme(
+	"Bloop Blue",
+	sprCircleBloopBlue,
+	noone,
+	noone,
+	new TrailTheme(
+		$ffc000,
+		2,
+		50,
+	),
+);
+
+circleThemeBloopCyan = new CircleTheme(
+	"Bloop Cyan",
+	sprCircleBloopCyan,
+	noone,
+	noone,
+	new TrailTheme(
+		$ffff00,
+		2,
+		50,
+	),
+);
+
+circleThemeBloopNavy = new CircleTheme(
+	"Bloop Navy",
+	sprCircleBloopNavy,
+	noone,
+	noone,
+	new TrailTheme(
+		$db1500,
+		2,
+		50,
+	),
+);
+
+circleThemeBloopPink = new CircleTheme(
+	"Bloop Pink",
+	sprCircleBloopPink,
+	noone,
+	noone,
+	new TrailTheme(
+		$df00b8,
+		2,
+		50,
+	),
+);
+
+circleThemeBloopPurple = new CircleTheme(
+	"Bloop Purple",
+	sprCircleBloopPurple,
+	noone,
+	noone,
+	new TrailTheme(
+		$ff99d5,
+		2,
+		50,
+	),
+);
+
+circleThemeBloopWhite = new CircleTheme(
+	"Bloop White",
+	sprCircleBloopWhite,
+	noone,
+	noone,
+	new TrailTheme(
+		$ffefc0,
+		2,
+		50,
+	),
+);
+
+
+
+///////////////////////////////
+// Stuck In The Loo Sub-Themes
+circleThemeLooBlack = new CircleTheme(
+	"Loo Black",
+	sprCircleLooBlack,
+	sprGlowLoo,
+	noone,
+	new TrailTheme(
+		$022033,
+		2,
+		50,
+	),
+);
+
+circleThemeLooBrown = new CircleTheme(
+	"Loo Brown",
+	sprCircleLooBrown,
+	sprGlowLoo,
+	noone,
+	new TrailTheme(
+		$00517e,
+		2,
+		50,
+	),
+);
+
+circleThemeLooOrange = new CircleTheme(
+	"Loo Orange",
+	sprCircleLooOrange,
+	sprGlowLoo,
+	noone,
+	new TrailTheme(
+		$22b7ff,
+		2,
+		50,
+	),
+);
+
+circleThemeLooRed = new CircleTheme(
+	"Loo Red",
+	sprCircleLooRed,
+	sprGlowLoo,
+	noone,
+	new TrailTheme(
+		$1c4bac,
+		2,
+		50,
+	),
+);
+
+circleThemeLooTan = new CircleTheme(
+	"Loo Tan",
+	sprCircleLooTan,
+	sprGlowLoo,
+	noone,
+	new TrailTheme(
+		$2c8bb7,
+		2,
+		50,
+	),
+);
+
+circleThemeLooYellow = new CircleTheme(
+	"Loo Yellow",
+	sprCircleLooYellow,
+	sprGlowLoo,
+	noone,
+	new TrailTheme(
+		$02e4ff,
+		2,
+		50,
+	),
+);
+
+
+
+// Full Theme definitions
+
 global.stuckInTheLoopTheme = new ColorTheme(
 	"Stuck In The Loop",
 	playerCircleThemeLoop, 
@@ -139,7 +295,7 @@ global.stuckInTheLoopTheme = new ColorTheme(
 		circleThemeCyan,
 		circleThemeOrange,
 		circleThemePink,
-		circleThemeYellow
+		circleThemeYellow,
 	],
 	$5b2c2b, // background color (behind the tiled background sprites)
 	sprBackgroundLoop,
@@ -155,14 +311,14 @@ global.stuckInTheLoopTheme = new ColorTheme(
 // Stuck In The Bloop Theme
 global.stuckInTheBloopTheme = new ColorTheme(
 	"Stuck In The Bloop",
- // This theme is a duplicate of Stuck in the Loop -- Micha TODO
-	playerCircleThemeLoop, 
+	//playerCircleThemeLoop, 
+	circleThemeBloopWhite,
 	[
-		circleThemeBlue,
-		circleThemeCyan,
-		circleThemeOrange,
-		circleThemePink,
-		circleThemeYellow
+		circleThemeBloopBlue,
+		circleThemeBloopCyan,
+		circleThemeBloopNavy,
+		circleThemeBloopPink,
+		circleThemeBloopPurple,
 	],
 	$230a06, // background color (behind the tiled background sprites)
 	sprBackgroundBloop,
@@ -179,13 +335,14 @@ global.stuckInTheBloopTheme = new ColorTheme(
 global.stuckInTheLooTheme = new ColorTheme(
 	"Stuck In The Loo",
 // This theme is a duplicate of Stuck in the Loop -- Micha TODO
-	playerCircleThemeLoop, 
+	//playerCircleThemeLoop, 
+	circleThemeLooBlack,
 	[
-		circleThemeBlue,
-		circleThemeCyan,
-		circleThemeOrange,
-		circleThemePink,
-		circleThemeYellow
+		circleThemeLooBrown,
+		circleThemeLooOrange,
+		circleThemeLooRed,
+		circleThemeLooTan,
+		circleThemeLooYellow,
 	],
 	$e8faff, // background color (behind the tiled background sprites)
 	sprBackgroundLoo,
