@@ -62,3 +62,4 @@ audio_set_master_gain(info[? "index"], 0);
 ds_map_destroy(info);
 }
    
+won = false;

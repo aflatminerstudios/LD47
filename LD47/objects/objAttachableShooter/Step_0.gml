@@ -27,7 +27,15 @@ if (place_meeting(x, y, objNoNoShip)) {
   var collObject = instance_place(x, y, objNoNoShip);
   x = oldX;
   y = oldY;  
-  scrDetachAttachable(self.id, collObject);
+  scrDetachAttachable(self.id, collObject, false);
+	instance_destroy(collObject);
+	if(instance_exists(objRoomBulletBossControl))
+		objRoomBulletBossControl.shipsDestroyed++;
+} else if (place_meeting(x, y, objNoNoBullet)) {
+  var collObject = instance_place(x, y, objNoNoBullet);
+  x = oldX;
+  y = oldY;  
+  scrDetachAttachable(self.id, collObject, false);
 	instance_destroy(collObject);
 	if(instance_exists(objRoomBulletBossControl))
 		objRoomBulletBossControl.shipsDestroyed++;
@@ -35,6 +43,6 @@ if (place_meeting(x, y, objNoNoShip)) {
   var collObject = instance_place(x, y, objNoNoParent);
   x = oldX;
   y = oldY;  
-  scrDetachAttachable(self.id, collObject);
+  scrDetachAttachable(self.id, collObject, true);
 }
 

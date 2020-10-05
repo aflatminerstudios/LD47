@@ -43,6 +43,7 @@ function scrScrollText(ticker, text) {
   instance.text = text;
   instance.textOffset = instance.textBegin;
   
+  return instance;
   
 }
 

@@ -22,4 +22,9 @@ if (placeholder != noone) {
   placeholder.y = 230;
 }
 
-won = false;
+
+
+var theText = "Get to the goal with as many loops as you can!"; 
+var tickerInstance = scrScrollText(ticker, theText);
+canSpawnText = false;
+tickerInstance.textOffset = room_width/3;

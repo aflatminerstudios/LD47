@@ -62,7 +62,7 @@ if(targetView == "title") {
 var newCameraX = cameraX;
 
 if (targetX != cameraX) {
-  show_debug_message(string(cameraX) + " to " + string(targetX));
+  //show_debug_message(string(cameraX) + " to " + string(targetX));
 	newCameraX = lerp(cameraX, targetX, 0.14);
 	if(abs(newCameraX - targetX) < 2)
 		newCameraX = targetX;
