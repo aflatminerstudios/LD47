@@ -98,6 +98,7 @@
     {"id":{"name":"RoomSpawnScripts","path":"scripts/RoomSpawnScripts/RoomSpawnScripts.yy",},"order":4,},
     {"id":{"name":"sprGoal","path":"sprites/sprGoal/sprGoal.yy",},"order":11,},
     {"id":{"name":"objAttachable","path":"objects/objAttachable/objAttachable.yy",},"order":2,},
+    {"id":{"name":"ButtonScripts","path":"scripts/ButtonScripts/ButtonScripts.yy",},"order":10,},
     {"id":{"name":"objSpiroControl","path":"objects/objSpiroControl/objSpiroControl.yy",},"order":1,},
     {"id":{"name":"sprCircleBloopWhite","path":"sprites/sprCircleBloopWhite/sprCircleBloopWhite.yy",},"order":5,},
     {"id":{"name":"GameOverScripts","path":"scripts/GameOverScripts/GameOverScripts.yy",},"order":9,},

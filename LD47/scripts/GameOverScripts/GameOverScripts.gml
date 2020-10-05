@@ -127,17 +127,3 @@ function scrGameOverObstacle(controller, won) {
   }
   
 }
-
-
-function scrPressMode() {
-  room_goto(roomTitleScreen);
-}
-
-function scrPressReplay() {
-  room_restart();
-}
-
-function scrPressTheme() {
-  show_message("Go to theme select (special theme select screen?)");
-}
-
